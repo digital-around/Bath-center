@@ -1,3 +1,59 @@
+@font-face {
+  font-family: "SFCompactDisplay";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/SFCompactDisplay/SFCompactDisplay-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "SFCompactDisplay";
+  font-weight: 300;
+  font-style: normal;
+  src: url("../fonts/SFCompactDisplay/SFCompactDisplay-Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "SFCompactDisplay";
+  font-weight: 500;
+  font-style: normal;
+  src: url("../fonts/SFCompactDisplay/SFCompactDisplay-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "SFCompactDisplay";
+  font-weight: 600;
+  font-style: normal;
+  src: url("../fonts/SFCompactDisplay/SFCompactDisplay-Semibold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "SFCompactDisplay";
+  font-weight: 700;
+  font-style: normal;
+  src: url("../fonts/SFCompactDisplay/SFCompactDisplay-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "SFCompactDisplay";
+  font-weight: 800;
+  font-style: normal;
+  src: url("../fonts/SFCompactDisplay/SFCompactDisplay-Heavy.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "SFCompactDisplay";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/Helvetica/HelveticaRegular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "SFCompactDisplay";
+  font-weight: 500;
+  font-style: normal;
+  src: url("../fonts/Helvetica/HelveticaMedium.ttf") format("truetype");
+}
+
 *,
 *::before,
 *::after {
@@ -5,7 +61,7 @@
 }
 
 html {
-  font-family: sans-serif;
+  font-family: 'SFCompactDisplay', sans-serif;
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
@@ -33,4 +89,152 @@ h6 {
   line-height: unset;
   margin: unset;
   padding: unset;
+}
+
+.h-100 {
+  height: 100%;
+}
+
+.banner {
+  position: relative;
+  height: 570px;
+  width: 100%;
+  max-width: 1920px;
+  margin-left: auto;
+  margin-right: auto;
+  background: #ffffff;
+  overflow: hidden;
+}
+
+.banner__title {
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 71px;
+  color: #002538;
+  opacity: 0.9;
+  margin-top: 100px;
+}
+
+.banner__subtitle {
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 53px;
+  color: #000000;
+  opacity: 0.8;
+  margin-top: 30px;
+}
+
+.banner__image-wrap {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  right: 0;
+}
+
+.banner__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.banner__sticker {
+  position: absolute;
+  top: -85px;
+  right: -28px;
+  padding: 130px 28px 0 0;
+  width: 370px;
+  height: 370px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  border-radius: 50%;
+  background: #8B857A;
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 50px;
+  color: #ffffff;
+}
+
+.banner__button {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+  background: #289FDD;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.banner__button:hover {
+  color: #ffffff;
+}
+
+.banner__button::before {
+  content: "";
+  width: 36px;
+  height: 12px;
+  background: url("../images/banner/btn-arrow.svg") no-repeat center;
+  background-size: contain;
+  margin-right: 15px;
+}
+
+.banner__link {
+  position: relative;
+  z-index: 2;
+  margin-top: auto;
+  margin-left: auto;
+  margin-bottom: 31px;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 18px;
+  color: #ffffff;
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+
+.banner__link:hover {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.banners {
+  width: 100%;
+  height: 570px;
+  overflow: hidden;
+}
+
+.banners__slide {
+  width: 100%;
+}
+
+.banners .flickity-page-dots {
+  bottom: 33px;
+  width: auto;
+  left: calc(50% + 30px);
+  display: flex;
+  align-items: center;
+}
+
+.banners .flickity-page-dots .dot {
+  margin-left: 0;
+  background: #D8F2FF;
+  opacity: 0.7;
+}
+
+.banners .flickity-page-dots .dot:not(:last-child) {
+  margin-right: 18px;
+}
+
+.banners .flickity-page-dots .dot.is-selected {
+  background: #289FDD;
+  width: 13px;
+  height: 13px;
 }

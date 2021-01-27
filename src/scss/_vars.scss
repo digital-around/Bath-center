@@ -1,3 +1,17 @@
+$white: #ffffff;
+$black: #000000;
+$title: #002538;
+$blue: #289FDD;
+
+@mixin font-face($font-family, $file-path, $weight: normal, $style: normal) {
+  @font-face {
+    font-family: $font-family;
+    font-weight: $weight;
+    font-style: $style;
+    src: url('#{$file-path}.ttf') format('truetype');
+  }
+}
+
 @mixin desktop-xl-min {
   @media screen and (min-width: 1400px) {
     @content;
