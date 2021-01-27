@@ -95,6 +95,14 @@ h6 {
   height: 100%;
 }
 
+.title {
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 50px;
+  color: #002538;
+  opacity: 0.9;
+}
+
 .banner {
   position: relative;
   height: 570px;
@@ -205,6 +213,67 @@ h6 {
   text-decoration: none;
 }
 
+.section-card__image-wrap {
+  width: 100%;
+  height: 450px;
+  overflow: hidden;
+}
+
+.section-card__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.section-card__name {
+  margin-top: 30px;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 35px;
+  height: 70px;
+  overflow: hidden;
+  color: #002538;
+  opacity: 0.9;
+}
+
+.section-card__description {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 31px;
+  color: #333333;
+  opacity: 0.9;
+}
+
+.section-card__link {
+  margin-top: 30px;
+  display: flex;
+  width: max-content;
+  align-items: center;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #07689A;
+}
+
+.section-card__link::before {
+  content: "";
+  width: 36px;
+  height: 12px;
+  background: url("../images/section-card/link-arrow.svg") no-repeat center;
+  background-size: contain;
+  margin-right: 18px;
+  transition: transform 150ms ease-in-out;
+}
+
+.section-card__link:hover {
+  color: #07689A;
+}
+
+.section-card__link:hover::before {
+  transform: translateX(10px);
+}
+
 .banners {
   width: 100%;
   height: 570px;
@@ -237,4 +306,25 @@ h6 {
   background: #289FDD;
   width: 13px;
   height: 13px;
+}
+
+.sections {
+  margin-top: 120px;
+}
+
+.sections__title {
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.sections__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 70px 100px;
+}
+
+@media screen and (max-width: 1399.98px) {
+  .sections__grid {
+    grid-gap: 70px 30px;
+  }
 }

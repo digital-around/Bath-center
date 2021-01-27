@@ -2,6 +2,8 @@ $white: #ffffff;
 $black: #000000;
 $title: #002538;
 $blue: #289FDD;
+$dark-blue: #07689A;
+$gray: #333333;
 
 @mixin font-face($font-family, $file-path, $weight: normal, $style: normal) {
   @font-face {
