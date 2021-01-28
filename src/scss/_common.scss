@@ -1,12 +1,8 @@
-@include font-face('SFCompactDisplay', '../fonts/SFCompactDisplay/SFCompactDisplay-Regular');
-@include font-face('SFCompactDisplay', '../fonts/SFCompactDisplay/SFCompactDisplay-Light', 300);
-@include font-face('SFCompactDisplay', '../fonts/SFCompactDisplay/SFCompactDisplay-Medium', 500);
-@include font-face('SFCompactDisplay', '../fonts/SFCompactDisplay/SFCompactDisplay-Semibold', 600);
-@include font-face('SFCompactDisplay', '../fonts/SFCompactDisplay/SFCompactDisplay-Bold', 700);
-@include font-face('SFCompactDisplay', '../fonts/SFCompactDisplay/SFCompactDisplay-Heavy', 800);
-
-@include font-face('SFCompactDisplay', '../fonts/Helvetica/HelveticaRegular');
-@include font-face('SFCompactDisplay', '../fonts/Helvetica/HelveticaMedium', 500);
+@include font-face('Helvetica', '../fonts/Helvetica/HelveticaRegular');
+@include font-face('Helvetica', '../fonts/Helvetica/HelveticaLight', 300);
+@include font-face('Helvetica', '../fonts/Helvetica/HelveticaMedium', 500);
+@include font-face('Helvetica', '../fonts/Helvetica/HelveticaBold', 700);
+@include font-face('Helvetica', '../fonts/Helvetica/HelveticaHeavy', 800);
 
 *,
 *::before,
@@ -15,7 +11,7 @@
 }
 
 html {
-  font-family: 'SFCompactDisplay', sans-serif;
+  font-family: 'Helvetica', sans-serif;
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(#000, 0);
@@ -49,9 +45,37 @@ h6 {
 }
 
 .title {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 40px;
   line-height: 50px;
   color: $title;
   opacity: 0.9;
+}
+
+.cart-btn {
+
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: $blue-gradient;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $white;
+
+  &::after {
+    content: "";
+    width: 32px;
+    height: 20px;
+    background: url("../images/common/cart.svg") center no-repeat;
+    background-size: contain;
+    margin-left: 10px;
+  }
+
+  &:hover {
+    color: $white;
+  }
+
 }

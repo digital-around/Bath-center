@@ -1,8 +1,10 @@
 <div class="products-carousel">
-    <div class="title container">Сейчас со скидкой</div>
+    <div class="title container">@@title</div>
     <div class="products-carousel__carousel">
-        <div class="products-carousel__item">
-            @@include('../components/product-card.html')
-        </div>
+        @@for (var i = 0; i < 8; i++) {
+            <div class="products-carousel__item">
+                @@include('../components/product-card.html')
+            </div>
+        }
     </div>
 </div>

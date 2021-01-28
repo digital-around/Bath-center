@@ -1,9 +1,14 @@
 $white: #ffffff;
 $black: #000000;
 $title: #002538;
-$blue: #289FDD;
+$blue: #289fdd;
 $dark-blue: #07689A;
 $gray: #333333;
+$yellow: #BB9F12;
+$green: #21B6B1;
+$paragraph: #575757;
+
+$blue-gradient: linear-gradient(90deg, #289FDD 0%, #07689A 100%);
 
 @mixin font-face($font-family, $file-path, $weight: normal, $style: normal) {
   @font-face {

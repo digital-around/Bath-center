@@ -1,0 +1,39 @@
+.advantage {
+
+  display: flex;
+  align-items: start;
+
+  &__icon-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    flex-shrink: 0;
+    border: 3px solid $blue;
+    margin-right: 15px;
+  }
+
+  &__icon {
+    max-width: 50px;
+    max-height: 50px;
+  }
+
+  &__content {
+    margin-top: 8px;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 31px;
+    color: $paragraph;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 31px;
+    color: $title;
+    min-height: 62px;
+    margin-bottom: 15px;
+  }
+
+}
