@@ -4,6 +4,7 @@ $(document).ready(function () {
         prevNextButtons: true,
         pageDots: false,
         cellAlign: 'left',
+        contain: true,
     });
 
 });
