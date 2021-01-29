@@ -80,6 +80,28 @@ h6 {
 
 }
 
+.btn {
+
+  height: 50px;
+  display: flex;
+  width: max-content;
+  padding: 0 35px;
+  align-items: center;
+  justify-content: center;
+  background: $blue-gradient;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: $white;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+
+  &:hover {
+    color: $white;
+  }
+
+}
+
 .embed-responsive {
 
   position: relative;
@@ -131,4 +153,88 @@ h6 {
   &::before {
     padding-top: percentage(1 / 1);
   }
+}
+
+.flickity-page-dots {
+
+  bottom: -30px;
+  width: auto;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+
+  .dot {
+
+    margin-left: 0;
+    background: $blue;
+    opacity: 0.4;
+
+    &:not(:last-child) {
+      margin-right: 18px;
+    }
+
+    &.is-selected {
+      background: $blue;
+      width: 13px;
+      height: 13px;
+      opacity: 1;
+    }
+
+  }
+
+}
+
+.flickity-prev-next-button {
+
+  width: 55px;
+  height: 55px;
+
+  &.previous {
+
+    background: url("../images/common/arrow-dark-left.svg") center no-repeat, $white;
+
+    &:not(:disabled) {
+
+      &:hover {
+        background: url("../images/common/arrow-light-left.svg") center no-repeat, $blue-gradient;
+      }
+
+      &:active {
+        opacity: 1;
+        background: url("../images/common/arrow-light-left.svg") center no-repeat, $dark-blue;
+      }
+
+    }
+
+  }
+
+  &.next {
+
+    background: url("../images/common/arrow-dark-right.svg") center no-repeat, $white;
+
+    &:not(:disabled) {
+
+      &:hover {
+        background: url("../images/common/arrow-light-right.svg") center no-repeat, $blue-gradient;
+
+      }
+
+      &:active {
+        opacity: 1;
+        background: url("../images/common/arrow-light-right.svg") center no-repeat, $dark-blue;
+      }
+
+    }
+
+  }
+
+  &:disabled {
+    opacity: 0.4;
+  }
+
+  .flickity-button-icon {
+    display: none;
+  }
+
 }

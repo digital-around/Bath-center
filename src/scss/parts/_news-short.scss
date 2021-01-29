@@ -6,4 +6,31 @@
     margin-top: 60px;
   }
 
+  &__carousel {
+
+    margin-left: 50px;
+
+    @include desktop-xl {
+      margin-left: 0;
+    }
+
+  }
+
+  &__slide {
+    width: 100%;
+  }
+
+  &__card {
+
+    &:not(:last-child) {
+      margin-bottom: 33px;
+    }
+
+  }
+
+  .flickity-page-dots {
+    left: 0;
+    transform: unset;
+  }
+
 }

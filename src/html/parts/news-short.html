@@ -5,8 +5,18 @@
             @@include('../components/news-card-big.html')
         </div>
         <div class="col-lg-5">
-            @@include('../components/news-card.html')
-            @@include('../components/news-card.html')
+            <div class="news-short__carousel">
+                @@for (var i = 0; i < 3; i++) {
+                    <div class="news-short__slide">
+                        <div class="news-short__card">
+                            @@include('../components/news-card.html')
+                        </div>
+                        <div class="news-short__card">
+                            @@include('../components/news-card.html')
+                        </div>
+                    </div>
+                }
+            </div>
         </div>
     </div>
 </div>
