@@ -200,6 +200,7 @@ h6 {
 .flickity-prev-next-button {
   width: 55px;
   height: 55px;
+  border: 1px solid #E5E7EA;
 }
 
 .flickity-prev-next-button.previous {
@@ -208,11 +209,13 @@ h6 {
 
 .flickity-prev-next-button.previous:not(:disabled):hover {
   background: url("../images/common/arrow-light-left.svg") center no-repeat, linear-gradient(90deg, #289FDD 0%, #07689A 100%);
+  border: none;
 }
 
 .flickity-prev-next-button.previous:not(:disabled):active {
   opacity: 1;
   background: url("../images/common/arrow-light-left.svg") center no-repeat, #07689A;
+  border: none;
 }
 
 .flickity-prev-next-button.next {
@@ -221,11 +224,13 @@ h6 {
 
 .flickity-prev-next-button.next:not(:disabled):hover {
   background: url("../images/common/arrow-light-right.svg") center no-repeat, linear-gradient(90deg, #289FDD 0%, #07689A 100%);
+  border: none;
 }
 
 .flickity-prev-next-button.next:not(:disabled):active {
   opacity: 1;
   background: url("../images/common/arrow-light-right.svg") center no-repeat, #07689A;
+  border: none;
 }
 
 .flickity-prev-next-button:disabled {
@@ -929,6 +934,28 @@ h6 {
 .reviews__item {
   width: 100%;
   margin-right: 15px;
+}
+
+.manufacturers {
+  margin-top: 105px;
+}
+
+.manufacturers__carousel {
+  margin-top: 50px;
+}
+
+.manufacturers__item {
+  width: 25%;
+  height: 100px;
+  padding: 0 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.manufacturers__logo {
+  max-width: 100%;
+  max-height: 100%;
 }
 
 @media screen and (max-width: 1399.98px) {

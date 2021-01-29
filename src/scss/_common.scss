@@ -189,6 +189,7 @@ h6 {
 
   width: 55px;
   height: 55px;
+  border: 1px solid #E5E7EA;
 
   &.previous {
 
@@ -198,11 +199,13 @@ h6 {
 
       &:hover {
         background: url("../images/common/arrow-light-left.svg") center no-repeat, $blue-gradient;
+        border: none;
       }
 
       &:active {
         opacity: 1;
         background: url("../images/common/arrow-light-left.svg") center no-repeat, $dark-blue;
+        border: none;
       }
 
     }
@@ -217,12 +220,13 @@ h6 {
 
       &:hover {
         background: url("../images/common/arrow-light-right.svg") center no-repeat, $blue-gradient;
-
+        border: none;
       }
 
       &:active {
         opacity: 1;
         background: url("../images/common/arrow-light-right.svg") center no-repeat, $dark-blue;
+        border: none;
       }
 
     }
