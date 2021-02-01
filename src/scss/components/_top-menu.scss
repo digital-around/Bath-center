@@ -1,0 +1,22 @@
+.top-menu {
+
+  display: flex;
+
+  &__item {
+
+    display: flex;
+    align-items: center;
+    height: 40px;
+    font-size: 13px;
+    line-height: 16px;
+    color: $paragraph;
+    padding: 0 20px;
+
+    &:hover, &_active {
+      background: $light-blue;
+      color: $gray;
+    }
+
+  }
+
+}

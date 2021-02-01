@@ -1,0 +1,133 @@
+.header {
+
+  position: relative;
+  z-index: 2;
+
+  &__top {
+    height: 40px;
+    box-shadow: 0 5px 20px rgba(7, 104, 154, 0.1);
+    background: #F7F7F9;
+  }
+
+  &__region {
+
+    display: flex;
+    width: max-content;
+    align-items: center;
+    font-size: 13px;
+    line-height: 16px;
+    text-decoration-line: underline;
+    color: $gray;
+
+    &:hover {
+      color: $gray;
+      text-decoration: none;
+    }
+
+    &::before {
+      content: "";
+      width: 9px;
+      height: 12px;
+      background: url("../images/header/pin.svg") center no-repeat;
+      background-size: contain;
+      margin-right: 10px;
+    }
+
+  }
+
+  &__middle {
+    height: 110px;
+    display: flex;
+    align-items: center;
+  }
+
+  &__logo {
+    max-width: 100%;
+  }
+
+  &__search-wrap {
+    position: relative;
+  }
+
+  &__search {
+
+    background: #F8F8F8;
+    border: 1px solid #E2E2E2;
+    padding-right: 40px;
+
+    &::placeholder {
+      color: #666666;
+    }
+
+  }
+
+  &__search-btn {
+    display: flex;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 10px;
+  }
+
+  &__contact {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  &__city {
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 12px;
+    color: #666666;
+  }
+
+  &__phone {
+
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+    font-size: 16px;
+    line-height: 20px;
+    color: $gray;
+    font-weight: 500;
+
+    &::before {
+      content: "";
+      width: 16px;
+      height: 15px;
+      margin-right: 10px;
+      background: url("../images/header/phone.svg") no-repeat center;
+      background-size: contain;
+    }
+
+  }
+
+  &__callback {
+
+    display: flex;
+    margin-top: 3px;
+    font-size: 12px;
+    line-height: 12px;
+    text-decoration-line: underline;
+    color: $dark-blue;
+
+    &:hover {
+      color: $dark-blue;
+    }
+
+  }
+
+  &__shop {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  &__bottom {
+    background: $light-blue;
+    height: 50px;
+  }
+
+}

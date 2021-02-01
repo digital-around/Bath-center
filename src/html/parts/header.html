@@ -1,0 +1,51 @@
+<div class="header">
+    <div class="header__top">
+        <div class="container h-100">
+            <div class="row align-items-center h-100">
+                <div class="col-lg-2">
+                    <a href="#" class="header__region">Красноярск</a>
+                </div>
+                <div class="col-lg-10">
+                    @@include('../components/top-menu.html')
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header__middle">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-3">
+                    <img src="images/header/logo.png" class="header__logo" alt="">
+                </div>
+                <div class="col-lg-3">
+                    <div class="header__search-wrap">
+                        <input class="header__search field" type="text" placeholder="Поиск">
+                        <a class="header__search-btn" href="#">
+                            <img src="images/header/search.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="header__contact col-lg-2">
+                    <div class="header__city">г. Абакан</div>
+                    <a href="tel:+73902298600" class="header__phone">+7 (390) 229-86-00</a>
+                    <a href="#" class="header__callback">Заказать звонок</a>
+                </div>
+                <div class="header__contact col-lg-2">
+                    <div class="header__city">г. Красноярск</div>
+                    <a href="tel:+73912051345" class="header__phone">+7 (391) 205-13-45</a>
+                    <a href="#" class="header__callback">Заказать звонок</a>
+                </div>
+                <div class="header__shop col-lg-2">
+                    @@include('../components/compare-small.html')
+                    @@include('../components/cart-small.html')
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header__bottom">
+        <div class="container">
+            @@include('../components/menu.html')
+        </div>
+    </div>
+    @@include('../components/catalog-menu.html')
+</div>

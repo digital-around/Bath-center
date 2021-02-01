@@ -1,0 +1,31 @@
+.catalog-menu {
+
+  position: absolute;
+  z-index: 2;
+  top: 200px;
+  left: 0;
+  right: 0;
+
+  &__content {
+
+    position: relative;
+    z-index: 1;
+    padding-top: 20px;
+    padding-bottom: 45px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: -38px;
+      right: -38px;
+      background: #EFFAFF;
+      box-shadow: 0 4px 10px rgba(7, 104, 154, 0.1);
+      z-index: -1;
+    }
+
+  }
+
+
+}

@@ -102,6 +102,28 @@ h6 {
 
 }
 
+.field {
+
+  height: 45px;
+  width: 100%;
+  border: 1px solid #E5E7EA;
+  padding: 0 15px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 21px;
+  color: #393939;
+
+  &::placeholder {
+    color: rgba(119,135,154,.5);
+  }
+
+  &:focus {
+    outline: none;
+    border: 1px solid #87BFDC;
+  }
+
+}
+
 .embed-responsive {
 
   position: relative;
