@@ -1100,6 +1100,39 @@ h6 {
   right: -65px;
 }
 
+.footer-menu {
+  color: #ffffff;
+}
+
+.footer-menu__title {
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 31px;
+}
+
+.footer-menu__links {
+  margin-top: 18px;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-menu__link {
+  display: flex;
+  width: max-content;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 18px;
+  opacity: .6;
+}
+
+.footer-menu__link:not(:last-child) {
+  margin-bottom: 12px;
+}
+
+.footer-menu__link:hover {
+  opacity: 1;
+}
+
 .header {
   position: relative;
   z-index: 2;
@@ -1399,6 +1432,77 @@ h6 {
 .manufacturers__logo {
   max-width: 100%;
   max-height: 100%;
+}
+
+.footer {
+  margin-top: 120px;
+  background: linear-gradient(90deg, #289FDD 0%, #07689A 100%);
+  padding: 50px 0 15px;
+}
+
+.footer__contacts {
+  margin-top: 55px;
+}
+
+.footer__city {
+  display: flex;
+  align-items: center;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 21px;
+  color: #D0EFFF;
+}
+
+.footer__city::before {
+  content: "";
+  width: 12px;
+  height: 17px;
+  background: url("../images/footer/pin.svg") no-repeat center;
+  background-size: contain;
+  margin-right: 14px;
+}
+
+.footer__phone-wrap {
+  margin-top: 8px;
+  display: flex;
+  flex-direction: column;
+  width: max-content;
+  align-items: flex-end;
+}
+
+.footer__phone {
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+}
+
+.footer__phone:hover {
+  color: #ffffff;
+}
+
+.footer__phone::before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  background: url("../images/footer/phone.svg") no-repeat center;
+  background-size: contain;
+  margin-right: 10px;
+}
+
+.footer__callback {
+  margin-top: 3px;
+  font-size: 12px;
+  line-height: 12px;
+  text-decoration-line: underline;
+  color: #D0EFFF;
+}
+
+.footer__callback:hover {
+  text-decoration: none;
+  color: #D0EFFF;
 }
 
 @media screen and (max-width: 1399.98px) {

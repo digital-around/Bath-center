@@ -1,0 +1,36 @@
+.footer-menu {
+
+  color: $white;
+
+  &__title {
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 31px;
+  }
+
+  &__links {
+    margin-top: 18px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__link {
+
+    display: flex;
+    width: max-content;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 18px;
+    opacity: .6;
+
+    &:not(:last-child) {
+      margin-bottom: 12px;
+    }
+
+    &:hover {
+      opacity: 1;
+    }
+
+  }
+
+}

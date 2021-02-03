@@ -1,0 +1,78 @@
+.footer {
+
+  margin-top: 120px;
+  background: $blue-gradient;
+  padding: 50px 0 15px;
+
+  &__contacts {
+    margin-top: 55px;
+  }
+
+  &__city {
+
+    display: flex;
+    align-items: center;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 21px;
+    color: #D0EFFF;
+
+    &::before {
+      content: "";
+      width: 12px;
+      height: 17px;
+      background: url("../images/footer/pin.svg") no-repeat center;
+      background-size: contain;
+      margin-right: 14px;
+    }
+
+  }
+
+  &__phone-wrap {
+    margin-top: 8px;
+    display: flex;
+    flex-direction: column;
+    width: max-content;
+    align-items: flex-end;
+  }
+
+  &__phone {
+
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: $white;
+
+    &:hover {
+      color: $white;
+    }
+
+    &::before {
+      content: "";
+      width: 16px;
+      height: 16px;
+      background: url("../images/footer/phone.svg") no-repeat center;
+      background-size: contain;
+      margin-right: 10px;
+    }
+
+  }
+
+  &__callback {
+
+    margin-top: 3px;
+    font-size: 12px;
+    line-height: 12px;
+    text-decoration-line: underline;
+    color: #D0EFFF;
+
+    &:hover {
+      text-decoration: none;
+      color: #D0EFFF;
+    }
+
+  }
+
+}
