@@ -1,0 +1,36 @@
+.menu-category {
+
+  display: flex;
+  align-items: start;
+
+  &__icon {
+    display: flex;
+    width: 30px;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+    margin-right: 8px;
+    flex-shrink: 0;
+  }
+
+  &__text {
+    margin-top: 6px;
+    font-size: 16px;
+    line-height: 21px;
+    color: $title;
+  }
+
+  &:hover {
+
+    .menu-category {
+
+      &__text {
+        color: $dark-blue;
+        text-decoration: underline;
+      }
+
+    }
+
+  }
+
+}

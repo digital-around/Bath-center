@@ -1,0 +1,35 @@
+.menu-subcategory {
+
+  &__title {
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: 700;
+    color: $title;
+  }
+
+  &__links {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__link {
+
+    font-size: 13px;
+    line-height: 15px;
+    color: $paragraph;
+    display: flex;
+    width: max-content;
+
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+
+    &:hover {
+      text-decoration: underline;
+      color: $dark-blue;
+    }
+
+  }
+
+}

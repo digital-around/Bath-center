@@ -1,5 +1,39 @@
 <div class="catalog-menu">
     <div class="catalog-menu__content container">
-        hey you
+        <div class="row">
+            <div class="col-lg-3">
+                <div class="catalog-menu__categories">
+                    @@for (var i = 0; i < 10; i++) {
+                        <div class="catalog-menu__category" data-subcategory="`+i+`">
+                            @@include('menu-category.html', {"id": `+i+`})
+                        </div>
+                    }
+                </div>
+            </div>
+            @@for (var i = 0; i < 10; i++) {
+                <div class="catalog-menu__right col-lg-9" data-subcategory="`+i+`">
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <div class="catalog-menu__grid">
+                                @@include('menu-subcategory.html', {"id": `+i+`})
+                                @@include('menu-subcategory.html', {"id": `+i+`})
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <a href="#" class="catalog-menu__banner-wrap">
+                                <img src="images/catalog-menu/banner.png" class="catalog-menu__banner" alt="">
+                            </a>
+                            <div class="catalog-menu__articles">
+                                <a href="#" class="catalog-menu__article">Скидки на ванны</a>
+                                <a href="#" class="catalog-menu__article">Как выбрать ванну?</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog-menu__partners">
+                        @@include('manufacturers-small.html', {"id": `+i+`})
+                    </div>
+                </div>
+            }
+        </div>
     </div>
 </div>

@@ -80,7 +80,7 @@
         <div class="header__bottom">
             <div class="container">
                 <div class="menu">
-                    <a href="javascript:void(0)" class="menu__item menu__item_catalog">Каталог</a>
+                    <a href="javascript:void(0)" onclick="toggleCatalogMenu()" class="menu__item menu__item_catalog">Каталог</a>
                     <a href="#" class="menu__item">Акции</a>
                     <a href="#" class="menu__item menu__item_active">Бренды</a>
                     <a href="#" class="menu__item">Магазины</a>
@@ -90,7 +90,904 @@
         </div>
         <div class="catalog-menu">
             <div class="catalog-menu__content container">
-                hey you
+                <div class="row">
+                    <div class="col-lg-3">
+                        <div class="catalog-menu__categories">
+
+                            <div class="catalog-menu__category" data-subcategory="0">
+                                <a href="#" class="menu-category">
+                                    <div class="menu-category__icon">
+                                        <img src="images/menu-category/icon.svg" alt="">
+                                    </div>
+                                    <div class="menu-category__text">
+                                        Душевые кабины, углы, ограждения и поддоны 0
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="catalog-menu__category" data-subcategory="1">
+                                <a href="#" class="menu-category">
+                                    <div class="menu-category__icon">
+                                        <img src="images/menu-category/icon.svg" alt="">
+                                    </div>
+                                    <div class="menu-category__text">
+                                        Душевые кабины, углы, ограждения и поддоны 1
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="catalog-menu__category" data-subcategory="2">
+                                <a href="#" class="menu-category">
+                                    <div class="menu-category__icon">
+                                        <img src="images/menu-category/icon.svg" alt="">
+                                    </div>
+                                    <div class="menu-category__text">
+                                        Душевые кабины, углы, ограждения и поддоны 2
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="catalog-menu__category" data-subcategory="3">
+                                <a href="#" class="menu-category">
+                                    <div class="menu-category__icon">
+                                        <img src="images/menu-category/icon.svg" alt="">
+                                    </div>
+                                    <div class="menu-category__text">
+                                        Душевые кабины, углы, ограждения и поддоны 3
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="catalog-menu__category" data-subcategory="4">
+                                <a href="#" class="menu-category">
+                                    <div class="menu-category__icon">
+                                        <img src="images/menu-category/icon.svg" alt="">
+                                    </div>
+                                    <div class="menu-category__text">
+                                        Душевые кабины, углы, ограждения и поддоны 4
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="catalog-menu__category" data-subcategory="5">
+                                <a href="#" class="menu-category">
+                                    <div class="menu-category__icon">
+                                        <img src="images/menu-category/icon.svg" alt="">
+                                    </div>
+                                    <div class="menu-category__text">
+                                        Душевые кабины, углы, ограждения и поддоны 5
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="catalog-menu__category" data-subcategory="6">
+                                <a href="#" class="menu-category">
+                                    <div class="menu-category__icon">
+                                        <img src="images/menu-category/icon.svg" alt="">
+                                    </div>
+                                    <div class="menu-category__text">
+                                        Душевые кабины, углы, ограждения и поддоны 6
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="catalog-menu__category" data-subcategory="7">
+                                <a href="#" class="menu-category">
+                                    <div class="menu-category__icon">
+                                        <img src="images/menu-category/icon.svg" alt="">
+                                    </div>
+                                    <div class="menu-category__text">
+                                        Душевые кабины, углы, ограждения и поддоны 7
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="catalog-menu__category" data-subcategory="8">
+                                <a href="#" class="menu-category">
+                                    <div class="menu-category__icon">
+                                        <img src="images/menu-category/icon.svg" alt="">
+                                    </div>
+                                    <div class="menu-category__text">
+                                        Душевые кабины, углы, ограждения и поддоны 8
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="catalog-menu__category" data-subcategory="9">
+                                <a href="#" class="menu-category">
+                                    <div class="menu-category__icon">
+                                        <img src="images/menu-category/icon.svg" alt="">
+                                    </div>
+                                    <div class="menu-category__text">
+                                        Душевые кабины, углы, ограждения и поддоны 9
+                                    </div>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="catalog-menu__right col-lg-9" data-subcategory="0">
+                        <div class="row">
+                            <div class="col-lg-8">
+                                <div class="catalog-menu__grid">
+                                    <div class="menu-subcategory">
+                                        <div class="menu-subcategory__title">
+                                            Ванны 0
+                                        </div>
+                                        <div class="menu-subcategory__links">
+                                            <a href="#" class="menu-subcategory__link">Акриловые ванны</a>
+                                            <a href="#" class="menu-subcategory__link">Ванны из искусственного камня</a>
+                                            <a href="#" class="menu-subcategory__link">Ванны с гидромассажем</a>
+                                            <a href="#" class="menu-subcategory__link">Встраиваемые ванны</a>
+                                            <a href="#" class="menu-subcategory__link">Приставные ванны</a>
+                                            <a href="#" class="menu-subcategory__link">Угловые ванны</a>
+                                            <a href="#" class="menu-subcategory__link">Отдельностоящие ванны</a>
+                                            <a href="#" class="menu-subcategory__link">Круглые ванны</a>
+                                            <a href="#" class="menu-subcategory__link">Прямоугольные ванны</a>
+                                            <a href="#" class="menu-subcategory__link">Асимметричные ванны</a>
+                                            <a href="#" class="menu-subcategory__link">Овальные ванны</a>
+                                        </div>
+                                    </div>
+                                    <div class="menu-subcategory">
+                                        <div class="menu-subcategory__title">
+                                            Ванны 0
+                                        </div>
+                                        <div class="menu-subcategory__links">
+                                            <a href="#" class="menu-subcategory__link">Акриловые ванны</a>
+                                            <a href="#" class="menu-subcategory__link">Ванны из искусственного камня</a>
+                                            <a href="#" class="menu-subcategory__link">Ванны с гидромассажем</a>
+                                            <a href="#" class="menu-subcategory__link">Встраиваемые ванны</a>
+                                            <a href="#" class="menu-subcategory__link">Приставные ванны</a>
+                                            <a href="#" class="menu-subcategory__link">Угловые ванны</a>
+                                            <a href="#" class="menu-subcategory__link">Отдельностоящие ванны</a>
+                                            <a href="#" class="menu-subcategory__link">Круглые ванны</a>
+                                            <a href="#" class="menu-subcategory__link">Прямоугольные ванны</a>
+                                            <a href="#" class="menu-subcategory__link">Асимметричные ванны</a>
+                                            <a href="#" class="menu-subcategory__link">Овальные ванны</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <a href="#" class="catalog-menu__banner-wrap">
+                                    <img src="images/catalog-menu/banner.png" class="catalog-menu__banner" alt="">
+                                </a>
+                                <div class="catalog-menu__articles">
+                                    <a href="#" class="catalog-menu__article">Скидки на ванны</a>
+                                    <a href="#" class="catalog-menu__article">Как выбрать ванну?</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="catalog-menu__partners">
+                            <div class="manufacturers-small">
+                                <div class="manufacturers-small__title">Производители и партнеры 0</div>
+                                <div class="manufacturers-small__carousel">
+
+                                    <div class="manufacturers-small__item">
+                                        <img src="images/manufacturers-small/logo.png" class="manufacturers-small__logo" alt="">
+                                    </div>
+
+                                    <div class="manufacturers-small__item">
+                                        <img src="images/manufacturers-small/logo.png" class="manufacturers-small__logo" alt="">
+                                    </div>
+
+                                    <div class="manufacturers-small__item">
+                                        <img src="images/manufacturers-small/logo.png" class="manufacturers-small__logo" alt="">
+                                    </div>
+
+                                    <div class="manufacturers-small__item">
+                                        <img src="images/manufacturers-small/logo.png" class="manufacturers-small__logo" alt="">
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="catalog-menu__right col-lg-9" data-subcategory="1">
+                        <div class="row">
+                            <div class="col-lg-8">
+                                <div class="catalog-menu__grid">
+                                    <div class="menu-subcategory">
+                                        <div class="menu-subcategory__title">
+                                            Ванны 1
+                                        </div>
+                                        <div class="menu-subcategory__links">
+                                            <a href="#" class="menu-subcategory__link">Акриловые ванны</a>
+                                            <a href="#" class="menu-subcategory__link">Ванны из искусственного камня</a>
+                                            <a href="#" class="menu-subcategory__link">Ванны с гидромассажем</a>
+                                            <a href="#" class="menu-subcategory__link">Встраиваемые ванны</a>
+                                            <a href="#" class="menu-subcategory__link">Приставные ванны</a>
+                                            <a href="#" class="menu-subcategory__link">Угловые ванны</a>
+                                            <a href="#" class="menu-subcategory__link">Отдельностоящие ванны</a>
+                                            <a href="#" class="menu-subcategory__link">Круглые ванны</a>
+                                            <a href="#" class="menu-subcategory__link">Прямоугольные ванны</a>
+                                            <a href="#" class="menu-subcategory__link">Асимметричные ванны</a>
+                                            <a href="#" class="menu-subcategory__link">Овальные ванны</a>
+                                        </div>
+                                    </div>
+                                    <div class="menu-subcategory">
+                                        <div class="menu-subcategory__title">
+                                            Ванны 1
+                                        </div>
+                                        <div class="menu-subcategory__links">
+                                            <a href="#" class="menu-subcategory__link">Акриловые ванны</a>
+                                            <a href="#" class="menu-subcategory__link">Ванны из искусственного камня</a>
+                                            <a href="#" class="menu-subcategory__link">Ванны с гидромассажем</a>
+                                            <a href="#" class="menu-subcategory__link">Встраиваемые ванны</a>
+                                            <a href="#" class="menu-subcategory__link">Приставные ванны</a>
+                                            <a href="#" class="menu-subcategory__link">Угловые ванны</a>
+                                            <a href="#" class="menu-subcategory__link">Отдельностоящие ванны</a>
+                                            <a href="#" class="menu-subcategory__link">Круглые ванны</a>
+                                            <a href="#" class="menu-subcategory__link">Прямоугольные ванны</a>
+                                            <a href="#" class="menu-subcategory__link">Асимметричные ванны</a>
+                                            <a href="#" class="menu-subcategory__link">Овальные ванны</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <a href="#" class="catalog-menu__banner-wrap">
+                                    <img src="images/catalog-menu/banner.png" class="catalog-menu__banner" alt="">
+                                </a>
+                                <div class="catalog-menu__articles">
+                                    <a href="#" class="catalog-menu__article">Скидки на ванны</a>
+                                    <a href="#" class="catalog-menu__article">Как выбрать ванну?</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="catalog-menu__partners">
+                            <div class="manufacturers-small">
+                                <div class="manufacturers-small__title">Производители и партнеры 1</div>
+                                <div class="manufacturers-small__carousel">
+
+                                    <div class="manufacturers-small__item">
+                                        <img src="images/manufacturers-small/logo.png" class="manufacturers-small__logo" alt="">
+                                    </div>
+
+                                    <div class="manufacturers-small__item">
+                                        <img src="images/manufacturers-small/logo.png" class="manufacturers-small__logo" alt="">
+                                    </div>
+
+                                    <div class="manufacturers-small__item">
+                                        <img src="images/manufacturers-small/logo.png" class="manufacturers-small__logo" alt="">
+                                    </div>
+
+                                    <div class="manufacturers-small__item">
+                                        <img src="images/manufacturers-small/logo.png" class="manufacturers-small__logo" alt="">
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="catalog-menu__right col-lg-9" data-subcategory="2">
+                        <div class="row">
+                            <div class="col-lg-8">
+                                <div class="catalog-menu__grid">
+                                    <div class="menu-subcategory">
+                                        <div class="menu-subcategory__title">
+                                            Ванны 2
+                                        </div>
+                                        <div class="menu-subcategory__links">
+                                            <a href="#" class="menu-subcategory__link">Акриловые ванны</a>
+                                            <a href="#" class="menu-subcategory__link">Ванны из искусственного камня</a>
+                                            <a href="#" class="menu-subcategory__link">Ванны с гидромассажем</a>
+                                            <a href="#" class="menu-subcategory__link">Встраиваемые ванны</a>
+                                            <a href="#" class="menu-subcategory__link">Приставные ванны</a>
+                                            <a href="#" class="menu-subcategory__link">Угловые ванны</a>
+                                            <a href="#" class="menu-subcategory__link">Отдельностоящие ванны</a>
+                                            <a href="#" class="menu-subcategory__link">Круглые ванны</a>
+                                            <a href="#" class="menu-subcategory__link">Прямоугольные ванны</a>
+                                            <a href="#" class="menu-subcategory__link">Асимметричные ванны</a>
+                                            <a href="#" class="menu-subcategory__link">Овальные ванны</a>
+                                        </div>
+                                    </div>
+                                    <div class="menu-subcategory">
+                                        <div class="menu-subcategory__title">
+                                            Ванны 2
+                                        </div>
+                                        <div class="menu-subcategory__links">
+                                            <a href="#" class="menu-subcategory__link">Акриловые ванны</a>
+                                            <a href="#" class="menu-subcategory__link">Ванны из искусственного камня</a>
+                                            <a href="#" class="menu-subcategory__link">Ванны с гидромассажем</a>
+                                            <a href="#" class="menu-subcategory__link">Встраиваемые ванны</a>
+                                            <a href="#" class="menu-subcategory__link">Приставные ванны</a>
+                                            <a href="#" class="menu-subcategory__link">Угловые ванны</a>
+                                            <a href="#" class="menu-subcategory__link">Отдельностоящие ванны</a>
+                                            <a href="#" class="menu-subcategory__link">Круглые ванны</a>
+                                            <a href="#" class="menu-subcategory__link">Прямоугольные ванны</a>
+                                            <a href="#" class="menu-subcategory__link">Асимметричные ванны</a>
+                                            <a href="#" class="menu-subcategory__link">Овальные ванны</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <a href="#" class="catalog-menu__banner-wrap">
+                                    <img src="images/catalog-menu/banner.png" class="catalog-menu__banner" alt="">
+                                </a>
+                                <div class="catalog-menu__articles">
+                                    <a href="#" class="catalog-menu__article">Скидки на ванны</a>
+                                    <a href="#" class="catalog-menu__article">Как выбрать ванну?</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="catalog-menu__partners">
+                            <div class="manufacturers-small">
+                                <div class="manufacturers-small__title">Производители и партнеры 2</div>
+                                <div class="manufacturers-small__carousel">
+
+                                    <div class="manufacturers-small__item">
+                                        <img src="images/manufacturers-small/logo.png" class="manufacturers-small__logo" alt="">
+                                    </div>
+
+                                    <div class="manufacturers-small__item">
+                                        <img src="images/manufacturers-small/logo.png" class="manufacturers-small__logo" alt="">
+                                    </div>
+
+                                    <div class="manufacturers-small__item">
+                                        <img src="images/manufacturers-small/logo.png" class="manufacturers-small__logo" alt="">
+                                    </div>
+
+                                    <div class="manufacturers-small__item">
+                                        <img src="images/manufacturers-small/logo.png" class="manufacturers-small__logo" alt="">
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="catalog-menu__right col-lg-9" data-subcategory="3">
+                        <div class="row">
+                            <div class="col-lg-8">
+                                <div class="catalog-menu__grid">
+                                    <div class="menu-subcategory">
+                                        <div class="menu-subcategory__title">
+                                            Ванны 3
+                                        </div>
+                                        <div class="menu-subcategory__links">
+                                            <a href="#" class="menu-subcategory__link">Акриловые ванны</a>
+                                            <a href="#" class="menu-subcategory__link">Ванны из искусственного камня</a>
+                                            <a href="#" class="menu-subcategory__link">Ванны с гидромассажем</a>
+                                            <a href="#" class="menu-subcategory__link">Встраиваемые ванны</a>
+                                            <a href="#" class="menu-subcategory__link">Приставные ванны</a>
+                                            <a href="#" class="menu-subcategory__link">Угловые ванны</a>
+                                            <a href="#" class="menu-subcategory__link">Отдельностоящие ванны</a>
+                                            <a href="#" class="menu-subcategory__link">Круглые ванны</a>
+                                            <a href="#" class="menu-subcategory__link">Прямоугольные ванны</a>
+                                            <a href="#" class="menu-subcategory__link">Асимметричные ванны</a>
+                                            <a href="#" class="menu-subcategory__link">Овальные ванны</a>
+                                        </div>
+                                    </div>
+                                    <div class="menu-subcategory">
+                                        <div class="menu-subcategory__title">
+                                            Ванны 3
+                                        </div>
+                                        <div class="menu-subcategory__links">
+                                            <a href="#" class="menu-subcategory__link">Акриловые ванны</a>
+                                            <a href="#" class="menu-subcategory__link">Ванны из искусственного камня</a>
+                                            <a href="#" class="menu-subcategory__link">Ванны с гидромассажем</a>
+                                            <a href="#" class="menu-subcategory__link">Встраиваемые ванны</a>
+                                            <a href="#" class="menu-subcategory__link">Приставные ванны</a>
+                                            <a href="#" class="menu-subcategory__link">Угловые ванны</a>
+                                            <a href="#" class="menu-subcategory__link">Отдельностоящие ванны</a>
+                                            <a href="#" class="menu-subcategory__link">Круглые ванны</a>
+                                            <a href="#" class="menu-subcategory__link">Прямоугольные ванны</a>
+                                            <a href="#" class="menu-subcategory__link">Асимметричные ванны</a>
+                                            <a href="#" class="menu-subcategory__link">Овальные ванны</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <a href="#" class="catalog-menu__banner-wrap">
+                                    <img src="images/catalog-menu/banner.png" class="catalog-menu__banner" alt="">
+                                </a>
+                                <div class="catalog-menu__articles">
+                                    <a href="#" class="catalog-menu__article">Скидки на ванны</a>
+                                    <a href="#" class="catalog-menu__article">Как выбрать ванну?</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="catalog-menu__partners">
+                            <div class="manufacturers-small">
+                                <div class="manufacturers-small__title">Производители и партнеры 3</div>
+                                <div class="manufacturers-small__carousel">
+
+                                    <div class="manufacturers-small__item">
+                                        <img src="images/manufacturers-small/logo.png" class="manufacturers-small__logo" alt="">
+                                    </div>
+
+                                    <div class="manufacturers-small__item">
+                                        <img src="images/manufacturers-small/logo.png" class="manufacturers-small__logo" alt="">
+                                    </div>
+
+                                    <div class="manufacturers-small__item">
+                                        <img src="images/manufacturers-small/logo.png" class="manufacturers-small__logo" alt="">
+                                    </div>
+
+                                    <div class="manufacturers-small__item">
+                                        <img src="images/manufacturers-small/logo.png" class="manufacturers-small__logo" alt="">
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="catalog-menu__right col-lg-9" data-subcategory="4">
+                        <div class="row">
+                            <div class="col-lg-8">
+                                <div class="catalog-menu__grid">
+                                    <div class="menu-subcategory">
+                                        <div class="menu-subcategory__title">
+                                            Ванны 4
+                                        </div>
+                                        <div class="menu-subcategory__links">
+                                            <a href="#" class="menu-subcategory__link">Акриловые ванны</a>
+                                            <a href="#" class="menu-subcategory__link">Ванны из искусственного камня</a>
+                                            <a href="#" class="menu-subcategory__link">Ванны с гидромассажем</a>
+                                            <a href="#" class="menu-subcategory__link">Встраиваемые ванны</a>
+                                            <a href="#" class="menu-subcategory__link">Приставные ванны</a>
+                                            <a href="#" class="menu-subcategory__link">Угловые ванны</a>
+                                            <a href="#" class="menu-subcategory__link">Отдельностоящие ванны</a>
+                                            <a href="#" class="menu-subcategory__link">Круглые ванны</a>
+                                            <a href="#" class="menu-subcategory__link">Прямоугольные ванны</a>
+                                            <a href="#" class="menu-subcategory__link">Асимметричные ванны</a>
+                                            <a href="#" class="menu-subcategory__link">Овальные ванны</a>
+                                        </div>
+                                    </div>
+                                    <div class="menu-subcategory">
+                                        <div class="menu-subcategory__title">
+                                            Ванны 4
+                                        </div>
+                                        <div class="menu-subcategory__links">
+                                            <a href="#" class="menu-subcategory__link">Акриловые ванны</a>
+                                            <a href="#" class="menu-subcategory__link">Ванны из искусственного камня</a>
+                                            <a href="#" class="menu-subcategory__link">Ванны с гидромассажем</a>
+                                            <a href="#" class="menu-subcategory__link">Встраиваемые ванны</a>
+                                            <a href="#" class="menu-subcategory__link">Приставные ванны</a>
+                                            <a href="#" class="menu-subcategory__link">Угловые ванны</a>
+                                            <a href="#" class="menu-subcategory__link">Отдельностоящие ванны</a>
+                                            <a href="#" class="menu-subcategory__link">Круглые ванны</a>
+                                            <a href="#" class="menu-subcategory__link">Прямоугольные ванны</a>
+                                            <a href="#" class="menu-subcategory__link">Асимметричные ванны</a>
+                                            <a href="#" class="menu-subcategory__link">Овальные ванны</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <a href="#" class="catalog-menu__banner-wrap">
+                                    <img src="images/catalog-menu/banner.png" class="catalog-menu__banner" alt="">
+                                </a>
+                                <div class="catalog-menu__articles">
+                                    <a href="#" class="catalog-menu__article">Скидки на ванны</a>
+                                    <a href="#" class="catalog-menu__article">Как выбрать ванну?</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="catalog-menu__partners">
+                            <div class="manufacturers-small">
+                                <div class="manufacturers-small__title">Производители и партнеры 4</div>
+                                <div class="manufacturers-small__carousel">
+
+                                    <div class="manufacturers-small__item">
+                                        <img src="images/manufacturers-small/logo.png" class="manufacturers-small__logo" alt="">
+                                    </div>
+
+                                    <div class="manufacturers-small__item">
+                                        <img src="images/manufacturers-small/logo.png" class="manufacturers-small__logo" alt="">
+                                    </div>
+
+                                    <div class="manufacturers-small__item">
+                                        <img src="images/manufacturers-small/logo.png" class="manufacturers-small__logo" alt="">
+                                    </div>
+
+                                    <div class="manufacturers-small__item">
+                                        <img src="images/manufacturers-small/logo.png" class="manufacturers-small__logo" alt="">
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="catalog-menu__right col-lg-9" data-subcategory="5">
+                        <div class="row">
+                            <div class="col-lg-8">
+                                <div class="catalog-menu__grid">
+                                    <div class="menu-subcategory">
+                                        <div class="menu-subcategory__title">
+                                            Ванны 5
+                                        </div>
+                                        <div class="menu-subcategory__links">
+                                            <a href="#" class="menu-subcategory__link">Акриловые ванны</a>
+                                            <a href="#" class="menu-subcategory__link">Ванны из искусственного камня</a>
+                                            <a href="#" class="menu-subcategory__link">Ванны с гидромассажем</a>
+                                            <a href="#" class="menu-subcategory__link">Встраиваемые ванны</a>
+                                            <a href="#" class="menu-subcategory__link">Приставные ванны</a>
+                                            <a href="#" class="menu-subcategory__link">Угловые ванны</a>
+                                            <a href="#" class="menu-subcategory__link">Отдельностоящие ванны</a>
+                                            <a href="#" class="menu-subcategory__link">Круглые ванны</a>
+                                            <a href="#" class="menu-subcategory__link">Прямоугольные ванны</a>
+                                            <a href="#" class="menu-subcategory__link">Асимметричные ванны</a>
+                                            <a href="#" class="menu-subcategory__link">Овальные ванны</a>
+                                        </div>
+                                    </div>
+                                    <div class="menu-subcategory">
+                                        <div class="menu-subcategory__title">
+                                            Ванны 5
+                                        </div>
+                                        <div class="menu-subcategory__links">
+                                            <a href="#" class="menu-subcategory__link">Акриловые ванны</a>
+                                            <a href="#" class="menu-subcategory__link">Ванны из искусственного камня</a>
+                                            <a href="#" class="menu-subcategory__link">Ванны с гидромассажем</a>
+                                            <a href="#" class="menu-subcategory__link">Встраиваемые ванны</a>
+                                            <a href="#" class="menu-subcategory__link">Приставные ванны</a>
+                                            <a href="#" class="menu-subcategory__link">Угловые ванны</a>
+                                            <a href="#" class="menu-subcategory__link">Отдельностоящие ванны</a>
+                                            <a href="#" class="menu-subcategory__link">Круглые ванны</a>
+                                            <a href="#" class="menu-subcategory__link">Прямоугольные ванны</a>
+                                            <a href="#" class="menu-subcategory__link">Асимметричные ванны</a>
+                                            <a href="#" class="menu-subcategory__link">Овальные ванны</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <a href="#" class="catalog-menu__banner-wrap">
+                                    <img src="images/catalog-menu/banner.png" class="catalog-menu__banner" alt="">
+                                </a>
+                                <div class="catalog-menu__articles">
+                                    <a href="#" class="catalog-menu__article">Скидки на ванны</a>
+                                    <a href="#" class="catalog-menu__article">Как выбрать ванну?</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="catalog-menu__partners">
+                            <div class="manufacturers-small">
+                                <div class="manufacturers-small__title">Производители и партнеры 5</div>
+                                <div class="manufacturers-small__carousel">
+
+                                    <div class="manufacturers-small__item">
+                                        <img src="images/manufacturers-small/logo.png" class="manufacturers-small__logo" alt="">
+                                    </div>
+
+                                    <div class="manufacturers-small__item">
+                                        <img src="images/manufacturers-small/logo.png" class="manufacturers-small__logo" alt="">
+                                    </div>
+
+                                    <div class="manufacturers-small__item">
+                                        <img src="images/manufacturers-small/logo.png" class="manufacturers-small__logo" alt="">
+                                    </div>
+
+                                    <div class="manufacturers-small__item">
+                                        <img src="images/manufacturers-small/logo.png" class="manufacturers-small__logo" alt="">
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="catalog-menu__right col-lg-9" data-subcategory="6">
+                        <div class="row">
+                            <div class="col-lg-8">
+                                <div class="catalog-menu__grid">
+                                    <div class="menu-subcategory">
+                                        <div class="menu-subcategory__title">
+                                            Ванны 6
+                                        </div>
+                                        <div class="menu-subcategory__links">
+                                            <a href="#" class="menu-subcategory__link">Акриловые ванны</a>
+                                            <a href="#" class="menu-subcategory__link">Ванны из искусственного камня</a>
+                                            <a href="#" class="menu-subcategory__link">Ванны с гидромассажем</a>
+                                            <a href="#" class="menu-subcategory__link">Встраиваемые ванны</a>
+                                            <a href="#" class="menu-subcategory__link">Приставные ванны</a>
+                                            <a href="#" class="menu-subcategory__link">Угловые ванны</a>
+                                            <a href="#" class="menu-subcategory__link">Отдельностоящие ванны</a>
+                                            <a href="#" class="menu-subcategory__link">Круглые ванны</a>
+                                            <a href="#" class="menu-subcategory__link">Прямоугольные ванны</a>
+                                            <a href="#" class="menu-subcategory__link">Асимметричные ванны</a>
+                                            <a href="#" class="menu-subcategory__link">Овальные ванны</a>
+                                        </div>
+                                    </div>
+                                    <div class="menu-subcategory">
+                                        <div class="menu-subcategory__title">
+                                            Ванны 6
+                                        </div>
+                                        <div class="menu-subcategory__links">
+                                            <a href="#" class="menu-subcategory__link">Акриловые ванны</a>
+                                            <a href="#" class="menu-subcategory__link">Ванны из искусственного камня</a>
+                                            <a href="#" class="menu-subcategory__link">Ванны с гидромассажем</a>
+                                            <a href="#" class="menu-subcategory__link">Встраиваемые ванны</a>
+                                            <a href="#" class="menu-subcategory__link">Приставные ванны</a>
+                                            <a href="#" class="menu-subcategory__link">Угловые ванны</a>
+                                            <a href="#" class="menu-subcategory__link">Отдельностоящие ванны</a>
+                                            <a href="#" class="menu-subcategory__link">Круглые ванны</a>
+                                            <a href="#" class="menu-subcategory__link">Прямоугольные ванны</a>
+                                            <a href="#" class="menu-subcategory__link">Асимметричные ванны</a>
+                                            <a href="#" class="menu-subcategory__link">Овальные ванны</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <a href="#" class="catalog-menu__banner-wrap">
+                                    <img src="images/catalog-menu/banner.png" class="catalog-menu__banner" alt="">
+                                </a>
+                                <div class="catalog-menu__articles">
+                                    <a href="#" class="catalog-menu__article">Скидки на ванны</a>
+                                    <a href="#" class="catalog-menu__article">Как выбрать ванну?</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="catalog-menu__partners">
+                            <div class="manufacturers-small">
+                                <div class="manufacturers-small__title">Производители и партнеры 6</div>
+                                <div class="manufacturers-small__carousel">
+
+                                    <div class="manufacturers-small__item">
+                                        <img src="images/manufacturers-small/logo.png" class="manufacturers-small__logo" alt="">
+                                    </div>
+
+                                    <div class="manufacturers-small__item">
+                                        <img src="images/manufacturers-small/logo.png" class="manufacturers-small__logo" alt="">
+                                    </div>
+
+                                    <div class="manufacturers-small__item">
+                                        <img src="images/manufacturers-small/logo.png" class="manufacturers-small__logo" alt="">
+                                    </div>
+
+                                    <div class="manufacturers-small__item">
+                                        <img src="images/manufacturers-small/logo.png" class="manufacturers-small__logo" alt="">
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="catalog-menu__right col-lg-9" data-subcategory="7">
+                        <div class="row">
+                            <div class="col-lg-8">
+                                <div class="catalog-menu__grid">
+                                    <div class="menu-subcategory">
+                                        <div class="menu-subcategory__title">
+                                            Ванны 7
+                                        </div>
+                                        <div class="menu-subcategory__links">
+                                            <a href="#" class="menu-subcategory__link">Акриловые ванны</a>
+                                            <a href="#" class="menu-subcategory__link">Ванны из искусственного камня</a>
+                                            <a href="#" class="menu-subcategory__link">Ванны с гидромассажем</a>
+                                            <a href="#" class="menu-subcategory__link">Встраиваемые ванны</a>
+                                            <a href="#" class="menu-subcategory__link">Приставные ванны</a>
+                                            <a href="#" class="menu-subcategory__link">Угловые ванны</a>
+                                            <a href="#" class="menu-subcategory__link">Отдельностоящие ванны</a>
+                                            <a href="#" class="menu-subcategory__link">Круглые ванны</a>
+                                            <a href="#" class="menu-subcategory__link">Прямоугольные ванны</a>
+                                            <a href="#" class="menu-subcategory__link">Асимметричные ванны</a>
+                                            <a href="#" class="menu-subcategory__link">Овальные ванны</a>
+                                        </div>
+                                    </div>
+                                    <div class="menu-subcategory">
+                                        <div class="menu-subcategory__title">
+                                            Ванны 7
+                                        </div>
+                                        <div class="menu-subcategory__links">
+                                            <a href="#" class="menu-subcategory__link">Акриловые ванны</a>
+                                            <a href="#" class="menu-subcategory__link">Ванны из искусственного камня</a>
+                                            <a href="#" class="menu-subcategory__link">Ванны с гидромассажем</a>
+                                            <a href="#" class="menu-subcategory__link">Встраиваемые ванны</a>
+                                            <a href="#" class="menu-subcategory__link">Приставные ванны</a>
+                                            <a href="#" class="menu-subcategory__link">Угловые ванны</a>
+                                            <a href="#" class="menu-subcategory__link">Отдельностоящие ванны</a>
+                                            <a href="#" class="menu-subcategory__link">Круглые ванны</a>
+                                            <a href="#" class="menu-subcategory__link">Прямоугольные ванны</a>
+                                            <a href="#" class="menu-subcategory__link">Асимметричные ванны</a>
+                                            <a href="#" class="menu-subcategory__link">Овальные ванны</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <a href="#" class="catalog-menu__banner-wrap">
+                                    <img src="images/catalog-menu/banner.png" class="catalog-menu__banner" alt="">
+                                </a>
+                                <div class="catalog-menu__articles">
+                                    <a href="#" class="catalog-menu__article">Скидки на ванны</a>
+                                    <a href="#" class="catalog-menu__article">Как выбрать ванну?</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="catalog-menu__partners">
+                            <div class="manufacturers-small">
+                                <div class="manufacturers-small__title">Производители и партнеры 7</div>
+                                <div class="manufacturers-small__carousel">
+
+                                    <div class="manufacturers-small__item">
+                                        <img src="images/manufacturers-small/logo.png" class="manufacturers-small__logo" alt="">
+                                    </div>
+
+                                    <div class="manufacturers-small__item">
+                                        <img src="images/manufacturers-small/logo.png" class="manufacturers-small__logo" alt="">
+                                    </div>
+
+                                    <div class="manufacturers-small__item">
+                                        <img src="images/manufacturers-small/logo.png" class="manufacturers-small__logo" alt="">
+                                    </div>
+
+                                    <div class="manufacturers-small__item">
+                                        <img src="images/manufacturers-small/logo.png" class="manufacturers-small__logo" alt="">
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="catalog-menu__right col-lg-9" data-subcategory="8">
+                        <div class="row">
+                            <div class="col-lg-8">
+                                <div class="catalog-menu__grid">
+                                    <div class="menu-subcategory">
+                                        <div class="menu-subcategory__title">
+                                            Ванны 8
+                                        </div>
+                                        <div class="menu-subcategory__links">
+                                            <a href="#" class="menu-subcategory__link">Акриловые ванны</a>
+                                            <a href="#" class="menu-subcategory__link">Ванны из искусственного камня</a>
+                                            <a href="#" class="menu-subcategory__link">Ванны с гидромассажем</a>
+                                            <a href="#" class="menu-subcategory__link">Встраиваемые ванны</a>
+                                            <a href="#" class="menu-subcategory__link">Приставные ванны</a>
+                                            <a href="#" class="menu-subcategory__link">Угловые ванны</a>
+                                            <a href="#" class="menu-subcategory__link">Отдельностоящие ванны</a>
+                                            <a href="#" class="menu-subcategory__link">Круглые ванны</a>
+                                            <a href="#" class="menu-subcategory__link">Прямоугольные ванны</a>
+                                            <a href="#" class="menu-subcategory__link">Асимметричные ванны</a>
+                                            <a href="#" class="menu-subcategory__link">Овальные ванны</a>
+                                        </div>
+                                    </div>
+                                    <div class="menu-subcategory">
+                                        <div class="menu-subcategory__title">
+                                            Ванны 8
+                                        </div>
+                                        <div class="menu-subcategory__links">
+                                            <a href="#" class="menu-subcategory__link">Акриловые ванны</a>
+                                            <a href="#" class="menu-subcategory__link">Ванны из искусственного камня</a>
+                                            <a href="#" class="menu-subcategory__link">Ванны с гидромассажем</a>
+                                            <a href="#" class="menu-subcategory__link">Встраиваемые ванны</a>
+                                            <a href="#" class="menu-subcategory__link">Приставные ванны</a>
+                                            <a href="#" class="menu-subcategory__link">Угловые ванны</a>
+                                            <a href="#" class="menu-subcategory__link">Отдельностоящие ванны</a>
+                                            <a href="#" class="menu-subcategory__link">Круглые ванны</a>
+                                            <a href="#" class="menu-subcategory__link">Прямоугольные ванны</a>
+                                            <a href="#" class="menu-subcategory__link">Асимметричные ванны</a>
+                                            <a href="#" class="menu-subcategory__link">Овальные ванны</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <a href="#" class="catalog-menu__banner-wrap">
+                                    <img src="images/catalog-menu/banner.png" class="catalog-menu__banner" alt="">
+                                </a>
+                                <div class="catalog-menu__articles">
+                                    <a href="#" class="catalog-menu__article">Скидки на ванны</a>
+                                    <a href="#" class="catalog-menu__article">Как выбрать ванну?</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="catalog-menu__partners">
+                            <div class="manufacturers-small">
+                                <div class="manufacturers-small__title">Производители и партнеры 8</div>
+                                <div class="manufacturers-small__carousel">
+
+                                    <div class="manufacturers-small__item">
+                                        <img src="images/manufacturers-small/logo.png" class="manufacturers-small__logo" alt="">
+                                    </div>
+
+                                    <div class="manufacturers-small__item">
+                                        <img src="images/manufacturers-small/logo.png" class="manufacturers-small__logo" alt="">
+                                    </div>
+
+                                    <div class="manufacturers-small__item">
+                                        <img src="images/manufacturers-small/logo.png" class="manufacturers-small__logo" alt="">
+                                    </div>
+
+                                    <div class="manufacturers-small__item">
+                                        <img src="images/manufacturers-small/logo.png" class="manufacturers-small__logo" alt="">
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="catalog-menu__right col-lg-9" data-subcategory="9">
+                        <div class="row">
+                            <div class="col-lg-8">
+                                <div class="catalog-menu__grid">
+                                    <div class="menu-subcategory">
+                                        <div class="menu-subcategory__title">
+                                            Ванны 9
+                                        </div>
+                                        <div class="menu-subcategory__links">
+                                            <a href="#" class="menu-subcategory__link">Акриловые ванны</a>
+                                            <a href="#" class="menu-subcategory__link">Ванны из искусственного камня</a>
+                                            <a href="#" class="menu-subcategory__link">Ванны с гидромассажем</a>
+                                            <a href="#" class="menu-subcategory__link">Встраиваемые ванны</a>
+                                            <a href="#" class="menu-subcategory__link">Приставные ванны</a>
+                                            <a href="#" class="menu-subcategory__link">Угловые ванны</a>
+                                            <a href="#" class="menu-subcategory__link">Отдельностоящие ванны</a>
+                                            <a href="#" class="menu-subcategory__link">Круглые ванны</a>
+                                            <a href="#" class="menu-subcategory__link">Прямоугольные ванны</a>
+                                            <a href="#" class="menu-subcategory__link">Асимметричные ванны</a>
+                                            <a href="#" class="menu-subcategory__link">Овальные ванны</a>
+                                        </div>
+                                    </div>
+                                    <div class="menu-subcategory">
+                                        <div class="menu-subcategory__title">
+                                            Ванны 9
+                                        </div>
+                                        <div class="menu-subcategory__links">
+                                            <a href="#" class="menu-subcategory__link">Акриловые ванны</a>
+                                            <a href="#" class="menu-subcategory__link">Ванны из искусственного камня</a>
+                                            <a href="#" class="menu-subcategory__link">Ванны с гидромассажем</a>
+                                            <a href="#" class="menu-subcategory__link">Встраиваемые ванны</a>
+                                            <a href="#" class="menu-subcategory__link">Приставные ванны</a>
+                                            <a href="#" class="menu-subcategory__link">Угловые ванны</a>
+                                            <a href="#" class="menu-subcategory__link">Отдельностоящие ванны</a>
+                                            <a href="#" class="menu-subcategory__link">Круглые ванны</a>
+                                            <a href="#" class="menu-subcategory__link">Прямоугольные ванны</a>
+                                            <a href="#" class="menu-subcategory__link">Асимметричные ванны</a>
+                                            <a href="#" class="menu-subcategory__link">Овальные ванны</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <a href="#" class="catalog-menu__banner-wrap">
+                                    <img src="images/catalog-menu/banner.png" class="catalog-menu__banner" alt="">
+                                </a>
+                                <div class="catalog-menu__articles">
+                                    <a href="#" class="catalog-menu__article">Скидки на ванны</a>
+                                    <a href="#" class="catalog-menu__article">Как выбрать ванну?</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="catalog-menu__partners">
+                            <div class="manufacturers-small">
+                                <div class="manufacturers-small__title">Производители и партнеры 9</div>
+                                <div class="manufacturers-small__carousel">
+
+                                    <div class="manufacturers-small__item">
+                                        <img src="images/manufacturers-small/logo.png" class="manufacturers-small__logo" alt="">
+                                    </div>
+
+                                    <div class="manufacturers-small__item">
+                                        <img src="images/manufacturers-small/logo.png" class="manufacturers-small__logo" alt="">
+                                    </div>
+
+                                    <div class="manufacturers-small__item">
+                                        <img src="images/manufacturers-small/logo.png" class="manufacturers-small__logo" alt="">
+                                    </div>
+
+                                    <div class="manufacturers-small__item">
+                                        <img src="images/manufacturers-small/logo.png" class="manufacturers-small__logo" alt="">
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
             </div>
         </div>
     </div>
@@ -1010,6 +1907,7 @@
     <script src="js/news-short.js"></script>
     <script src="js/reviews.js"></script>
     <script src="js/manufacturers.js"></script>
+    <script src="js/catalog-menu.js"></script>
 
 </body>
 
