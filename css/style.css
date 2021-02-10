@@ -50,6 +50,7 @@ html {
 body {
   margin: 0;
   text-align: left;
+  overflow-x: hidden;
 }
 
 a,
@@ -1437,7 +1438,30 @@ h6 {
 .footer {
   margin-top: 120px;
   background: linear-gradient(90deg, #289FDD 0%, #07689A 100%);
-  padding: 50px 0 15px;
+}
+
+.footer__container {
+  position: relative;
+}
+
+.footer__top {
+  padding-top: 50px;
+  padding-bottom: 35px;
+}
+
+.footer__socials {
+  position: absolute;
+  display: flex;
+  top: 0;
+  right: 0.75rem;
+}
+
+.footer__social {
+  display: flex;
+}
+
+.footer__social:not(:last-child) {
+  margin-right: 5px;
 }
 
 .footer__contacts {
@@ -1497,12 +1521,48 @@ h6 {
   font-size: 12px;
   line-height: 12px;
   text-decoration-line: underline;
-  color: #D0EFFF;
+  color: #D8F2FF;
 }
 
 .footer__callback:hover {
   text-decoration: none;
-  color: #D0EFFF;
+  color: #D8F2FF;
+}
+
+.footer__bottom {
+  position: relative;
+  padding-top: 20px;
+  padding-bottom: 15px;
+  color: #D8F2FF;
+  opacity: .8;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.footer__bottom::before {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 1px;
+  top: 0;
+  left: -50vw;
+  right: -50vw;
+  background: #D8F2FF;
+  opacity: 0.4;
+}
+
+.footer__dev {
+  display: flex;
+  align-items: center;
+}
+
+.footer__dev-link {
+  display: flex;
+  margin-left: 11px;
+}
+
+.footer__link {
+  text-decoration: underline;
 }
 
 @media screen and (max-width: 1399.98px) {
