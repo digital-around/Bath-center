@@ -1,0 +1,63 @@
+<div class="filter">
+    <a href="#" class="filter__help btn">Помощь в подборе</a>
+    <div class="filter__accordion">
+        <div class="filter__collapse">
+            <a class="filter__collapse-header" data-bs-toggle="collapse" href="#filter-categories" role="button">
+                Категории
+            </a>
+            <div class="collapse show" id="filter-categories">
+                <div class="filter__collapse-content">
+                    <div class="filter__sections">
+                        @@for (var i = 0; i < 5; i++) {
+                            <a href="#" class="filter__section">Душевая программа</a>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="filter__collapse">
+            <a class="filter__collapse-header" data-bs-toggle="collapse" href="#filter-prices" role="button">
+                Категории
+            </a>
+            <div class="collapse show" id="filter-prices">
+                <div class="filter__collapse-content">
+                    <div class="filter__input-groups">
+                        <div class="filter__input-group filter__fields">
+                            <input type="text" class="filter__field field" value="от 450">
+                            <input type="text" class="filter__field field" value="до 12 000">
+                        </div>
+                        <div class="filter__input-group">
+                            тут ползунок
+                        </div>
+                        <div class="filter__input-group radio">
+                            <div class="radio__item">
+                                <input type="radio" class="radio__input" name="price-type" value="prices-all"
+                                       id="filterPricesAll" checked>
+                                <label class="radio__label" for="filterPricesAll">Все цены</label>
+                            </div>
+                            <div class="radio__item">
+                                <input type="radio" class="radio__input" name="price-type" value="prices-all"
+                                       id="filterPricesSale">
+                                <label class="radio__label" for="filterPricesSale">Товары со скидкой</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="filter__collapse">
+            <a class="filter__collapse-header collapsed" data-bs-toggle="collapse" href="#collapseExample1" role="button">
+                Категории
+            </a>
+            <div class="collapse" id="collapseExample1">
+                <div class="filter__collapse-content">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="filter__controls">
+        <a href="#" class="filter__control btn">Применить</a>
+        <a href="#" class="filter__control btn btn_invert">Сбросить</a>
+    </div>
+</div>

@@ -97,8 +97,22 @@ h6 {
   color: $white;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 
+  &_invert {
+    background: transparent;
+    border: 2px solid $blue;
+    color: $title;
+  }
+
   &:hover {
     color: $white;
+    background: $blue;
+    border: none;
+  }
+
+  &:active {
+    color: $white;
+    background: $dark-blue;
+    border: none;
   }
 
 }
@@ -121,6 +135,64 @@ h6 {
   &:focus {
     outline: none;
     border: 1px solid #87BFDC;
+  }
+
+}
+
+.radio {
+
+  display: flex;
+  flex-direction: column;
+
+  &__item {
+
+    &:not(:last-child) {
+      margin-bottom: 12px;
+    }
+
+  }
+
+  &__label {
+
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    line-height: 18px;
+    color: $gray;
+    cursor: pointer;
+
+    &::before {
+      content: "";
+      width: 18px;
+      height: 18px;
+      margin-right: 14px;
+      background: url("../images/common/radio-empty.svg") center no-repeat;
+      background-size: contain;
+    }
+
+  }
+
+  &__input {
+
+    display: none;
+
+    &:checked {
+
+      &+.radio {
+
+        &__label {
+
+          &::before {
+            background: url("../images/common/radio-active.svg") center no-repeat;
+            background-size: contain;
+          }
+
+        }
+
+      }
+
+    }
+
   }
 
 }
@@ -175,6 +247,22 @@ h6 {
 .embed-responsive-1by1 {
   &::before {
     padding-top: percentage(1 / 1);
+  }
+}
+
+.collapse:not(.show) {
+  display: none;
+}
+
+.collapsing {
+  height: 0;
+  overflow: hidden;
+  transition: height 0.35s ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .collapsing {
+    transition: none;
   }
 }
 

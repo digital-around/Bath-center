@@ -156,6 +156,26 @@
     opacity: 0.9;
   }
 
+  &__specs {
+    margin-top: 4px;
+    padding: 0 30px;
+  }
+
+  &__spec {
+    font-size: 13px;
+    line-height: 18px;
+    color: $text-element;
+  }
+
+  &__warranty {
+    margin-top: 9px;
+    padding: 0 30px;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 18px;
+    color: $text-element;
+  }
+
   &__prices {
     margin-top: 15px;
     display: flex;

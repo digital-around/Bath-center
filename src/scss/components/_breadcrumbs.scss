@@ -1,0 +1,30 @@
+.breadcrumbs {
+
+  display: flex;
+  color: $text-element;
+  font-size: 13px;
+  line-height: 20px;
+
+  &__item {
+
+    display: flex;
+    align-items: center;
+
+    &:not(:last-child) {
+
+      margin-right: 10px;
+
+      &::after {
+        content: "/";
+        margin-left: 7px;
+      }
+
+    }
+
+  }
+
+  &__link {
+    text-decoration: underline;
+  }
+
+}

@@ -9,7 +9,23 @@
   }
 
   .flickity-page-dots {
+
     bottom: 33px;
+    transform: unset;
+    left: calc(50% + 30px);
+
+    .dot {
+
+      background: $light-blue;
+      opacity: .7;
+
+      &.is-selected {
+        background: $blue;
+        opacity: 1;
+      }
+
+    }
+
   }
 
 }

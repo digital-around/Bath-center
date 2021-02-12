@@ -1,0 +1,35 @@
+.per-page {
+
+  display: flex;
+  align-items: center;
+
+  &__title {
+    font-size: 13px;
+    line-height: 18px;
+    color: $title;
+    margin-right: 22px;
+  }
+
+  &__items {
+    display: flex;
+    align-items: center;
+  }
+
+  &__item {
+
+    display: flex;
+    font-size: 13px;
+    line-height: 18px;
+    color: #728194;
+
+    &:not(:last-child) {
+      margin-right: 18px;
+    }
+
+    &_active, &:hover {
+      color: $dark-blue;
+    }
+
+  }
+
+}

@@ -1,0 +1,40 @@
+.section {
+
+  &__count {
+
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    line-height: 18px;
+    color: $title;
+
+    &-number {
+      margin-left: 15px;
+      color: #77879A;
+    }
+
+  }
+
+  &__controls {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__grid {
+    margin-top: 42px;
+    display: grid;
+    grid-gap: 30px 30px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  &__description {
+    margin-top: 100px;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 31px;
+    color: $gray;
+  }
+
+}
