@@ -37,10 +37,16 @@
   }
 
   &__pages {
+
     margin-top: 26px;
     display: flex;
     align-items: center;
     justify-content: center;
+
+    @include phone {
+      display: none;
+    }
+
   }
 
   &__page {

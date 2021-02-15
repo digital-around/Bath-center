@@ -135,6 +135,7 @@
   }
 
   &__type {
+
     font-size: 16px;
     line-height: 35px;
     height: 35px;
@@ -142,11 +143,18 @@
     text-align: center;
     color: #575757;
     opacity: 0.9;
+
+    @include laptop {
+      line-height: 21px;
+      height: 21px;
+    }
+
   }
 
   &__name {
+
     margin-top: -7px;
-    font-weight: 700;
+    font-weight: 500;
     font-size: 25px;
     line-height: 35px;
     height: 35px;
@@ -154,11 +162,22 @@
     text-align: center;
     color: $title;
     opacity: 0.9;
+
+    @include laptop {
+      margin-top: 7px;
+    }
+
   }
 
   &__specs {
+
     margin-top: 4px;
     padding: 0 30px;
+
+    @include tablet {
+      padding: 0 20px;
+    }
+
   }
 
   &__spec {
@@ -168,20 +187,32 @@
   }
 
   &__warranty {
+
     margin-top: 9px;
     padding: 0 30px;
     font-weight: bold;
     font-size: 13px;
     line-height: 18px;
     color: $text-element;
+
+    @include tablet {
+      padding: 0 20px;
+    }
+
   }
 
   &__prices {
+
     margin-top: 15px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 30px;
+
+    @include tablet {
+      padding: 0 20px;
+    }
+
   }
 
   &__price {

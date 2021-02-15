@@ -3,9 +3,157 @@
   background: #F7F7F9;
   padding: 25px 0 50px;
 
+  @include laptop {
+    background: transparent;
+    padding: 0;
+  }
+
+  &__buttons {
+
+    margin-bottom: 33px;
+    padding: 0 20px;
+
+    @include laptop {
+      padding: 0;
+      margin: 0;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 25px;
+    }
+
+    @include phone {
+      grid-template-columns: 1fr;
+    }
+
+  }
+
   &__help {
-    margin: 0 20px 33px;
-    width: calc(100% - 40px);
+    width: 100%;
+  }
+
+  &__toggle {
+
+    width: 100%;
+    display: none;
+
+    @include laptop {
+      display: flex;
+    }
+
+    &::after {
+      content: attr(data-count);
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background: #F2DE6D;
+      font-size: 13px;
+      line-height: 18px;
+      color: $title;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-left: 10px;
+    }
+
+  }
+
+  &__mobile {
+
+    @include laptop {
+
+      display: none;
+      position: fixed;
+      z-index: 10;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: $white;
+      overflow-y: auto;
+      padding: 60px 0 85px;
+
+      &_show {
+        display: block;
+      }
+
+    }
+
+  }
+
+  &__header {
+
+    display: none;
+
+    @include laptop {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 60px;
+      box-shadow: 0 0 30px rgba(114, 129, 148, 0.35);
+      background: $white;
+      z-index: 2;
+      padding: 0 20px;
+    }
+
+  }
+
+  &__title {
+    font-size: 22px;
+    line-height: 26px;
+    color: $title;
+    font-weight: 500;
+  }
+
+  &__choices {
+
+    display: none;
+    padding: 20px 20px 7px;
+    flex-wrap: wrap;
+
+    @include laptop {
+      display: flex;
+    }
+
+  }
+
+  &__choice {
+
+    display: flex;
+    height: 30px;
+    align-items: center;
+    padding: 0 10px;
+    background: $blue;
+    font-size: 13px;
+    line-height: 18px;
+    color: $white;
+    margin-right: 3px;
+    margin-bottom: 3px;
+
+    &::after {
+      content: "";
+      width: 8px;
+      height: 8px;
+      background: url("../images/filter/choice-delete.svg") no-repeat center;
+      background-size: contain;
+      margin-left: 10px;
+    }
+
+    &_clear {
+
+      color: $title;
+      background: $white;
+      border: 1px solid #E5E7EA;
+
+      &::after {
+        display: none;
+      }
+
+    }
+
   }
 
   &__accordion {
@@ -103,16 +251,44 @@
   }
 
   &__controls {
+
     margin-top: 29px;
     padding: 0 20px;
+
+    @include laptop {
+      padding: 17px 20px;
+      position: fixed;
+      z-index: 2;
+      background: $white;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 85px;
+      margin: 0;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-column-gap: 10px;
+      box-shadow: 0 0 30px rgba(114, 129, 148, 0.35);
+    }
+
   }
 
   &__control {
 
     width: 100%;
 
+    @include laptop {
+      padding: 0;
+    }
+
     &:not(:last-child) {
+
       margin-bottom: 20px;
+
+      @include laptop {
+        margin: 0;
+      }
+
     }
 
   }

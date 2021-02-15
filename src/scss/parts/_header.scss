@@ -3,6 +3,10 @@
   position: relative;
   z-index: 2;
 
+  @include laptop {
+    display: none;
+  }
+
   &__top {
     height: 40px;
     box-shadow: 0 5px 20px rgba(7, 104, 154, 0.1);
@@ -93,13 +97,26 @@
     color: $gray;
     font-weight: 500;
 
+    @include desktop {
+      font-size: 13px;
+      line-height: 15px;
+      margin-top: 3px;
+    }
+
     &::before {
+
       content: "";
       width: 16px;
       height: 15px;
       margin-right: 10px;
       background: url("../images/header/phone.svg") no-repeat center;
       background-size: contain;
+
+      @include desktop {
+        width: 12px;
+        margin-right: 5px;
+      }
+
     }
 
   }

@@ -1,5 +1,13 @@
 .section {
 
+  &__products {
+
+    @include laptop {
+      margin-top: 25px;
+    }
+
+  }
+
   &__count {
 
     display: flex;
@@ -7,6 +15,10 @@
     font-size: 13px;
     line-height: 18px;
     color: $title;
+
+    @include laptop {
+      display: none;
+    }
 
     &-number {
       margin-left: 15px;
@@ -16,29 +28,58 @@
   }
 
   &__controls {
+
     margin-top: 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @include laptop {
+      margin-top: 0;
+    }
+
   }
 
   &__grid {
+
     margin-top: 42px;
     display: grid;
     grid-gap: 30px 30px;
     grid-template-columns: repeat(3, 1fr);
+
+    @include desktop {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include phone {
+      grid-template-columns: 1fr;
+      grid-gap: 0 0;
+    }
+
   }
 
   &__pagination {
+
     margin-top: 50px;
+
+    @include tablet {
+      margin-top: 40px;
+    }
+
   }
 
   &__description {
+
     margin-top: 100px;
     font-weight: 300;
     font-size: 20px;
     line-height: 31px;
     color: $gray;
+
+    @include laptop {
+      margin-top: 80px;
+    }
+
   }
 
 }

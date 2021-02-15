@@ -3,6 +3,10 @@
   margin-top: 120px;
   background: $blue-gradient;
 
+  @include laptop {
+    display: none;
+  }
+
   &__container {
     position: relative;
   }

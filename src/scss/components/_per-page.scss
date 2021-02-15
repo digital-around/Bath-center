@@ -3,11 +3,21 @@
   display: flex;
   align-items: center;
 
+  @include phone {
+    display: none;
+  }
+
   &__title {
+
     font-size: 13px;
     line-height: 18px;
     color: $title;
     margin-right: 22px;
+
+    @include desktop {
+      display: none;
+    }
+
   }
 
   &__items {

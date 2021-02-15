@@ -4,10 +4,16 @@
   align-items: center;
 
   &__title {
+
     font-size: 13px;
     line-height: 18px;
     color: $title;
     margin-right: 23px;
+
+    @include desktop {
+      display: none;
+    }
+
   }
 
   &__items {

@@ -5,3 +5,9 @@ $(document).ready(function () {
     });
 
 });
+
+function toggleMobileFilter() {
+
+    $('.filter__mobile').toggleClass('filter__mobile_show');
+
+}

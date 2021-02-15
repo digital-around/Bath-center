@@ -707,7 +707,7 @@ h6 {
 
 .product-card__name {
   margin-top: -7px;
-  font-weight: 700;
+  font-weight: 500;
   font-size: 25px;
   line-height: 35px;
   height: 35px;
@@ -1411,9 +1411,82 @@ h6 {
   padding: 25px 0 50px;
 }
 
+.filter__buttons {
+  margin-bottom: 33px;
+  padding: 0 20px;
+}
+
 .filter__help {
-  margin: 0 20px 33px;
-  width: calc(100% - 40px);
+  width: 100%;
+}
+
+.filter__toggle {
+  width: 100%;
+  display: none;
+}
+
+.filter__toggle::after {
+  content: attr(data-count);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #F2DE6D;
+  font-size: 13px;
+  line-height: 18px;
+  color: #002538;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+}
+
+.filter__header {
+  display: none;
+}
+
+.filter__title {
+  font-size: 22px;
+  line-height: 26px;
+  color: #002538;
+  font-weight: 500;
+}
+
+.filter__choices {
+  display: none;
+  padding: 20px 20px 7px;
+  flex-wrap: wrap;
+}
+
+.filter__choice {
+  display: flex;
+  height: 30px;
+  align-items: center;
+  padding: 0 10px;
+  background: #289fdd;
+  font-size: 13px;
+  line-height: 18px;
+  color: #ffffff;
+  margin-right: 3px;
+  margin-bottom: 3px;
+}
+
+.filter__choice::after {
+  content: "";
+  width: 8px;
+  height: 8px;
+  background: url("../images/filter/choice-delete.svg") no-repeat center;
+  background-size: contain;
+  margin-left: 10px;
+}
+
+.filter__choice_clear {
+  color: #002538;
+  background: #ffffff;
+  border: 1px solid #E5E7EA;
+}
+
+.filter__choice_clear::after {
+  display: none;
 }
 
 .filter__collapse {
@@ -2062,6 +2135,198 @@ h6 {
 
   .news-short__carousel {
     margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 1199.98px) {
+  .sort__title {
+    display: none;
+  }
+
+  .per-page__title {
+    display: none;
+  }
+
+  .header__phone {
+    font-size: 13px;
+    line-height: 15px;
+    margin-top: 3px;
+  }
+
+  .header__phone::before {
+    width: 12px;
+    margin-right: 5px;
+  }
+
+  .section__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 991.98px) {
+  .title {
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  .product-card__type {
+    line-height: 21px;
+    height: 21px;
+  }
+
+  .product-card__name {
+    margin-top: 7px;
+  }
+
+  .filter {
+    background: transparent;
+    padding: 0;
+  }
+
+  .filter__buttons {
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 25px;
+  }
+
+  .filter__toggle {
+    display: flex;
+  }
+
+  .filter__mobile {
+    display: none;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #ffffff;
+    overflow-y: auto;
+    padding: 60px 0 85px;
+  }
+
+  .filter__mobile_show {
+    display: block;
+  }
+
+  .filter__header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    box-shadow: 0 0 30px rgba(114, 129, 148, 0.35);
+    background: #ffffff;
+    z-index: 2;
+    padding: 0 20px;
+  }
+
+  .filter__choices {
+    display: flex;
+  }
+
+  .filter__controls {
+    padding: 17px 20px;
+    position: fixed;
+    z-index: 2;
+    background: #ffffff;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 85px;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 10px;
+    box-shadow: 0 0 30px rgba(114, 129, 148, 0.35);
+  }
+
+  .filter__control {
+    padding: 0;
+  }
+
+  .filter__control:not(:last-child) {
+    margin: 0;
+  }
+
+  .header {
+    display: none;
+  }
+
+  .heading {
+    margin-top: 30px;
+  }
+
+  .section__products {
+    margin-top: 25px;
+  }
+
+  .section__count {
+    display: none;
+  }
+
+  .section__controls {
+    margin-top: 0;
+  }
+
+  .section__description {
+    margin-top: 80px;
+  }
+
+  .footer {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767.98px) {
+  .title {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .product-card__specs {
+    padding: 0 20px;
+  }
+
+  .product-card__warranty {
+    padding: 0 20px;
+  }
+
+  .product-card__prices {
+    padding: 0 20px;
+  }
+
+  .heading {
+    margin-top: 20px;
+  }
+
+  .section__pagination {
+    margin-top: 40px;
+  }
+}
+
+@media screen and (max-width: 575.98px) {
+  .per-page {
+    display: none;
+  }
+
+  .filter__buttons {
+    grid-template-columns: 1fr;
+  }
+
+  .pagination__pages {
+    display: none;
+  }
+
+  .section__grid {
+    grid-template-columns: 1fr;
+    grid-gap: 0 0;
   }
 }
 
