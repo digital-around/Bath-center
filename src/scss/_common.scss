@@ -139,7 +139,7 @@ h6 {
 
 }
 
-.radio {
+.radio, .checkbox {
 
   display: flex;
   flex-direction: column;
@@ -166,6 +166,17 @@ h6 {
       width: 18px;
       height: 18px;
       margin-right: 14px;
+    }
+
+  }
+
+}
+
+.radio {
+
+  &__label {
+
+    &::before {
       background: url("../images/common/radio-empty.svg") center no-repeat;
       background-size: contain;
     }
@@ -189,6 +200,113 @@ h6 {
 
         }
 
+      }
+
+    }
+
+  }
+
+}
+
+.checkbox {
+
+  &__label {
+
+    &::before {
+      background: url("../images/common/checkbox-empty.svg") center no-repeat;
+      background-size: contain;
+    }
+
+  }
+
+  &__input {
+
+    display: none;
+
+    &:checked {
+
+      &+.checkbox {
+
+        &__label {
+
+          &::before {
+            background: url("../images/common/checkbox-active.svg") center no-repeat;
+            background-size: contain;
+          }
+
+        }
+
+      }
+
+    }
+
+  }
+
+}
+
+.irs--flat {
+
+  height: 47px;
+
+  .irs {
+
+    &-line {
+      top: 8px;
+      height: 2px;
+      background: #B8C9DD;
+      opacity: .6;
+    }
+
+    &-bar {
+      top: 8px;
+      height: 2px;
+      background: $blue;
+    }
+
+    &-handle {
+
+      top: 0;
+      width: 18px;
+      height: 18px;
+
+      &.state_hover {
+
+        &>i:first-child {
+          background: $blue;
+        }
+
+      }
+
+      &>i:first-child {
+
+        left: 0;
+        width: 18px;
+        height: 18px;
+        background: $dark-blue;
+        border-radius: 50%;
+        border: 3px solid $white;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+
+        &:hover {
+          background: $blue;
+        }
+
+      }
+
+    }
+
+    &-min, &-max {
+
+      top: 26px;
+      color: $text-element;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 21px;
+      background: 0;
+      padding: 0;
+
+      &::after {
+        content: " ₽";
       }
 
     }

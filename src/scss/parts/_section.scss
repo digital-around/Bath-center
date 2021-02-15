@@ -29,6 +29,10 @@
     grid-template-columns: repeat(3, 1fr);
   }
 
+  &__pagination {
+    margin-top: 50px;
+  }
+
   &__description {
     margin-top: 100px;
     font-weight: 300;

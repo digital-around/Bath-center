@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/libs/jquery.fancybox.min.css">
     <link rel="stylesheet" href="css/libs/flickity.css">
     <link rel="stylesheet" href="css/libs/flickity-fade.css">
+    <link rel="stylesheet" href="css/libs/ion.rangeSlider.min.css">
     <link rel="stylesheet" href="css/style.css">
 
     <title>Ванна центр</title>
@@ -1033,17 +1034,17 @@
                         </div>
                         <div class="filter__collapse">
                             <a class="filter__collapse-header" data-bs-toggle="collapse" href="#filter-prices" role="button">
-                                Категории
+                                Цена
                             </a>
                             <div class="collapse show" id="filter-prices">
                                 <div class="filter__collapse-content">
                                     <div class="filter__input-groups">
                                         <div class="filter__input-group filter__fields">
-                                            <input type="text" class="filter__field field" value="от 450">
-                                            <input type="text" class="filter__field field" value="до 12 000">
+                                            <input type="text" class="filter__field field" value="от 1 250">
+                                            <input type="text" class="filter__field field" value="до 7 500">
                                         </div>
                                         <div class="filter__input-group">
-                                            тут ползунок
+                                            <input type="text" class="js-range-slider" name="my_range" value="" data-type="double" data-min="450" data-max="12000" data-from="1250" data-to="7500" />
                                         </div>
                                         <div class="filter__input-group radio">
                                             <div class="radio__item">
@@ -1060,12 +1061,26 @@
                             </div>
                         </div>
                         <div class="filter__collapse">
-                            <a class="filter__collapse-header collapsed" data-bs-toggle="collapse" href="#collapseExample1" role="button">
-                                Категории
+                            <a class="filter__collapse-header collapsed" data-bs-toggle="collapse" href="#filter-brands" role="button">
+                                Бренды
                             </a>
-                            <div class="collapse" id="collapseExample1">
+                            <div class="collapse" id="filter-brands">
                                 <div class="filter__collapse-content">
-                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                                    <div class="checkbox">
+                                        <div class="checkbox__item">
+                                            <input type="checkbox" class="checkbox__input" name="brand" id="filterBrand1">
+                                            <label class="checkbox__label" for="filterBrand1">Бренд 1</label>
+                                        </div>
+                                        <div class="checkbox__item">
+                                            <input type="checkbox" class="checkbox__input" name="brand" id="filterBrand2">
+                                            <label class="checkbox__label" for="filterBrand2">Бренд 2</label>
+                                        </div>
+                                        <div class="checkbox__item">
+                                            <input type="checkbox" class="checkbox__input" name="brand" id="filterBrand3">
+                                            <label class="checkbox__label" for="filterBrand3">Бренд 3</label>
+                                        </div>
+                                    </div>
+
                                 </div>
                             </div>
                         </div>
@@ -1312,6 +1327,22 @@
                     </div>
 
                 </div>
+                <div class="section__pagination">
+                    <div class="pagination">
+                        <a href="#" class="pagination__load">Загрузить еще</a>
+                        <div class="pagination__pages">
+                            <a href="#" class="pagination__page">1</a>
+                            <div class="pagination__page pagination__page_space">...</div>
+                            <a href="#" class="pagination__page">5</a>
+                            <a href="#" class="pagination__page">6</a>
+                            <div class="pagination__page pagination__page_active">7</div>
+                            <a href="#" class="pagination__page">8</a>
+                            <a href="#" class="pagination__page">9</a>
+                            <div class="pagination__page pagination__page_space">...</div>
+                            <a href="#" class="pagination__page">13</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="section__description">
@@ -1436,6 +1467,7 @@
     <script src="js/libs/bootstrap.min.js"></script>
     <script src="js/libs/flickity.pkgd.min.js"></script>
     <script src="js/libs/flickity-fade.js"></script>
+    <script src="js/libs/ion.rangeSlider.min.js"></script>
 
     <script src="js/banners.js"></script>
     <script src="js/products-carousel.js"></script>
@@ -1443,6 +1475,7 @@
     <script src="js/reviews.js"></script>
     <script src="js/manufacturers.js"></script>
     <script src="js/catalog-menu.js"></script>
+    <script src="js/filter.js"></script>
 
 </body>
 

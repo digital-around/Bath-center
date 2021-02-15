@@ -17,17 +17,18 @@
         </div>
         <div class="filter__collapse">
             <a class="filter__collapse-header" data-bs-toggle="collapse" href="#filter-prices" role="button">
-                Категории
+                Цена
             </a>
             <div class="collapse show" id="filter-prices">
                 <div class="filter__collapse-content">
                     <div class="filter__input-groups">
                         <div class="filter__input-group filter__fields">
-                            <input type="text" class="filter__field field" value="от 450">
-                            <input type="text" class="filter__field field" value="до 12 000">
+                            <input type="text" class="filter__field field" value="от 1 250">
+                            <input type="text" class="filter__field field" value="до 7 500">
                         </div>
                         <div class="filter__input-group">
-                            тут ползунок
+                            <input type="text" class="js-range-slider" name="my_range" value="" data-type="double"
+                                   data-min="450" data-max="12000" data-from="1250" data-to="7500"/>
                         </div>
                         <div class="filter__input-group radio">
                             <div class="radio__item">
@@ -46,12 +47,26 @@
             </div>
         </div>
         <div class="filter__collapse">
-            <a class="filter__collapse-header collapsed" data-bs-toggle="collapse" href="#collapseExample1" role="button">
-                Категории
+            <a class="filter__collapse-header collapsed" data-bs-toggle="collapse" href="#filter-brands" role="button">
+                Бренды
             </a>
-            <div class="collapse" id="collapseExample1">
+            <div class="collapse" id="filter-brands">
                 <div class="filter__collapse-content">
-                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                    <div class="checkbox">
+                        <div class="checkbox__item">
+                            <input type="checkbox" class="checkbox__input" name="brand" id="filterBrand1">
+                            <label class="checkbox__label" for="filterBrand1">Бренд 1</label>
+                        </div>
+                        <div class="checkbox__item">
+                            <input type="checkbox" class="checkbox__input" name="brand" id="filterBrand2">
+                            <label class="checkbox__label" for="filterBrand2">Бренд 2</label>
+                        </div>
+                        <div class="checkbox__item">
+                            <input type="checkbox" class="checkbox__input" name="brand" id="filterBrand3">
+                            <label class="checkbox__label" for="filterBrand3">Бренд 3</label>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
