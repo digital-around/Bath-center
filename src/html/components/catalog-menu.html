@@ -1,7 +1,10 @@
 <div class="catalog-menu">
     <div class="catalog-menu__content container">
         <div class="row">
-            <div class="col-lg-3">
+            <div class="col-lg-3 col-md-5">
+                <div class="catalog-menu__search">
+                    @@include('../components/search-field.html')
+                </div>
                 <div class="catalog-menu__categories">
                     @@for (var i = 0; i < 10; i++) {
                         <div class="catalog-menu__category" data-subcategory="`+i+`">
@@ -11,15 +14,15 @@
                 </div>
             </div>
             @@for (var i = 0; i < 10; i++) {
-                <div class="catalog-menu__right col-lg-9" data-subcategory="`+i+`">
+                <div class="catalog-menu__right col-lg-9 col-md-7" data-subcategory="`+i+`">
                     <div class="row">
-                        <div class="col-lg-8">
+                        <div class="col-lg-8 order-1 order-lg-0">
                             <div class="catalog-menu__grid">
                                 @@include('menu-subcategory.html', {"id": `+i+`})
                                 @@include('menu-subcategory.html', {"id": `+i+`})
                             </div>
                         </div>
-                        <div class="col-lg-4">
+                        <div class="col-lg-4 order-0 order-lg-1">
                             <a href="#" class="catalog-menu__banner-wrap">
                                 <img src="images/catalog-menu/banner.png" class="catalog-menu__banner" alt="">
                             </a>

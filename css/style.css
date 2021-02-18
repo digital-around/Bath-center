@@ -966,6 +966,16 @@ h6 {
   display: flex;
 }
 
+.top-menu__mobile {
+  display: none;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  background: #ffffff;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  padding: 8px 0;
+}
+
 .top-menu__item {
   display: flex;
   align-items: center;
@@ -974,6 +984,14 @@ h6 {
   line-height: 16px;
   color: #575757;
   padding: 0 20px;
+}
+
+.top-menu__item_mobile {
+  height: 26px;
+}
+
+.top-menu__item_more {
+  display: none;
 }
 
 .top-menu__item:hover,
@@ -989,11 +1007,11 @@ h6 {
 
 .small-cart__icon {
   flex-shrink: 0;
-  margin-right: 8px;
 }
 
 .small-cart__content {
   margin-top: 2px;
+  margin-left: 8px;
   position: relative;
 }
 
@@ -1110,6 +1128,10 @@ h6 {
   background: #EFFAFF;
   box-shadow: 0 4px 10px rgba(7, 104, 154, 0.1);
   z-index: -1;
+}
+
+.catalog-menu__search {
+  display: none;
 }
 
 .catalog-menu__categories {
@@ -1637,6 +1659,29 @@ h6 {
   background: linear-gradient(90deg, #289FDD 0%, #07689A 100%);
 }
 
+.search-field {
+  position: relative;
+}
+
+.search-field__input {
+  background: #F8F8F8;
+  border: 1px solid #E2E2E2;
+  padding-right: 40px;
+}
+
+.search-field__input::placeholder {
+  color: #666666;
+}
+
+.search-field__btn {
+  display: flex;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 10px;
+}
+
 .header {
   position: relative;
   z-index: 2;
@@ -1678,31 +1723,12 @@ h6 {
   align-items: center;
 }
 
+.header__burger {
+  display: flex;
+}
+
 .header__logo {
   max-width: 100%;
-}
-
-.header__search-wrap {
-  position: relative;
-}
-
-.header__search {
-  background: #F8F8F8;
-  border: 1px solid #E2E2E2;
-  padding-right: 40px;
-}
-
-.header__search::placeholder {
-  color: #666666;
-}
-
-.header__search-btn {
-  display: flex;
-  position: absolute;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  padding: 10px;
 }
 
 .header__contact {
@@ -2178,6 +2204,87 @@ h6 {
     margin-top: 7px;
   }
 
+  .top-menu__item {
+    padding: 0 14px;
+  }
+
+  .top-menu__item:nth-child(n+5) {
+    display: none;
+  }
+
+  .top-menu__item_more {
+    display: flex !important;
+    position: relative;
+  }
+
+  .top-menu__item_more:hover .top-menu__mobile {
+    display: block;
+  }
+
+  .small-cart__content {
+    display: none;
+  }
+
+  .compare-small__badge {
+    top: -6px;
+    width: 15px;
+    height: 15px;
+    font-size: 10px;
+    line-height: 10px;
+  }
+
+  .menu__item {
+    padding: 0 20px;
+  }
+
+  .catalog-menu__search {
+    display: block;
+    margin-top: 20px;
+    padding-right: 20px;
+  }
+
+  .catalog-menu__categories {
+    border-right: unset;
+  }
+
+  .catalog-menu__right {
+    margin-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .catalog-menu__grid {
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+  }
+
+  .catalog-menu__banner-wrap {
+    justify-content: start;
+    margin-bottom: 10px;
+  }
+
+  .catalog-menu__articles {
+    align-items: start;
+    margin-bottom: 20px;
+  }
+
+  .catalog-menu__article {
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: 500;
+  }
+
+  .catalog-menu__article:not(:last-child) {
+    margin-bottom: unset;
+  }
+
+  .catalog-menu__partners {
+    margin-top: 40px;
+  }
+
+  .manufacturers-small__item {
+    width: 100%;
+  }
+
   .filter {
     background: transparent;
     padding: 0;
@@ -2255,8 +2362,23 @@ h6 {
     margin: 0;
   }
 
-  .header {
-    display: none;
+  .header__logo {
+    width: 220px;
+  }
+
+  .header__phone {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .header__phone::before {
+    width: 16px;
+    height: 15px;
+    margin-right: 10px;
+  }
+
+  .header__shop {
+    justify-content: flex-end;
   }
 
   .heading {
@@ -2300,6 +2422,30 @@ h6 {
 
   .product-card__prices {
     padding: 0 20px;
+  }
+
+  .header__top {
+    display: none;
+  }
+
+  .header__middle {
+    height: 90px;
+  }
+
+  .header__logo {
+    width: 144px;
+  }
+
+  .header__shop {
+    margin-left: auto;
+  }
+
+  .header__shop a:not(:last-child) {
+    margin-right: 20px;
+  }
+
+  .header__bottom {
+    display: none;
   }
 
   .heading {

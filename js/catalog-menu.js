@@ -17,6 +17,11 @@ $(document).ready(function () {
         timer = setTimeout(showSubcategory, 500, activeSubcategory);
     });
 
+    $('.menu-category').on('click', function (e) {
+        if ($(window).width() < 992)
+            e.preventDefault();
+    });
+
 });
 
 function toggleCatalogMenu() {

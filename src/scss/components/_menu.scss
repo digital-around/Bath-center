@@ -14,6 +14,10 @@
     color: $gray;
     text-transform: uppercase;
 
+    @include laptop {
+      padding: 0 20px;
+    }
+
     &:hover, &_active {
       background: $blue;
       color: $white;

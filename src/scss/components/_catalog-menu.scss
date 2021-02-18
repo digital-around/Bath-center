@@ -31,11 +31,29 @@
 
   }
 
+  &__search {
+
+    display: none;
+
+    @include laptop {
+      display: block;
+      margin-top: 20px;
+      padding-right: 20px;
+    }
+
+  }
+
   &__categories {
+
     padding: 20px 20px 25px 0;
     border-right: 1px solid $light-blue;
     display: flex;
     flex-direction: column;
+
+    @include laptop {
+      border-right: unset;
+    }
+
   }
 
   &__category {
@@ -53,6 +71,11 @@
     margin-top: 37px;
     padding-bottom: 32px;
 
+    @include laptop {
+      margin-top: 20px;
+      padding-bottom: 20px;
+    }
+
     &_active {
       display: flex;
     }
@@ -60,15 +83,29 @@
   }
 
   &__grid {
+
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 65px;
+
+    @include laptop {
+      grid-template-columns: 1fr;
+      grid-gap: 20px;
+    }
+
   }
 
   &__banner-wrap {
+
     display: flex;
     justify-content: flex-end;
     margin-bottom: 20px;
+
+    @include laptop {
+      justify-content: start;
+      margin-bottom: 10px;
+    }
+
   }
 
   &__banner {
@@ -76,9 +113,16 @@
   }
 
   &__articles {
+
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+
+    @include laptop {
+      align-items: start;
+      margin-bottom: 20px;
+    }
+
   }
 
   &__article {
@@ -88,14 +132,32 @@
     color: $gray;
     font-weight: 700;
 
+    @include laptop {
+      font-size: 13px;
+      line-height: 18px;
+      font-weight: 500;
+    }
+
     &:not(:last-child) {
+
       margin-bottom: 10px;
+
+      @include laptop {
+        margin-bottom: unset;
+      }
+
     }
 
   }
 
   &__partners {
+
     margin-top: auto;
+
+    @include laptop {
+      margin-top: 40px;
+    }
+
   }
 
 }

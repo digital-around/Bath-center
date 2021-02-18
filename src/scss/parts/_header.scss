@@ -3,14 +3,16 @@
   position: relative;
   z-index: 2;
 
-  @include laptop {
-    display: none;
-  }
-
   &__top {
+
     height: 40px;
     box-shadow: 0 5px 20px rgba(7, 104, 154, 0.1);
     background: #F7F7F9;
+
+    @include tablet {
+      display: none;
+    }
+
   }
 
   &__region {
@@ -40,38 +42,33 @@
   }
 
   &__middle {
+
     height: 110px;
     display: flex;
     align-items: center;
-  }
 
-  &__logo {
-    max-width: 100%;
-  }
-
-  &__search-wrap {
-    position: relative;
-  }
-
-  &__search {
-
-    background: #F8F8F8;
-    border: 1px solid #E2E2E2;
-    padding-right: 40px;
-
-    &::placeholder {
-      color: #666666;
+    @include tablet {
+      height: 90px;
     }
 
   }
 
-  &__search-btn {
+  &__burger {
     display: flex;
-    position: absolute;
-    right: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    padding: 10px;
+  }
+
+  &__logo {
+
+    max-width: 100%;
+
+    @include laptop {
+      width: 220px;
+    }
+
+    @include tablet {
+      width: 144px;
+    }
+
   }
 
   &__contact {
@@ -103,6 +100,11 @@
       margin-top: 3px;
     }
 
+    @include laptop {
+      font-size: 16px;
+      line-height: 20px;
+    }
+
     &::before {
 
       content: "";
@@ -115,6 +117,12 @@
       @include desktop {
         width: 12px;
         margin-right: 5px;
+      }
+
+      @include laptop {
+        width: 16px;
+        height: 15px;
+        margin-right: 10px;
       }
 
     }
@@ -137,14 +145,36 @@
   }
 
   &__shop {
+
     display: flex;
     justify-content: space-around;
     align-items: center;
+
+    @include laptop {
+      justify-content: flex-end;
+    }
+
+    @include tablet {
+
+      margin-left: auto;
+
+      a:not(:last-child) {
+        margin-right: 20px;
+      }
+
+    }
+
   }
 
   &__bottom {
+
     background: $light-blue;
     height: 50px;
+
+    @include tablet {
+      display: none;
+    }
+
   }
 
 }

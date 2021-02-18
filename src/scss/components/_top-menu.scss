@@ -2,6 +2,18 @@
 
   display: flex;
 
+  &__mobile {
+
+    display: none;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    background: $white;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 8px 0;
+
+  }
+
   &__item {
 
     display: flex;
@@ -12,9 +24,46 @@
     color: $paragraph;
     padding: 0 20px;
 
+    &_mobile {
+      height: 26px;
+    }
+
+    &_more {
+      display: none;
+    }
+
     &:hover, &_active {
       background: $light-blue;
       color: $gray;
+    }
+
+    @include laptop {
+
+      padding: 0 14px;
+
+      &:nth-child(n+5) {
+        display: none;
+      }
+
+      &_more {
+
+        display: flex !important;
+        position: relative;
+
+        &:hover {
+
+          .top-menu {
+
+            &__mobile {
+              display: block;
+            }
+
+          }
+
+        }
+
+      }
+
     }
 
   }
