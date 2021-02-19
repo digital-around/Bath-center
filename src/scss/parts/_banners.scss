@@ -14,6 +14,12 @@
     transform: unset;
     left: calc(50% + 30px);
 
+    @include tablet {
+      bottom: 90px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
     .dot {
 
       background: $light-blue;

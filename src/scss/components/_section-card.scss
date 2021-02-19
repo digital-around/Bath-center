@@ -1,9 +1,29 @@
 .section-card {
 
+  @include tablet {
+
+    width: 290px;
+
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+
+  }
+
   &__image-wrap {
+
     width: 100%;
     height: 450px;
     overflow: hidden;
+
+    @include laptop {
+      height: 345px;
+    }
+
+    @include tablet {
+      height: 240px;
+    }
+
   }
 
   &__image {
@@ -13,22 +33,42 @@
   }
 
   &__name {
+
     margin-top: 30px;
     font-weight: 700;
     font-size: 25px;
-    line-height: 35px;
-    height: 70px;
+    line-height: 31px;
+    height: 62px;
     overflow: hidden;
     color: $title;
     opacity: 0.9;
+
+    @include tablet {
+      font-size: 22px;
+      line-height: 26px;
+      height: 52px;
+    }
+
   }
 
   &__description {
+
+    margin-top: 30px;
     font-weight: 300;
     font-size: 20px;
     line-height: 31px;
     color: $gray;
     opacity: 0.9;
+
+    @include laptop {
+      margin-top: 20px;
+    }
+
+    @include tablet {
+      height: 155px;
+      overflow: hidden;
+    }
+
   }
 
   &__link {
@@ -42,6 +82,10 @@
     line-height: 18px;
     text-transform: uppercase;
     color: $dark-blue;
+
+    @include laptop {
+      margin-top: 20px;
+    }
 
     &::before {
       content: "";

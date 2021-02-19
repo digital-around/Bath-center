@@ -2,8 +2,26 @@
 
   margin-top: 100px;
 
+  @include tablet {
+    margin-top: 80px;
+  }
+
+  &__title {
+
+    @include tablet {
+      text-align: center;
+    }
+
+  }
+
   &__carousel {
+
     margin-top: 60px;
+
+    @include tablet {
+      margin-top: 40px;
+    }
+
   }
 
   &__item {

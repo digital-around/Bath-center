@@ -345,10 +345,11 @@ h6 {
   margin-left: 0;
   background: #289fdd;
   opacity: 0.4;
+  margin-right: 18px;
 }
 
-.flickity-page-dots .dot:not(:last-child) {
-  margin-right: 18px;
+.flickity-page-dots .dot:last-child {
+  margin-right: 0;
 }
 
 .flickity-page-dots .dot.is-selected {
@@ -528,14 +529,15 @@ h6 {
   margin-top: 30px;
   font-weight: 700;
   font-size: 25px;
-  line-height: 35px;
-  height: 70px;
+  line-height: 31px;
+  height: 62px;
   overflow: hidden;
   color: #002538;
   opacity: 0.9;
 }
 
 .section-card__description {
+  margin-top: 30px;
   font-weight: 300;
   font-size: 20px;
   line-height: 31px;
@@ -2195,6 +2197,43 @@ h6 {
     line-height: 40px;
   }
 
+  .banner__title {
+    font-size: 40px;
+    line-height: 54px;
+    margin-top: 60px;
+  }
+
+  .banner__subtitle {
+    font-size: 28px;
+    line-height: 36px;
+    margin-top: 25px;
+  }
+
+  .banner__sticker {
+    width: 300px;
+    height: 300px;
+    font-size: 40px;
+    line-height: 40px;
+    padding-top: 115px;
+  }
+
+  .banner__link {
+    margin-bottom: 60px;
+    margin-left: 18px;
+  }
+
+  .section-card__image-wrap {
+    height: 345px;
+  }
+
+  .section-card__description {
+    margin-top: 20px;
+  }
+
+  .section-card__link {
+    margin-top: 20px;
+  }
+
   .product-card__type {
     line-height: 21px;
     height: 21px;
@@ -2202,6 +2241,29 @@ h6 {
 
   .product-card__name {
     margin-top: 7px;
+  }
+
+  .offer__image-wrap {
+    min-height: unset;
+    height: 280px;
+  }
+
+  .offer__content {
+    border-top: none;
+  }
+
+  .offer__text {
+    padding: 50px 40px 50px;
+    max-width: unset;
+  }
+
+  .offer__title {
+    margin-bottom: 30px;
+  }
+
+  .offer__link {
+    height: 70px;
+    padding-left: 40px;
   }
 
   .top-menu__item {
@@ -2385,6 +2447,18 @@ h6 {
     margin-top: 30px;
   }
 
+  .sections {
+    margin-top: 80px;
+  }
+
+  .sections__title {
+    margin-bottom: 50px;
+  }
+
+  .sections__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   .section__products {
     margin-top: 25px;
   }
@@ -2401,6 +2475,10 @@ h6 {
     margin-top: 80px;
   }
 
+  .advantages {
+    grid-template-columns: 1fr;
+  }
+
   .footer {
     display: none;
   }
@@ -2410,6 +2488,72 @@ h6 {
   .title {
     font-size: 24px;
     line-height: 30px;
+  }
+
+  .flickity-with-arrows {
+    padding-top: 70px;
+  }
+
+  .flickity-prev-next-button {
+    top: 0;
+  }
+
+  .flickity-prev-next-button.previous {
+    left: calc(50% - 15px);
+    transform: translateX(-100%);
+  }
+
+  .flickity-prev-next-button.next {
+    right: calc(50% - 15px);
+    transform: translateX(100%);
+  }
+
+  .banner__image-wrap {
+    left: 0;
+  }
+
+  .banner__sticker {
+    top: -56px;
+    right: -50px;
+    width: 230px;
+    height: 230px;
+    font-size: 30px;
+    line-height: 34px;
+    padding: 78px 48px 0 28px;
+  }
+
+  .banner__button {
+    right: 0;
+    height: 60px;
+  }
+
+  .banner__link {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 120px;
+  }
+
+  .section-card {
+    width: 290px;
+  }
+
+  .section-card:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  .section-card__image-wrap {
+    height: 240px;
+  }
+
+  .section-card__name {
+    font-size: 22px;
+    line-height: 26px;
+    height: 52px;
+  }
+
+  .section-card__description {
+    height: 155px;
+    overflow: hidden;
   }
 
   .product-card__specs {
@@ -2422,6 +2566,23 @@ h6 {
 
   .product-card__prices {
     padding: 0 20px;
+  }
+
+  .offer__image-wrap {
+    height: 230px;
+  }
+
+  .offer__text {
+    padding: 30px 12px 37px;
+  }
+
+  .offer__title {
+    margin-bottom: 20px;
+  }
+
+  .offer__link {
+    height: 60px;
+    padding-left: 12px;
   }
 
   .header__top {
@@ -2452,7 +2613,37 @@ h6 {
     margin-top: 20px;
   }
 
+  .banners .flickity-page-dots {
+    bottom: 90px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .sections {
+    margin-top: 40px;
+  }
+
+  .sections__title {
+    margin-bottom: 30px;
+  }
+
+  .sections__grid {
+    display: block;
+  }
+
   .section__pagination {
+    margin-top: 40px;
+  }
+
+  .products-carousel {
+    margin-top: 80px;
+  }
+
+  .products-carousel__title {
+    text-align: center;
+  }
+
+  .products-carousel__carousel {
     margin-top: 40px;
   }
 }

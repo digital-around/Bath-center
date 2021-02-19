@@ -410,9 +410,10 @@ h6 {
     margin-left: 0;
     background: $blue;
     opacity: 0.4;
+    margin-right: 18px;
 
-    &:not(:last-child) {
-      margin-right: 18px;
+    &:last-child {
+      margin-right: 0;
     }
 
     &.is-selected {
@@ -426,15 +427,32 @@ h6 {
 
 }
 
+.flickity-with-arrows {
+
+  @include tablet {
+    padding-top: 70px;
+  }
+
+}
+
 .flickity-prev-next-button {
 
   width: 55px;
   height: 55px;
   border: 1px solid #E5E7EA;
 
+  @include tablet {
+    top: 0;
+  }
+
   &.previous {
 
     background: url("../images/common/arrow-dark-left.svg") center no-repeat, $white;
+
+    @include tablet {
+      left: calc(50% - 15px);
+      transform: translateX(-100%);
+    }
 
     &:not(:disabled) {
 
@@ -456,6 +474,11 @@ h6 {
   &.next {
 
     background: url("../images/common/arrow-dark-right.svg") center no-repeat, $white;
+
+    @include tablet {
+      right: calc(50% - 15px);
+      transform: translateX(100%);
+    }
 
     &:not(:disabled) {
 
