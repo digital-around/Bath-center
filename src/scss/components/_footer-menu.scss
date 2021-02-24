@@ -2,16 +2,80 @@
 
   color: $white;
 
+  &_opened {
+
+    .footer-menu {
+
+      &__title {
+
+        @include laptop {
+
+          &::after {
+            transform: rotate(180deg);
+          }
+
+        }
+
+      }
+
+      &__links {
+
+        @include laptop {
+          max-height: 100vh !important;
+          margin-top: 10px !important;
+          margin-bottom: 15px !important;
+        }
+
+      }
+
+    }
+
+  }
+
   &__title {
+
     font-weight: 700;
     font-size: 25px;
     line-height: 31px;
+    position: relative;
+
+    @include laptop {
+
+      font-size: 22px;
+      line-height: 26px;
+      font-weight: 500;
+      padding-right: 52px;
+
+      &::after {
+        content: "";
+        position: absolute;
+        right: 20px;
+        top: calc(50% - 4px);
+        width: 12px;
+        height: 8px;
+        background: url("../images/footer-menu/angle.svg") center no-repeat;
+        background-size: contain;
+        transition: transform 500ms ease-in;
+      }
+
+    }
+
   }
 
   &__links {
+
     margin-top: 18px;
     display: flex;
     flex-direction: column;
+
+    @include laptop {
+      transition: all 600ms ease-in-out;
+      max-height: 0;
+      margin-top: 0;
+      margin-bottom: 0;
+      overflow: hidden;
+    }
+
   }
 
   &__link {

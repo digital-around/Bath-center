@@ -1419,8 +1419,8 @@
         </div>
     </div>
     <div class="manufacturers container">
-        <div class="title">Производители и партнеры</div>
-        <div class="manufacturers__carousel">
+        <div class="manufacturers__title title">Производители и партнеры</div>
+        <div class="manufacturers__carousel flickity-with-arrows">
 
             <div class="manufacturers__item">
                 <img src="images/manufacturers/logo.png" class="manufacturers__logo" alt="">
@@ -1460,53 +1460,63 @@
             </div>
             <div class="footer__top row">
                 <div class="col-lg-6">
-                    <a href="#">
-                        <img src="images/footer/logo.png" class="footer__logo" alt="">
-                    </a>
-                    <div class="footer__contacts row">
-                        <div class="footer__contact col-lg-6">
-                            <div class="footer__city">Магазины в Красноярске</div>
-                            <div class="footer__phone-wrap">
-                                <a href="tel:+73912051345" class="footer__phone">+7 (391) 205-13-45</a>
-                                <a href="#" class="footer__callback">Заказать звонок</a>
-                            </div>
+                    <div class="row">
+                        <div class="col-lg-12 col-md-4">
+                            <a href="#">
+                                <img src="images/footer/logo.png" class="footer__logo" alt="">
+                            </a>
                         </div>
-                        <div class="footer__contact col-lg-6">
-                            <div class="footer__city">Магазины в Абакане</div>
-                            <div class="footer__phone-wrap">
-                                <a href="tel:+73902298600" class="footer__phone">+7 (390) 229-86-00</a>
-                                <a href="#" class="footer__callback">Заказать звонок</a>
+                        <div class="col-lg-12 col-md-8">
+                            <div class="footer__contacts row justify-content-end">
+                                <div class="footer__contact col-lg-6 col-md-auto">
+                                    <div class="footer__city">Магазины в Красноярске</div>
+                                    <div class="footer__phone-wrap">
+                                        <a href="tel:+73912051345" class="footer__phone">+7 (391) 205-13-45</a>
+                                        <a href="#" class="footer__callback">Заказать звонок</a>
+                                    </div>
+                                </div>
+                                <div class="footer__contact col-lg-6 col-md-auto">
+                                    <div class="footer__city">Магазины в Абакане</div>
+                                    <div class="footer__phone-wrap">
+                                        <a href="tel:+73902298600" class="footer__phone">+7 (390) 229-86-00</a>
+                                        <a href="#" class="footer__callback">Заказать звонок</a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-2">
-                    <div class="footer-menu">
-                        <div class="footer-menu__title">Сервис</div>
-                        <div class="footer-menu__links">
-                            <a href="#" class="footer-menu__link">Оплата</a>
-                            <a href="#" class="footer-menu__link">Доставка</a>
-                            <a href="#" class="footer-menu__link">Гарантия</a>
-                            <a href="#" class="footer-menu__link">Сервис</a>
-                            <a href="#" class="footer-menu__link">Монтаж</a>
+                <div class="footer__navs col-lg-4">
+                    <div class="row">
+                        <div class="footer__nav col-lg-6">
+                            <div class="footer-menu">
+                                <div class="footer-menu__title" onclick="toggleFooterMenu(this)">Сервис</div>
+                                <div class="footer-menu__links">
+                                    <a href="#" class="footer-menu__link">Оплата</a>
+                                    <a href="#" class="footer-menu__link">Доставка</a>
+                                    <a href="#" class="footer-menu__link">Гарантия</a>
+                                    <a href="#" class="footer-menu__link">Сервис</a>
+                                    <a href="#" class="footer-menu__link">Монтаж</a>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="col-lg-2">
-                    <div class="footer-menu">
-                        <div class="footer-menu__title">Сервис</div>
-                        <div class="footer-menu__links">
-                            <a href="#" class="footer-menu__link">Оплата</a>
-                            <a href="#" class="footer-menu__link">Доставка</a>
-                            <a href="#" class="footer-menu__link">Гарантия</a>
-                            <a href="#" class="footer-menu__link">Сервис</a>
-                            <a href="#" class="footer-menu__link">Монтаж</a>
+                        <div class="footer__nav col-lg-6">
+                            <div class="footer-menu">
+                                <div class="footer-menu__title" onclick="toggleFooterMenu(this)">Сервис</div>
+                                <div class="footer-menu__links">
+                                    <a href="#" class="footer-menu__link">Оплата</a>
+                                    <a href="#" class="footer-menu__link">Доставка</a>
+                                    <a href="#" class="footer-menu__link">Гарантия</a>
+                                    <a href="#" class="footer-menu__link">Сервис</a>
+                                    <a href="#" class="footer-menu__link">Монтаж</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="footer__bottom row align-items-center">
-                <div class="col-lg-4">
+                <div class="col-xl-4">
                     <div class="footer__dev">
                         Создание и продвижение
                         <a class="footer__dev-link" href="https://digitalaround.ru/" target="_blank">
@@ -1514,11 +1524,15 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-lg-8">
-                    <div class="row justify-content-end align-items-center">
-                        <div class="col-auto"><a class="footer__link" href="#">Пользовательское соглашение</a></div>
-                        <div class="col-auto"><a class="footer__link" href="#">Политика конфиденциальности</a></div>
-                        <div class="col-auto">© ВаннаЦЕНТР, 2000 – 2020 г.</div>
+                <div class="col-xl-8">
+                    <div class="row justify-content-xl-end align-items-center">
+                        <div class="col-md-auto order-1 order-md-0">
+                            <a class="footer__link" href="#">Пользовательское соглашение</a>
+                        </div>
+                        <div class="col-md-auto order-2 order-md-1">
+                            <a class="footer__link" href="#">Политика конфиденциальности</a>
+                        </div>
+                        <div class="col-md-auto order-0 order-md-2">© ВаннаЦЕНТР, 2000 – 2020 г.</div>
                     </div>
                 </div>
             </div>
@@ -1539,6 +1553,7 @@
     <script src="js/manufacturers.js"></script>
     <script src="js/catalog-menu.js"></script>
     <script src="js/filter.js"></script>
+    <script src="js/footer-menu.js"></script>
 
 </body>
 

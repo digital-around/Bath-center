@@ -2,11 +2,11 @@
     <div class="reviews__content container">
         <div class="row align-items-center">
             <div class="reviews__title title col-lg-6 offset-lg-3">Покупатели о нас</div>
-            <div class="col-lg-3">
+            <div class="col-lg-3 d-none d-lg-block">
                 <a href="#" class="reviews__btn btn">Оставить отзыв</a>
             </div>
         </div>
-        <div class="reviews__portraits">
+        <div class="reviews__portraits flickity-with-arrows">
             @@for (var i = 0; i < 5; i++) {
                 <div class="reviews__portrait">
                     <img src="images/reviews/photo.png" class="reviews__portrait-image" alt="">
@@ -20,5 +20,6 @@
                 </div>
             }
         </div>
+        <a href="#" class="reviews__btn btn d-lg-none">Оставить отзыв</a>
     </div>
 </div>

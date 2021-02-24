@@ -998,7 +998,7 @@ h6 {
 
 .top-menu__item:hover,
 .top-menu__item_active {
-  background: #D8F2FF;
+  background: #d8f2ff;
   color: #333333;
 }
 
@@ -1138,7 +1138,7 @@ h6 {
 
 .catalog-menu__categories {
   padding: 20px 20px 25px 0;
-  border-right: 1px solid #D8F2FF;
+  border-right: 1px solid #d8f2ff;
   display: flex;
   flex-direction: column;
 }
@@ -1293,6 +1293,7 @@ h6 {
   font-weight: 700;
   font-size: 25px;
   line-height: 31px;
+  position: relative;
 }
 
 .footer-menu__links {
@@ -1785,7 +1786,7 @@ h6 {
 }
 
 .header__bottom {
-  background: #D8F2FF;
+  background: #d8f2ff;
   height: 50px;
 }
 
@@ -1815,7 +1816,7 @@ h6 {
 }
 
 .banners .flickity-page-dots .dot {
-  background: #D8F2FF;
+  background: #d8f2ff;
   opacity: .7;
 }
 
@@ -1930,7 +1931,8 @@ h6 {
 
 .reviews__content {
   position: relative;
-  padding: 112px 0 182px;
+  padding-top: 112px;
+  padding-bottom: 182px;
 }
 
 .reviews__content::before,
@@ -1973,7 +1975,7 @@ h6 {
   margin-right: 15px;
   width: 120px;
   height: 120px;
-  transition: transform 150ms ease-in-out;
+  transition: transform 150ms ease-in-out, opacity 300ms ease-in-out;
 }
 
 .reviews__portrait:not(.is-selected) {
@@ -2010,6 +2012,7 @@ h6 {
 
 .manufacturers__carousel {
   margin-top: 50px;
+  padding: 0 65px;
 }
 
 .manufacturers__item {
@@ -2029,6 +2032,7 @@ h6 {
 .footer {
   margin-top: 120px;
   background: linear-gradient(90deg, #289FDD 0%, #07689A 100%);
+  overflow: hidden;
 }
 
 .footer__container {
@@ -2053,6 +2057,10 @@ h6 {
 
 .footer__social:not(:last-child) {
   margin-right: 5px;
+}
+
+.footer__logo {
+  max-width: 100%;
 }
 
 .footer__contacts {
@@ -2112,19 +2120,19 @@ h6 {
   font-size: 12px;
   line-height: 12px;
   text-decoration-line: underline;
-  color: #D8F2FF;
+  color: #d8f2ff;
 }
 
 .footer__callback:hover {
   text-decoration: none;
-  color: #D8F2FF;
+  color: #d8f2ff;
 }
 
 .footer__bottom {
   position: relative;
   padding-top: 20px;
   padding-bottom: 15px;
-  color: #D8F2FF;
+  color: #d8f2ff;
   opacity: .8;
   font-size: 14px;
   line-height: 17px;
@@ -2138,7 +2146,7 @@ h6 {
   top: 0;
   left: -50vw;
   right: -50vw;
-  background: #D8F2FF;
+  background: #d8f2ff;
   opacity: 0.4;
 }
 
@@ -2188,6 +2196,10 @@ h6 {
 
   .section__grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer__dev {
+    margin-bottom: 16px;
   }
 }
 
@@ -2264,6 +2276,14 @@ h6 {
   .offer__link {
     height: 70px;
     padding-left: 40px;
+  }
+
+  .advantage__icon-wrap {
+    margin-right: 20px;
+  }
+
+  .advantage__title {
+    min-height: unset;
   }
 
   .top-menu__item {
@@ -2345,6 +2365,43 @@ h6 {
 
   .manufacturers-small__item {
     width: 100%;
+  }
+
+  .footer-menu_opened .footer-menu__title::after {
+    transform: rotate(180deg);
+  }
+
+  .footer-menu_opened .footer-menu__links {
+    max-height: 100vh !important;
+    margin-top: 10px !important;
+    margin-bottom: 15px !important;
+  }
+
+  .footer-menu__title {
+    font-size: 22px;
+    line-height: 26px;
+    font-weight: 500;
+    padding-right: 52px;
+  }
+
+  .footer-menu__title::after {
+    content: "";
+    position: absolute;
+    right: 20px;
+    top: calc(50% - 4px);
+    width: 12px;
+    height: 8px;
+    background: url("../images/footer-menu/angle.svg") center no-repeat;
+    background-size: contain;
+    transition: transform 500ms ease-in;
+  }
+
+  .footer-menu__links {
+    transition: all 600ms ease-in-out;
+    max-height: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    overflow: hidden;
   }
 
   .filter {
@@ -2479,8 +2536,57 @@ h6 {
     grid-template-columns: 1fr;
   }
 
-  .footer {
-    display: none;
+  .reviews__content {
+    padding-top: 76px;
+    padding-bottom: 121px;
+  }
+
+  .reviews__btn {
+    margin-right: auto;
+    margin-top: 60px;
+  }
+
+  .reviews__portraits {
+    margin-top: 45px;
+  }
+
+  .reviews__carousel {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .reviews__carousel .flickity-page-dots {
+    margin-bottom: initial;
+  }
+
+  .manufacturers__carousel {
+    margin-top: 40px;
+  }
+
+  .manufacturers__item {
+    width: 33.333%;
+  }
+
+  .footer__top {
+    padding-top: 60px;
+    padding-bottom: 0;
+  }
+
+  .footer__contacts {
+    margin-top: 0;
+  }
+
+  .footer__navs {
+    margin-top: 30px;
+  }
+
+  .footer__nav {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
+  .footer__nav:not(:first-child) {
+    border-top: 1px solid rgba(216, 242, 255, 0.3);
   }
 }
 
@@ -2585,6 +2691,33 @@ h6 {
     padding-left: 12px;
   }
 
+  .advantage {
+    display: block;
+  }
+
+  .advantage__icon-wrap {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .advantage__title {
+    margin-top: 20px;
+    font-size: 22px;
+    line-height: 26px;
+    font-weight: 500;
+    text-align: center;
+  }
+
+  .review__title {
+    font-size: 22px;
+    line-height: 26px;
+    font-weight: 500;
+  }
+
+  .review__text {
+    margin-top: 12px;
+  }
+
   .header__top {
     display: none;
   }
@@ -2646,6 +2779,89 @@ h6 {
   .products-carousel__carousel {
     margin-top: 40px;
   }
+
+  .advantages {
+    margin-top: 80px;
+  }
+
+  .reviews {
+    margin-top: 100px;
+  }
+
+  .reviews__content {
+    padding-top: 40px;
+    padding-bottom: 60px;
+  }
+
+  .reviews__content::before {
+    top: -21px;
+  }
+
+  .reviews__content::after {
+    bottom: -21px;
+  }
+
+  .reviews__portraits {
+    margin-top: 30px;
+  }
+
+  .reviews__portrait:not(.is-selected) {
+    opacity: 0;
+  }
+
+  .reviews__carousel {
+    margin-top: 15px;
+  }
+
+  .reviews__carousel .flickity-prev-next-button {
+    top: -205px;
+  }
+
+  .manufacturers {
+    margin-top: 100px;
+  }
+
+  .manufacturers__title {
+    text-align: center;
+  }
+
+  .manufacturers__carousel {
+    margin-top: 30px;
+  }
+
+  .manufacturers__item {
+    width: 100%;
+    border: 1px solid #E5E7EA;
+  }
+
+  .footer {
+    margin-top: 100px;
+  }
+
+  .footer__logo {
+    width: 290px;
+  }
+
+  .footer__contacts {
+    margin-top: 30px;
+  }
+
+  .footer__contact:not(:first-child) {
+    margin-top: 20px;
+  }
+
+  .footer__navs {
+    margin-top: 40px;
+  }
+
+  .footer__bottom {
+    padding-bottom: 50px;
+  }
+
+  .footer__link {
+    margin-top: 10px;
+    display: flex;
+  }
 }
 
 @media screen and (max-width: 575.98px) {
@@ -2664,6 +2880,11 @@ h6 {
   .section__grid {
     grid-template-columns: 1fr;
     grid-gap: 0 0;
+  }
+
+  .manufacturers__carousel {
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 

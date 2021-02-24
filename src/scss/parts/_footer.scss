@@ -2,9 +2,10 @@
 
   margin-top: 120px;
   background: $blue-gradient;
+  overflow: hidden;
 
-  @include laptop {
-    display: none;
+  @include tablet {
+    margin-top: 100px;
   }
 
   &__container {
@@ -12,8 +13,15 @@
   }
 
   &__top {
+
     padding-top: 50px;
     padding-bottom: 35px;
+
+    @include laptop {
+      padding-top: 60px;
+      padding-bottom: 0;
+    }
+
   }
 
   &__socials {
@@ -33,8 +41,40 @@
 
   }
 
+  &__logo {
+
+    max-width: 100%;
+
+    @include tablet {
+      width: 290px;
+    }
+
+  }
+
   &__contacts {
+
     margin-top: 55px;
+
+    @include laptop {
+      margin-top: 0;
+    }
+
+    @include tablet {
+      margin-top: 30px;
+    }
+
+  }
+
+  &__contact {
+
+    @include tablet {
+
+      &:not(:first-child) {
+        margin-top: 20px;
+      }
+
+    }
+
   }
 
   &__city {
@@ -104,6 +144,33 @@
 
   }
 
+  &__navs {
+
+    @include laptop {
+      margin-top: 30px;
+    }
+
+    @include tablet {
+      margin-top: 40px;
+    }
+
+  }
+
+  &__nav {
+
+    @include laptop {
+
+      padding-top: 15px;
+      padding-bottom: 15px;
+
+      &:not(:first-child) {
+        border-top: 1px solid rgba(216, 242, 255, .3);
+      }
+
+    }
+
+  }
+
   &__bottom {
 
     position: relative;
@@ -113,6 +180,10 @@
     opacity: .8;
     font-size: 14px;
     line-height: 17px;
+
+    @include tablet {
+      padding-bottom: 50px;
+    }
 
     &::before {
       content: "";
@@ -133,6 +204,10 @@
     display: flex;
     align-items: center;
 
+    @include desktop {
+      margin-bottom: 16px;
+    }
+
     &-link {
       display: flex;
       margin-left: 11px;
@@ -141,7 +216,14 @@
   }
 
   &__link {
+
     text-decoration: underline;
+
+    @include tablet {
+      margin-top: 10px;
+      display: flex;
+    }
+
   }
 
 }

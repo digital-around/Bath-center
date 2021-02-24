@@ -3,10 +3,25 @@
   margin-top: 105px;
   background: rgba(216, 242, 255, .4);
 
+  @include tablet {
+    margin-top: 100px;
+  }
+
   &__content {
 
     position: relative;
-    padding: 112px 0 182px;
+    padding-top: 112px;
+    padding-bottom: 182px;
+
+    @include laptop {
+      padding-top: 76px;
+      padding-bottom: 121px;
+    }
+
+    @include tablet {
+      padding-top: 40px;
+      padding-bottom: 60px;
+    }
 
     &::before, &::after {
       content: "";
@@ -18,14 +33,26 @@
     }
 
     &::before {
+
       top: -5px;
       left: 0;
+
+      @include tablet {
+        top: -21px;
+      }
+
     }
 
     &::after {
+
       bottom: -5px;
       right: 0;
       transform: rotate(180deg);
+
+      @include tablet {
+        bottom: -21px;
+      }
+
     }
 
   }
@@ -35,14 +62,31 @@
   }
 
   &__btn {
+
     margin-left: auto;
+
+    @include laptop {
+      margin-right: auto;
+      margin-top: 60px;
+    }
+
   }
 
   &__portraits {
+
     margin-top: 68px;
     max-width: 660px;
     margin-left: auto;
     margin-right: auto;
+
+    @include laptop {
+      margin-top: 45px;
+    }
+
+    @include tablet {
+      margin-top: 30px;
+    }
+
   }
 
   &__portrait {
@@ -50,11 +94,17 @@
     margin-right: 15px;
     width: 120px;
     height: 120px;
-    transition: transform 150ms ease-in-out;
+    transition: transform 150ms ease-in-out, opacity 300ms ease-in-out;
 
     &:not(.is-selected) {
+
       opacity: .5;
       transform: scale(0.84);
+
+      @include tablet {
+        opacity: 0;
+      }
+
     }
 
   }
@@ -69,12 +119,33 @@
 
     margin-top: 52px;
 
+    @include laptop {
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+
+    @include tablet {
+      margin-top: 15px;
+    }
+
     .flickity-page-dots {
+
       margin-bottom: -80px;
+
+      @include laptop {
+        margin-bottom: initial;
+      }
+
     }
 
     .flickity-prev-next-button {
+
       top: -25px;
+
+      @include tablet {
+        top: -205px;
+      }
+
     }
 
   }

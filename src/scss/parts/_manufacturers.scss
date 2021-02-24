@@ -2,17 +2,56 @@
 
   margin-top: 105px;
 
+  @include tablet {
+    margin-top: 100px;
+  }
+
+  &__title {
+
+    @include tablet {
+      text-align: center;
+    }
+
+  }
+
   &__carousel {
+
     margin-top: 50px;
+    padding: 0 65px;
+
+    @include laptop {
+      margin-top: 40px;
+    }
+
+    @include tablet {
+      margin-top: 30px;
+    }
+
+    @include phone {
+      padding-left: 0;
+      padding-right: 0;
+    }
+
   }
 
   &__item {
+
     width: 25%;
     height: 100px;
     padding: 0 25px;
     display: flex;
     align-items: center;
     justify-content: center;
+
+    @include laptop {
+      width: 33.333%;
+    }
+
+    @include tablet {
+      width: 100%;
+      border: 1px solid #E5E7EA;
+    }
+
   }
 
   &__logo {
