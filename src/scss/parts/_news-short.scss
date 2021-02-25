@@ -8,29 +8,33 @@
 
   &__carousel {
 
-    margin-left: 50px;
-
-    @include desktop-xl {
-      margin-left: 0;
+    @include desktop {
+      margin-top: 40px;
     }
 
   }
 
   &__slide {
+
     width: 100%;
-  }
+    margin-right: 30px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 30px;
 
-  &__card {
-
-    &:not(:last-child) {
-      margin-bottom: 33px;
+    @include desktop {
+      grid-template-columns: repeat(2, 1fr);
     }
 
   }
 
   .flickity-page-dots {
-    left: 0;
-    transform: unset;
+
+    @include desktop-min {
+      left: 0;
+      transform: unset;
+    }
+
   }
 
 }
