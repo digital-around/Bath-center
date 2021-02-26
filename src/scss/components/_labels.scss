@@ -1,0 +1,45 @@
+.labels {
+
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+
+  &__item {
+
+    display: flex;
+    width: max-content;
+    align-items: center;
+    height: 30px;
+    padding: 0 23px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+    opacity: 0.9;
+
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+
+    &_sale {
+      background: $yellow;
+    }
+
+    &_new {
+      background: $blue;
+    }
+
+    &_best-price {
+      background: $dark-blue;
+    }
+
+    &_bestseller {
+      background: $green;
+    }
+
+  }
+
+}

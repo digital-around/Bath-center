@@ -1,0 +1,110 @@
+.product {
+
+  &__top {
+    margin-bottom: 27px;
+    font-size: 13px;
+    line-height: 20px;
+    color: $text-element;
+  }
+
+  &__vendor-code {
+    margin-right: 20px;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+    color: $gray;
+  }
+
+  &__compare {
+
+    display: flex;
+    align-items: center;
+
+    &:hover {
+      color: $text-element;
+      text-decoration: underline;
+    }
+
+    &::before {
+      content: "";
+      width: 20px;
+      height: 18px;
+      background: url("../images/product/compare.svg") center no-repeat;
+      background-size: contain;
+      margin-right: 8px;
+    }
+
+  }
+
+  &__gallery {
+    position: relative;
+    background: $white;
+    padding: 40px;
+    box-shadow: 0 0 20px rgba(114, 114, 114, 0.12);
+  }
+
+  &__carousel {
+
+    height: 400px;
+    overflow: hidden;
+
+    &-item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 400px;
+      width: 100%;
+      margin-right: 30px;
+    }
+
+  }
+
+  &__photo {
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  &__carousel-nav {
+
+    margin-top: 30px;
+    height: 140px;
+    padding: 0 75px;
+    overflow: hidden;
+
+    &-item {
+
+      background: #FFFFFF;
+      box-shadow: 0 0 20px rgba(114, 114, 114, 0.12);
+      width: 155px;
+      height: 120px;
+      margin: 10px 60px 10px 0;
+      padding: 8px;
+      cursor: pointer;
+      border: 2px solid transparent;
+
+      &.is-nav-selected, &:hover {
+        border-color: $blue;
+      }
+
+    }
+
+    .flickity-prev-next-button {
+
+      &.previous {
+        left: 0;
+      }
+
+      &.next {
+        right: 0;
+      }
+
+    }
+
+  }
+
+  &__info {
+    background: #F7F7F9;
+    padding: 20px 20px 40px;
+  }
+
+}
