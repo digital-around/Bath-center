@@ -1,0 +1,132 @@
+.dropdown {
+
+  position: relative;
+
+  &__title {
+    font-size: 13px;
+    line-height: 18px;
+    color: #77879A;
+    margin-bottom: 5px;
+  }
+
+  &__input {
+
+    position: relative;
+    display: flex;
+    height: 45px;
+    align-items: center;
+    white-space: nowrap;
+    padding: 0 45px 0 17px;
+    background: $white;
+    outline: 1px solid #E5E7EA;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 15px;
+      width: 12px;
+      height: 8px;
+      background: url("../images/dropdown/angle-down.svg") center no-repeat;
+      background-size: contain;
+    }
+
+    &.show {
+      outline: none;
+      box-shadow: 0 4px 30px rgba(102, 101, 117, 0.2);
+
+      &::after {
+        transform: translateY(-50%) rotate(180deg);
+      }
+
+    }
+
+  }
+
+  &__list {
+
+    position: absolute;
+    top: 100%;
+    z-index: 1000;
+    width: 100%;
+    display: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+    list-style: none;
+    background-color: $white;
+    color: $title;
+
+    &.show {
+      display: block;
+      box-shadow: 0 4px 30px rgba(102, 101, 117, 0.2);
+    }
+
+  }
+
+  &__item {
+
+    display: block;
+    font-weight: 300;
+    font-size: 16px;
+    color: #8B857A;
+    padding: 11px 15px;
+
+    &:hover, &_active {
+      background: #ECFAFF;
+      color: $title;
+    }
+
+  }
+
+  &_shops {
+
+    transform: translateX(-15px);
+
+    .dropdown {
+
+      &__input {
+
+        padding: 0 0 0 15px;
+        height: 34px;
+        font-size: 13px;
+        color: $dark-blue;
+        outline: none;
+        background: transparent;
+
+        &.show {
+          background: $white;
+        }
+
+      }
+
+      &__list {
+
+        &.show {
+          box-shadow: none;
+        }
+
+      }
+
+      &__item {
+
+        padding: 0 15px;
+        margin-bottom: 15px;
+        font-size: 13px;
+        line-height: 18px;
+        font-weight: normal;
+        color: $paragraph;
+
+        &:hover, &_active {
+          background: unset;
+          color: $paragraph;
+        }
+
+      }
+
+    }
+
+  }
+
+}

@@ -1,10 +1,10 @@
 <div class="product container">
     <div class="product__top row align-items-center">
-        <div class="col-auto">
+        <div class="col-sm-auto">
             Артикул:
             <span class="product__vendor-code">BB6400500000000</span>
         </div>
-        <div class="col-auto">
+        <div class="col-sm-auto">
             <a href="javascript:void(0)" class="product__compare">Добавить в сравнение</a>
         </div>
     </div>
@@ -30,8 +30,55 @@
         </div>
         <div class="col-lg-5">
             <div class="product__info">
-
+                <div class="product__info-top">
+                    @@include('../components/availability.html')
+                    <div class="product__prices">
+                        <div class="product__price product__price_old">76 150 ₽</div>
+                        <div class="product__price">60 920 ₽</div>
+                    </div>
+                </div>
+                <div class="product__equipment">
+                    @@include('../components/dropdown.html', {
+                        "title": "Комплектация:",
+                        "default": "Без гидромассажа",
+                        "options": ["Без гидромассажа", "Гидромассаж Light", "Гидромассаж Optimal"]
+                    })
+                </div>
+                <div class="product__services">
+                    @@include('../components/services-info.html')
+                </div>
+                <div class="product__buttons">
+                    <a href="javascript:void(0)" class="product__btn btn btn_wide btn_cart">В корзину</a>
+                    <a href="javascript:void(0)" class="product__btn btn btn_invert btn_wide">Купить в 1 клик</a>
+                </div>
+                <div class="product__short-specs">
+                    @@include('../components/short-specs.html')
+                </div>
             </div>
         </div>
+    </div>
+    <div class="product__tabs">
+        <ul class="product__tabs-inner nav" role="tablist">
+            <li class="nav-item" role="presentation">
+                <a class="product__tab nav-link" data-bs-toggle="tab" href="#tab-specs" role="tab">Характеристики</a>
+            </li>
+            <li class="nav-item" role="presentation">
+                <a class="product__tab nav-link active" data-bs-toggle="tab" href="#tab-equipment" role="tab">Комплектация</a>
+            </li>
+            <li class="nav-item" role="presentation">
+                <a class="product__tab nav-link" data-bs-toggle="tab" href="#tab-order" role="tab">Как заказать</a>
+            </li>
+            <li class="nav-item" role="presentation">
+                <a class="product__tab nav-link" data-bs-toggle="tab" href="#tab-installation" role="tab">Установка</a>
+            </li>
+        </ul>
+    </div>
+    <div class="product__tabs-content tab-content">
+        <div class="tab-pane fade" id="tab-specs" role="tabpanel">Характеристики</div>
+        <div class="tab-pane fade show active" id="tab-equipment" role="tabpanel">
+            @@include('../components/equipment.html')
+        </div>
+        <div class="tab-pane fade" role="tabpanel" id="tab-order">Как заказать</div>
+        <div class="tab-pane fade" role="tabpanel" id="tab-installation">Установка</div>
     </div>
 </div>

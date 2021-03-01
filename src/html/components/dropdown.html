@@ -1,0 +1,13 @@
+<div class="dropdown">
+    @@if (title !== '') {
+        <div class="dropdown__title">@@title</div>
+    }
+    <a class="dropdown__input dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        @@default
+    </a>
+    <ul class="dropdown__list dropdown-menu">
+        @@for (var i = 0; i < options.length; i++) {
+            <li><a class="dropdown__item" href="javascript:void(0)">`+options[i]+`</a></li>
+        }
+    </ul>
+</div>

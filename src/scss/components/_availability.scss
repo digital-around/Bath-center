@@ -1,0 +1,82 @@
+.availability {
+
+  &__count {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 21px;
+    color: $text-element;
+  }
+
+  &__number {
+    color: $gray;
+  }
+
+  &__shops {
+    margin-top: 5px;
+    width: 140px;
+    z-index: 2;
+  }
+
+  &__balance {
+
+    position: relative;
+    margin-top: 2px;
+    width: 100%;
+    font-weight: 300;
+
+    &::after {
+      content: "";
+      width: 11px;
+      height: 11px;
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      background-size: contain;
+      background-position: right;
+      background-repeat: no-repeat;
+    }
+
+    &_many {
+
+      color: $green;
+
+      &::after {
+        background-image: url("../images/availability/many.svg");
+      }
+
+    }
+
+    &_in-stock {
+
+      color: $yellow;
+
+      &::after {
+        background-image: url("../images/availability/in-stock.svg");
+      }
+
+    }
+
+    &_low {
+
+      color: $red;
+
+      &::after {
+        background-image: url("../images/availability/low.svg");
+      }
+
+    }
+
+    &_empty {
+
+      color: #77879A;
+
+      &::after {
+        display: none;
+      }
+
+    }
+
+  }
+
+}

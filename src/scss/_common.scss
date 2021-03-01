@@ -16,6 +16,7 @@ html {
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(#000, 0);
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -113,6 +114,23 @@ h6 {
     background: transparent;
     border: 2px solid $blue;
     color: $title;
+  }
+
+  &_wide {
+    width: 100%;
+  }
+
+  &_cart {
+
+    &::after {
+      content: "";
+      width: 32px;
+      height: 20px;
+      background: url("../images/common/cart.svg") center no-repeat;
+      background-size: contain;
+      margin-left: 10px;
+    }
+
   }
 
   &:hover {
@@ -503,6 +521,28 @@ h6 {
 
   .flickity-button-icon {
     display: none;
+  }
+
+}
+
+.tab-content {
+
+  > .tab-pane {
+    display: none;
+  }
+
+  > .active {
+    display: block;
+  }
+
+}
+
+.fade {
+
+  transition: opacity .15s linear;
+
+  &:not(.show) {
+    opacity: 0;
   }
 
 }

@@ -20,6 +20,10 @@
     display: flex;
     align-items: center;
 
+    @include phone {
+      margin-top: 12px;
+    }
+
     &:hover {
       color: $text-element;
       text-decoration: underline;
@@ -37,10 +41,20 @@
   }
 
   &__gallery {
+
     position: relative;
     background: $white;
     padding: 40px;
     box-shadow: 0 0 20px rgba(114, 114, 114, 0.12);
+
+    @include laptop {
+      padding: 25px;
+    }
+
+    @include tablet {
+      padding: 15px;
+    }
+
   }
 
   &__carousel {
@@ -48,13 +62,31 @@
     height: 400px;
     overflow: hidden;
 
+    @include tablet {
+      height: 330px;
+    }
+
+    @include phone {
+      height: 270px;
+    }
+
     &-item {
+
       display: flex;
       align-items: center;
       justify-content: center;
       height: 400px;
       width: 100%;
       margin-right: 30px;
+
+      @include tablet {
+        height: 330px;
+      }
+
+      @include phone {
+        height: 270px;
+      }
+
     }
 
   }
@@ -71,6 +103,12 @@
     padding: 0 75px;
     overflow: hidden;
 
+    @include tablet {
+      margin-top: 20px;
+      padding: 0;
+      height: 90px;
+    }
+
     &-item {
 
       background: #FFFFFF;
@@ -82,7 +120,21 @@
       cursor: pointer;
       border: 2px solid transparent;
 
-      &.is-nav-selected, &:hover {
+      @include tablet {
+        width: 90px;
+        height: 70px;
+        margin-right: 10px;
+      }
+
+      @include laptop-min {
+
+        &:hover {
+          border-color: $blue;
+        }
+
+      }
+
+      &.is-nav-selected {
         border-color: $blue;
       }
 
@@ -98,13 +150,205 @@
         right: 0;
       }
 
+      @include tablet {
+        display: none;
+      }
+
     }
 
   }
 
   &__info {
+
     background: #F7F7F9;
     padding: 20px 20px 40px;
+
+    @include laptop {
+      padding: 0;
+      background: unset;
+      margin-top: 30px;
+    }
+
+    @include tablet {
+      margin-top: 20px;
+    }
+
+  }
+
+  &__info-top {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include phone {
+      flex-direction: column;
+      align-items: start;
+    }
+
+  }
+
+  &__prices {
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    @include desktop {
+      flex-direction: column;
+      align-items: flex-end;
+      justify-content: center;
+    }
+
+    @include phone {
+      margin-top: 20px;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+    }
+
+  }
+
+  &__price {
+
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 31px;
+    opacity: .9;
+    color: $dark-blue;
+
+    &_old {
+
+      margin-right: 25px;
+      font-size: 18px;
+      line-height: 31px;
+      font-weight: 500;
+      color: #9D9D9D;
+      text-decoration: line-through;
+
+      @include desktop {
+        margin-right: 0;
+        margin-bottom: 5px;
+      }
+
+      @include phone {
+        margin-bottom: 0;
+      }
+
+    }
+
+  }
+
+  &__equipment {
+
+    margin-top: 15px;
+
+    @include laptop {
+      margin-top: 30px;
+    }
+
+  }
+
+  &__services {
+    margin-top: 30px;
+  }
+
+  &__buttons {
+    margin-top: 30px;
+  }
+
+  &__btn {
+
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+
+  }
+
+  &__short-specs {
+
+    margin-top: 40px;
+
+    @include laptop {
+      margin-top: 30px;
+    }
+
+  }
+
+  &__tabs {
+
+    position: relative;
+    margin-top: 40px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -50vw;
+      right: -50vw;
+      bottom: 0;
+      background: #D8F2FF;
+      opacity: .7;
+    }
+
+  }
+
+  &__tabs-inner {
+    overflow-y: auto;
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin-bottom: 0;
+  }
+
+  &__tab {
+
+    position: relative;
+    font-size: 15px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: $title;
+    font-weight: 500;
+    padding: 0 30px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+
+    @include tablet {
+      font-size: 13px;
+      line-height: 18px;
+      padding: 0 15px;
+      text-transform: none;
+    }
+
+    &.active, &:hover {
+
+      color: $title;
+
+      &::after {
+        content: "";
+        position: absolute;
+        background: $blue;
+        height: 2px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+      }
+
+    }
+
+  }
+
+  &__tabs-content {
+
+    margin-top: 40px;
+
+    @include tablet {
+      margin-top: 30px;
+    }
+
   }
 
 }
