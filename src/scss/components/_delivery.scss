@@ -1,0 +1,258 @@
+.delivery {
+
+  &__items {
+
+    @include laptop {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 20px;
+    }
+
+    @include phone {
+      display: flex;
+    }
+
+  }
+
+  &__item {
+
+    padding: 16px 32px 30px 18px;
+    border: 1px solid #E5E7EA;
+
+    @include tablet {
+      padding: 10px 15px 20px 15px;
+    }
+
+    @include phone {
+      padding: 0;
+      border: none;
+    }
+
+    &:not(:last-child) {
+
+      margin-bottom: 30px;
+
+      @include laptop {
+        margin-bottom: 0;
+      }
+
+    }
+
+  }
+
+  &__label {
+
+    align-items: start;
+
+    &::before {
+      margin-right: 10px;
+      margin-top: 6px;
+    }
+
+  }
+
+  &__name {
+
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 31px;
+    color: $title;
+    display: block;
+
+    @include desktop {
+      font-size: 20px;
+    }
+
+  }
+
+  &__description {
+
+    display: block;
+    margin-top: 8px;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 21px;
+    color: $gray;
+    opacity: .8;
+
+    a {
+
+      color: $dark-blue;
+      text-decoration: underline;
+
+      &:hover {
+        text-decoration: none;
+      }
+
+    }
+
+  }
+
+  &__price {
+
+    display: flex;
+    width: 100%;
+    margin-top: 22px;
+    justify-content: space-between;
+    font-size: 13px;
+    line-height: 18px;
+    color: $text-element;
+    border-bottom: 1px dashed rgba(57, 57, 57, .2);
+
+    &-name, &-value {
+      background: $white;
+      transform: translateY(1px);
+    }
+
+    &-name {
+      padding-right: 5px;
+    }
+
+    &-value {
+      padding-left: 5px;
+    }
+
+  }
+
+  &__details {
+
+    display: none;
+
+    @include laptop {
+      margin-top: 20px;
+    }
+
+    @include phone {
+      box-shadow: inset 0 0 10px rgba(47, 47, 47, 0.15);
+      padding: 15px 15px 20px;
+      margin-left: 15px;
+      margin-right: 15px;
+    }
+
+    &_active {
+      display: block;
+    }
+
+  }
+
+  &__city {
+
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 31px;
+    color: $title;
+    margin-top: 40px;
+    margin-bottom: 15px;
+
+    @include desktop {
+      font-size: 16px;
+      margin-top: 20px;
+      margin-bottom: 10px;
+    }
+
+    &_first {
+      margin-top: 0 !important;
+    }
+
+    &::before {
+
+      content: "";
+      width: 24px;
+      height: 24px;
+      margin-right: 10px;
+      background: url("../images/delivery/pin.svg") center no-repeat;
+      background-size: contain;
+
+      @include laptop {
+        margin-right: 3px;
+      }
+
+    }
+
+  }
+
+  &__stock {
+
+    display: block;
+    font-size: 20px;
+    line-height: 31px;
+    color: $gray;
+
+    @include desktop {
+      font-size: 16px;
+      font-weight: 300;
+    }
+
+  }
+
+  &__working-hours {
+    display: block;
+    margin-top: 5px;
+    font-size: 13px;
+    line-height: 18px;
+    color: $text-element;
+
+    @include desktop {
+      margin-top: -3px;
+    }
+
+  }
+
+  &__address {
+
+    margin-top: 30px;
+
+    @include desktop {
+      margin-top: 20px;
+    }
+
+  }
+
+  &__floor {
+
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+
+    @include desktop {
+      margin-top: 20px;
+    }
+
+    @include phone {
+      flex-direction: column;
+      align-items: start;
+    }
+
+    &-checkbox {
+
+      margin-right: 30px;
+
+      @include desktop {
+        margin-right: 20px;
+      }
+
+      @include phone {
+        margin-right: 0;
+        margin-bottom: 20px;
+      }
+
+    }
+
+    &-label {
+      align-items: start;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 21px;
+      color: #393939;
+    }
+
+    &-input {
+      width: 95px;
+      flex-shrink: 0;
+    }
+
+  }
+
+}

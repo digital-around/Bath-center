@@ -1,0 +1,22 @@
+<div class="checkout container">
+    <div class="row">
+        <div class="col-lg-8">
+            <div class="checkout__block">
+                <div class="checkout__title">Форма заказа</div>
+                <div class="checkout__fields">
+                    <input class="field" type="text" placeholder="*Имя">
+                    <input class="field" type="text" placeholder="*Фамилия">
+                    <input class="field" type="text" placeholder="*Номер телефона">
+                    <input class="field" type="text" placeholder="*E-mail">
+                </div>
+            </div>
+            <div class="checkout__block">
+                <div class="checkout__title">Доставка</div>
+                @@include('../components/delivery.html')
+            </div>
+        </div>
+        <div class="checkout__total col-lg-4">
+            @@include('../components/cart-total.html')
+        </div>
+    </div>
+</div>

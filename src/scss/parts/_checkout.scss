@@ -1,0 +1,91 @@
+.checkout {
+
+  &__block {
+
+    position: relative;
+    background: $white;
+    padding: 30px 30px 50px;
+    box-shadow: 0 5px 20px rgba(114, 129, 148, 0.2);
+
+    @include laptop {
+      padding: 20px 20px 35px;
+    }
+
+    @include phone {
+
+      padding: 20px 0 30px;
+      box-shadow: none;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -0.75rem;
+        right: -0.75rem;
+        height: 1px;
+        background: #E5E7EA;
+      }
+
+    }
+
+    &:not(:last-child) {
+
+      margin-bottom: 40px;
+
+      @include laptop {
+        margin-bottom: 30px;
+      }
+
+      @include phone {
+        margin-bottom: 0;
+      }
+
+    }
+
+  }
+
+  &__title {
+
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 31px;
+    color: $title;
+    margin-bottom: 30px;
+
+    @include laptop {
+      font-size: 22px;
+      line-height: 26px;
+      margin-bottom: 20px;
+    }
+
+  }
+
+  &__fields {
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 35px 30px;
+
+    @include laptop {
+      grid-gap: 20px;
+    }
+
+    @include phone {
+      grid-template-columns: 1fr;
+    }
+
+  }
+
+  &__total {
+
+    @include laptop {
+      margin-top: 40px;
+    }
+
+    @include phone {
+      margin-top: 20px;
+    }
+
+  }
+
+}

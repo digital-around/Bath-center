@@ -1,0 +1,90 @@
+<div class="delivery row">
+    <div class="col-lg-6">
+        <div class="delivery__items radio">
+            <div class="delivery__item radio__item">
+                <input type="radio" class="radio__input" name="delivery" value="pickup"
+                       id="deliveryPickup" checked>
+                <label class="delivery__label radio__label" for="deliveryPickup">
+                    <span>
+                        <span class="delivery__name">Самовывоз</span>
+                        <span class="delivery__description">
+                            Вы можете самостоятельно забрать заказ из нашего магазина.
+                        </span>
+                        <span class="delivery__price">
+                            <span class="delivery__price-name">Стоимость</span>
+                            <span class="delivery__price-value">0 руб.</span>
+                        </span>
+                    </span>
+                </label>
+            </div>
+            <div class="delivery__item radio__item">
+                <input type="radio" class="radio__input" name="delivery" value="delivery"
+                       id="deliveryDelivery">
+                <label class="delivery__label radio__label" for="deliveryDelivery">
+                     <span>
+                        <span class="delivery__name">Доставка</span>
+                        <span class="delivery__description">
+                            При доставке обязательно учитывайте стоимость подъема негабаритного товара.
+                            Полные условия и стоимость доставки смотрите на странице <a href="#">доставка</a>
+                        </span>
+                    </span>
+                </label>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-6">
+        <div class="delivery__details delivery__details_active radio" data-service="pickup">
+            <div class="delivery__city delivery__city_first">Красноярск</div>
+            <div class="radio__item">
+                <input type="radio" class="radio__input" name="pickup" value="shop1"
+                       id="shop1" checked>
+                <label class="delivery__label radio__label" for="shop1">
+                    <span>
+                        <span class="delivery__stock">ул. Водопьянова 22</span>
+                        <span class="delivery__working-hours">Ежедневно с 10 до 19</span>
+                    </span>
+                </label>
+            </div>
+            <div class="radio__item">
+                <input type="radio" class="radio__input" name="pickup" value="shop2"
+                       id="shop2">
+                <label class="delivery__label radio__label" for="shop2">
+                    <span>
+                        <span class="delivery__stock">ул. Водопьянова 22</span>
+                        <span class="delivery__working-hours">Ежедневно с 10 до 19</span>
+                    </span>
+                </label>
+            </div>
+            <div class="delivery__city">Абакан</div>
+            <div class="radio__item">
+                <input type="radio" class="radio__input" name="pickup" value="shop3"
+                       id="shop3">
+                <label class="delivery__label radio__label" for="shop3">
+                    <span>
+                        <span class="delivery__stock">ул. Водопьянова 22</span>
+                        <span class="delivery__working-hours">Ежедневно с 10 до 19</span>
+                    </span>
+                </label>
+            </div>
+        </div>
+        <div class="delivery__details" data-service="delivery">
+            @@include('../components/dropdown.html', {
+                "title": "",
+                "default": "Выберите зону доставки",
+                "options": ["МКАД", "КАД", "Россия"]
+            })
+            <input class="delivery__address field" type="text" placeholder="*Адрес доставки">
+            <div class="delivery__floor">
+                <div class="delivery__floor-checkbox checkbox">
+                    <div class="checkbox__item">
+                        <input type="checkbox" class="checkbox__input" name="brand" id="filterBrand1">
+                        <label class="delivery__floor-label checkbox__label" for="filterBrand1">
+                            Необходимо поднять товар на этаж
+                        </label>
+                    </div>
+                </div>
+                <input class="delivery__floor-input field" type="text" placeholder="Этаж">
+            </div>
+        </div>
+    </div>
+</div>
