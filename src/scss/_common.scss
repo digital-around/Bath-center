@@ -54,6 +54,12 @@ h6 {
   color: $title;
   opacity: 0.9;
 
+  &_small {
+    font-size: 32px;
+    line-height: 31px;
+    margin-bottom: 30px;
+  }
+
   @include laptop {
     font-size: 32px;
     line-height: 40px;
@@ -62,6 +68,26 @@ h6 {
   @include tablet {
     font-size: 24px;
     line-height: 30px;
+  }
+
+}
+
+.paragraph {
+
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 31px;
+  color: $paragraph;
+
+  a {
+
+    text-decoration: underline;
+    color: $dark-blue;
+
+    &:hover {
+      text-decoration: none;
+    }
+
   }
 
 }

@@ -1,0 +1,13 @@
+.about {
+
+  &__logo-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__logo {
+    max-width: 100%;
+  }
+
+}
