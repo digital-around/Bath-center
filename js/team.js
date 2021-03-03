@@ -1,7 +1,7 @@
 $(document).ready(function () {
 
     $('.team__carousel').flickity({
-        prevNextButtons: false,
+        prevNextButtons: true,
         pageDots: false,
         autoPlay: 5000,
         wrapAround: true,

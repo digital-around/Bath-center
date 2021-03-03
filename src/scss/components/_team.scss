@@ -5,15 +5,40 @@
   margin-left: auto;
   margin-right: auto;
 
+  @include laptop {
+    margin-top: 80px;
+  }
+
   &__carousel {
+
     margin-top: 40px;
     height: 389px;
     overflow: hidden;
+
+    @include tablet {
+      margin-top: 20px;
+      height: calc(387px + 70px);
+    }
+
+    .flickity-prev-next-button {
+
+      @include tablet-min {
+        display: none;
+      }
+
+    }
+
   }
 
   &__item {
+
     width: 260px;
     margin-right: 30px;
+
+    @include tablet {
+      margin-right: 20px;
+    }
+
   }
 
   &__photo-wrap {
@@ -38,13 +63,21 @@
   }
 
   &__name {
+
     margin-top: 7px;
-    font-weight: 550;
+    font-weight: 500;
     font-size: 25px;
     line-height: 31px;
     text-align: center;
     opacity: .9;
     color: $title;
+
+    @include tablet {
+      margin-top: 5px;
+      font-size: 20px;
+      line-height: 31px;
+    }
+
   }
 
 }

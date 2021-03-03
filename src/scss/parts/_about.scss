@@ -1,9 +1,23 @@
 .about {
 
+  &__title {
+
+    @include laptop {
+      display: none;
+    }
+
+  }
+
   &__logo-wrap {
+
     display: flex;
     align-items: center;
     justify-content: center;
+
+    @include laptop {
+      margin-bottom: 30px;
+    }
+
   }
 
   &__logo {

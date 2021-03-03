@@ -54,12 +54,6 @@ h6 {
   color: $title;
   opacity: 0.9;
 
-  &_small {
-    font-size: 32px;
-    line-height: 31px;
-    margin-bottom: 30px;
-  }
-
   @include laptop {
     font-size: 32px;
     line-height: 40px;
@@ -68,6 +62,25 @@ h6 {
   @include tablet {
     font-size: 24px;
     line-height: 30px;
+  }
+
+  &_small {
+
+    font-size: 32px;
+    line-height: 31px;
+    margin-bottom: 30px;
+
+    @include laptop {
+      font-size: 27px;
+      line-height: 29px;
+      margin-bottom: 20px;
+    }
+
+    @include tablet {
+      font-size: 22px;
+      line-height: 26px;
+    }
+
   }
 
 }
