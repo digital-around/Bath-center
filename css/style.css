@@ -2625,6 +2625,113 @@ h6 {
   width: 100%;
 }
 
+.delivery-stages__title {
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 31px;
+  color: #002538;
+}
+
+.delivery-stages__items {
+  margin-top: 60px;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+}
+
+.delivery-stages__item {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.delivery-stages__item:not(:last-child) .delivery-stages__dot::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  margin-top: 3px;
+  width: 100%;
+  height: 1px;
+  background: #E5E5E5;
+}
+
+.delivery-stages__item-inner {
+  width: 146px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.delivery-stages__icon-wrap {
+  display: flex;
+  width: 80px;
+  height: 80px;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(90deg, #289FDD 0%, #07689A 100%);
+}
+
+.delivery-stages__dot {
+  margin-top: 32px;
+  width: 7px;
+  height: 7px;
+  background: #289fdd;
+}
+
+.delivery-stages__name {
+  margin-top: 15px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  text-align: center;
+  color: #333333;
+}
+
+.delivery-stages__description {
+  width: 100%;
+  margin-top: 5px;
+  font-size: 13px;
+  line-height: 18px;
+  color: #575757;
+}
+
+.delivery-stages__description a {
+  color: #07689a;
+  text-decoration: underline;
+}
+
+.delivery-stages__description a:hover {
+  text-decoration: none;
+}
+
+.delivery-stages__service {
+  position: relative;
+  width: 100%;
+  margin-top: 10px;
+  padding-left: 11px;
+  font-size: 13px;
+  line-height: 18px;
+  color: #333333;
+}
+
+.delivery-stages__service::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 6px;
+  width: 5px;
+  height: 5px;
+  background: url("../images/delivery-stages/point.svg") no-repeat center;
+  background-size: contain;
+}
+
+.delivery-stages__service-caption {
+  color: #8B857A;
+}
+
 .header {
   position: relative;
   z-index: 2;
@@ -3325,6 +3432,10 @@ h6 {
   font-size: 16px;
   line-height: 21px;
   color: #333333;
+}
+
+.delivery__stages {
+  margin-top: 90px;
 }
 
 .footer {
