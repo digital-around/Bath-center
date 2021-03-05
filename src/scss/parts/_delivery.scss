@@ -1,7 +1,157 @@
 .delivery {
 
+  &__image {
+
+    position: absolute;
+    max-width: 100%;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+
+    @include laptop {
+      display: none;
+    }
+
+  }
+
   &__stages {
+
     margin-top: 90px;
+
+    @include laptop {
+      margin-top: 50px;
+    }
+
+    @include tablet {
+      margin-top: 30px;
+    }
+
+  }
+
+  &__benefits {
+
+    margin-top: 80px;
+
+    @include laptop {
+      margin-top: 60px;
+    }
+
+    @include tablet {
+      margin-top: 40px;
+    }
+
+  }
+
+  &__tables {
+
+    margin-top: 100px;
+
+    @include laptop {
+      margin-top: 80px;
+    }
+
+  }
+
+  &__table {
+
+    &:not(:last-child) {
+
+      margin-bottom: 100px;
+
+      @include laptop {
+        margin-bottom: 50px;
+      }
+
+    }
+
+  }
+
+  &__rf {
+
+    margin-top: 100px;
+    background: #EFFAFF;
+    padding: 40px 0 70px;
+    margin-bottom: -120px;
+
+    @include laptop {
+      margin-top: 80px;
+    }
+
+    @include tablet {
+      padding-bottom: 40px;
+      margin-bottom: -100px;
+    }
+
+  }
+
+  &__paragraph {
+
+    @include tablet {
+      font-size: 16px;
+      line-height: 21px;
+    }
+
+  }
+
+  &__contacts {
+
+    display: flex;
+    flex-direction: column;
+    width: max-content;
+    margin-left: auto;
+
+    @include laptop {
+      margin-left: 0;
+      margin-top: 30px;
+    }
+
+    @include tablet {
+      margin-top: 20px;
+    }
+
+  }
+
+  &__phone, &__email {
+
+    display: flex;
+    align-items: center;
+    font-size: 22px;
+    line-height: 31px;
+    font-weight: 500;
+    color: $gray;
+    margin-bottom: 20px;
+
+    &::before {
+      content: "";
+      width: 24px;
+      height: 24px;
+      margin-right: 10px;
+    }
+
+  }
+
+  &__phone {
+
+    &::before {
+      background: url("../images/delivery/phone.svg") center no-repeat;
+    }
+
+  }
+
+  &__email {
+
+    text-decoration: underline;
+
+    &::before {
+      background: url("../images/delivery/email.svg") center no-repeat;
+    }
+
+  }
+
+  &__callback {
+    margin-top: 10px;
+    font-weight: 500;
+    text-transform: unset;
   }
 
 }

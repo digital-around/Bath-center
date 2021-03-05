@@ -1,11 +1,52 @@
-<div class="delivery container">
-    <div class="row">
-        <div class="paragraph col-lg-5">
-            Для помощи в облегчении эпидемиологической ситуации доставка в пределах
-            города при заказе с сайта - бесплатна.
+<div class="delivery">
+    <div class="container">
+        <div class="row">
+            <div class="paragraph col-lg-6">
+                Для помощи в облегчении эпидемиологической ситуации доставка в пределах
+                города при заказе с сайта - бесплатна.
+            </div>
+            <div class="col-lg-6 position-relative">
+                <img class="delivery__image" src="images/delivery/car.png" alt="">
+            </div>
+        </div>
+        <div class="delivery__stages">
+            @@include('../components/delivery-stages.html')
+        </div>
+        <div class="delivery__benefits">
+            @@include('../components/delivery-benefits.html')
+        </div>
+        <div class="delivery__tables">
+            <div class="delivery__table">
+                @@include('../components/delivery-table.html', {"title": "Доставка по Красноярску"})
+            </div>
+            <div class="delivery__table">
+                @@include('../components/delivery-table.html', {"title": "Доставка по Красноярскому краю"})
+            </div>
+            <div class="delivery__table">
+                @@include('../components/delivery-table.html', {"title": "Доставка по Абакану"})
+            </div>
         </div>
     </div>
-    <div class="delivery__stages">
-        @@include('../components/delivery-stages.html')
+    <div class="delivery__rf">
+        <div class="container">
+            <div class="title title_small">Доставка на территории РФ</div>
+            <div class="row">
+                <div class="col-lg-9">
+                    <div class="delivery__paragraph paragraph">
+                        Мы доставим ваш заказ в любой регион России.<br>
+                        <br>
+                        Доставка осуществляется посредством любой транспортно-экспедиционной компанией на ваше усмотрение.
+                        Рассчитать стоимость доставки вы можете, позвонив по любому из наших номеров.
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="delivery__contacts">
+                        <a href="tel:+73912051345" class="delivery__phone">+7 (391) 205-13-45</a>
+                        <a href="mailto:103vanna-centr.ru" class="delivery__email">103vanna-centr.ru</a>
+                        <a href="#" class="delivery__callback btn">Заказать звонок</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
