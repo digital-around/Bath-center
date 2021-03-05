@@ -3642,6 +3642,52 @@ h6 {
   text-transform: unset;
 }
 
+.payment-systems__grid {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+}
+
+.payment-systems__item {
+  display: flex;
+  align-items: start;
+}
+
+.payment-systems__icon {
+  width: 80px;
+  height: 80px;
+  flex-shrink: 0;
+  margin-right: 15px;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(90deg, #289FDD 0%, #07689A 100%);
+  padding: 12px;
+}
+
+.payment-systems__icon img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.payment-systems__name {
+  margin-top: 8px;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 31px;
+  color: #002538;
+}
+
+.payment-systems__description {
+  margin-top: 15px;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 31px;
+  color: #575757;
+}
+
 .footer {
   margin-top: 120px;
   background: linear-gradient(90deg, #289FDD 0%, #07689A 100%);
@@ -4535,6 +4581,26 @@ h6 {
     margin-top: 30px;
   }
 
+  .payment-systems__grid {
+    margin-top: 40px;
+  }
+
+  .payment-systems__icon {
+    width: 70px;
+    height: 70px;
+  }
+
+  .payment-systems__name {
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .payment-systems__description {
+    margin-top: 10px;
+    font-size: 17px;
+    line-height: 24px;
+  }
+
   .footer__top {
     padding-top: 60px;
     padding-bottom: 0;
@@ -5061,6 +5127,27 @@ h6 {
 
   .delivery__contacts {
     margin-top: 20px;
+  }
+
+  .payment-systems__grid {
+    margin-top: 30px;
+    grid-template-columns: 1fr;
+  }
+
+  .payment-systems__icon {
+    width: 60px;
+    height: 60px;
+  }
+
+  .payment-systems__name {
+    font-size: 16px;
+    line-height: 21px;
+  }
+
+  .payment-systems__description {
+    margin-top: 0;
+    font-size: 13px;
+    line-height: 18px;
   }
 
   .footer {
