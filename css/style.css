@@ -2865,6 +2865,39 @@ h6 {
   max-height: 1000vh;
 }
 
+.number-list {
+  counter-reset: list-item;
+}
+
+.number-list__item {
+  padding-left: 50px;
+  position: relative;
+}
+
+.number-list__item:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.number-list__item::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  counter-increment: list-item;
+  content: counter(list-item);
+  width: 30px;
+  height: 30px;
+  border: 1px solid #289fdd;
+  border-radius: 50%;
+  margin-right: 20px;
+  flex-shrink: 0;
+  font-weight: 500;
+  font-size: 16px;
+  color: #07689a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .header {
   position: relative;
   z-index: 2;
@@ -3642,6 +3675,30 @@ h6 {
   text-transform: unset;
 }
 
+.payment__section {
+  margin-top: 100px;
+}
+
+.payment__image {
+  max-width: 100%;
+  margin-left: auto;
+}
+
+.payment__list {
+  margin-top: 30px;
+}
+
+.payment__legal-info {
+  margin-top: 20px !important;
+}
+
+.payment__safety {
+  margin-top: 100px;
+  background: #EFFAFF;
+  padding: 50px 0 60px;
+  margin-bottom: -120px;
+}
+
 .payment-systems__grid {
   margin-top: 50px;
   display: grid;
@@ -4410,6 +4467,11 @@ h6 {
     margin-bottom: 20px;
   }
 
+  .number-list__item {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
   .header__logo {
     width: 220px;
   }
@@ -4579,6 +4641,20 @@ h6 {
   .delivery__contacts {
     margin-left: 0;
     margin-top: 30px;
+  }
+
+  .payment__section {
+    margin-top: 80px;
+  }
+
+  .payment__image {
+    width: 290px;
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
+
+  .payment__safety {
+    margin-top: 80px;
   }
 
   .payment-systems__grid {
@@ -4912,6 +4988,18 @@ h6 {
     color: #002538;
   }
 
+  .number-list__item {
+    font-size: 16px;
+    line-height: 21px;
+    padding-left: 35px;
+  }
+
+  .number-list__item::before {
+    font-size: 13px;
+    width: 20px;
+    height: 20px;
+  }
+
   .header__top {
     display: none;
   }
@@ -5127,6 +5215,11 @@ h6 {
 
   .delivery__contacts {
     margin-top: 20px;
+  }
+
+  .payment__safety {
+    padding-bottom: 40px;
+    margin-bottom: -100px;
   }
 
   .payment-systems__grid {

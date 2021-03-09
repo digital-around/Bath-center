@@ -1,5 +1,90 @@
 <div class="payment">
     <div class="container">
         @@include('payment-systems.html')
+        <div class="payment__section">
+            <div class="title title_small">Оплатить онлайн</div>
+            <div class="row align-items-center">
+                <div class="paragraph col-lg-7 order-1 order-lg-0">
+                    Заказанный товар возможно оплатить банковской картой онлайн сразу после создания
+                    заказа через сервис “Net Pay” - соответствующую кнопку вы увидите на странице
+                    завершения оформления заказа.
+                </div>
+                <div class="col-lg-5 order-0 order-lg-1">
+                    <img src="images/payment/net-pay.png" class="payment__image" alt="">
+                </div>
+            </div>
+            <div class="payment__list">
+                @@include('../components/number-list.html', {
+                    "list": [
+                        "Для оплаты банковской картой Вы будете перенаправлены на защищенную платежную страницу процессинговой компании <a href='#'>ООО “Нэт Пэй”</a>. Страница оплаты отвечает последним международным требованиям безопасности платежных систем Visa и MasterCard.",
+                        "В процессе оплаты банковской картой введите ее номер, срок действия, код CVV, указанный на обороте, а также имя, фамилию и контактные данные владельца карты.",
+                        "Убедитесь, что Вы ввели корректные данные, а затем нажмите на кнопку “Оплатить”.",
+                        "Если ваша банковская карта поддерживает технологию 3D Secure, Вы автоматически перейдете на сайт своего банка, где Вас попросят ввести секретный код активации, который будет отправлен Вам на телефон.",
+                        "Если реквизиты карты введены верно и на счете достаточно денег, Вы увидите подтверждение оплаты заказа. После чего Вам будет предложено вернуться на страницу магазина."
+                    ]
+                })
+            </div>
+        </div>
+        <div class="payment__section">
+            <div class="title title_small">Порядок возврата денежных средств</div>
+            <div class="paragraph">
+                Для полного или частичного возврата денежных средств на карту Вам необходимо обратиться к
+                менеджеру интернет-магазина. Деньги автоматически вернутся на вашу карту в течение 2-3х дней.
+                Точный срок возврата денежных средств зависит от давности размещения заказа и от банка,
+                выпустившего карту (максимальный срок возврата не может превышать 30 дней).
+            </div>
+        </div>
+        <div class="payment__section">
+            <div class="title title_small">Оплата по расчетному счету</div>
+            <div class="paragraph">
+                Оплата на расчетный счет может быть произведена через интернет-банкинг любого другого банка.
+            </div>
+            <div class="payment__legal-info legal-info">
+                <div class="row">
+                    <div class="legal-info__col col-lg-7">
+                        <div class="legal-info__block legal-info__block_name">
+                            <div class="legal-info__text legal-info__text_bold">Получатель:</div>
+                            <div class="legal-info__text">Индивидуальный предприниматель - Благородная Эльвира Эдуардовна</div>
+                        </div>
+                        <div class="legal-info__block legal-info__block_bank">
+                            <div class="legal-info__bank-line">
+                                <div class="legal-info__text legal-info__text_bold">Расчетный счет:</div>
+                                <div class="legal-info__text">40802810231000028217</div>
+                            </div>
+                            <div class="legal-info__bank-line">
+                                <div class="legal-info__text legal-info__text_bold">К/с:</div>
+                                <div class="legal-info__text">30101810800000000627</div>
+                            </div>
+                            <div class="legal-info__bank-line">
+                                <div class="legal-info__text legal-info__text_bold">ИНН:</div>
+                                <div class="legal-info__text">246200904453</div>
+                            </div>
+                            <div class="legal-info__bank-line">
+                                <div class="legal-info__text legal-info__text_bold">ОГРН:</div>
+                                <div class="legal-info__text">304246233400062</div>
+                            </div>
+                            <div class="legal-info__bank-line">
+                                <div class="legal-info__text legal-info__text_bold">БИК:</div>
+                                <div class="legal-info__text">040407627</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="payment__safety">
+        <div class="container">
+            <div class="title title_small">Безопасность</div>
+            <div class="paragraph">
+                Обработка платежной информации происходит а странице процессингового центра Net Pay, поэтому данные каты
+                Покупателя не доступны для интернет-магазина.<br>
+                <br>
+                Защита передачи информации производится по технологиям, разработанным международными платежными
+                системами VISA и MasteCard - Payment Card Industry Data Security Standart (PCI DSS).
+                Использование протоколов Secure Sockets Layer (SSL), Verified by Visa, Secure Code, и закрытых банковских
+                сетей гарантирует безопасность по сделкам с банковскими картами.
+            </div>
+        </div>
     </div>
 </div>

@@ -1,5 +1,52 @@
 .payment {
 
+  &__section {
 
+    margin-top: 100px;
+
+    @include laptop {
+      margin-top: 80px;
+    }
+
+  }
+
+  &__image {
+
+    max-width: 100%;
+    margin-left: auto;
+
+    @include laptop {
+      width: 290px;
+      margin-left: 0;
+      margin-bottom: 20px;
+    }
+
+  }
+
+  &__list {
+    margin-top: 30px;
+  }
+
+  &__legal-info {
+    margin-top: 20px !important;
+  }
+
+  &__safety {
+
+    margin-top: 100px;
+    background: #EFFAFF;
+    padding: 50px 0 60px;
+    margin-bottom: -120px;
+
+    @include laptop {
+      margin-top: 80px;
+    }
+
+    @include tablet {
+      padding-bottom: 40px;
+      margin-bottom: -100px;
+    }
+
+  }
 
 }
