@@ -1,0 +1,68 @@
+.installation-docs {
+
+  margin-top: 100px;
+  padding: 50px 0;
+  background: #EFFAFF;
+  margin-bottom: -120px;
+
+  @include laptop {
+    margin-top: 80px;
+  }
+
+  @include tablet {
+    margin-bottom: -100px;
+  }
+
+  &__grid {
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+
+    @include laptop {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include phone {
+      grid-template-columns: 1fr;
+    }
+
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__link {
+
+    display: flex;
+    margin-top: 20px;
+    text-align: center;
+    max-width: 360px;
+    font-size: 20px;
+    line-height: 31px;
+    text-decoration-line: underline;
+    color: $dark-blue;
+
+    @include laptop {
+      font-size: 18px;
+      line-height: 26px;
+      margin-top: 15px;
+    }
+
+    @include tablet {
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 21px;
+    }
+
+    &:hover {
+      color: $dark-blue;
+      text-decoration: none;
+    }
+
+  }
+
+}

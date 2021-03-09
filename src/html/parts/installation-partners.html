@@ -1,0 +1,13 @@
+<div class="installation-partners container">
+    <div class="installation-partners__title">Наши партнеры</div>
+    <div class="installation-partners__grid flickity-with-arrows">
+        @@for (var i = 0; i < 4; i++) {
+            <div class="installation-partners__item">
+                @@include('../components/installation-partner.html')
+            </div>
+        }
+    </div>
+    <a href="#" target="_blank" class="installation-partners__price btn">
+        Скачать прайс-лист
+    </a>
+</div>

@@ -1,0 +1,80 @@
+.no-installation {
+
+  background: #EFFAFF;
+
+  &__inner {
+
+    position: relative;
+    padding-top: 40px;
+    padding-bottom: 57px;
+
+    @include laptop {
+      padding-top: 30px;
+      padding-bottom: 25px;
+    }
+
+    @include tablet {
+      padding-bottom: 0;
+    }
+
+  }
+
+  &__title {
+
+    color: $gray;
+    line-height: 42px;
+    opacity: 1;
+
+    @include laptop {
+      margin-bottom: 15px;
+      line-height: 32px;
+    }
+
+    @include tablet {
+      margin-bottom: 7px;
+      font-size: 20px;
+    }
+
+  }
+
+  &__description {
+
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 31px;
+    color: $paragraph;
+
+    @include laptop {
+      font-size: 20px;
+      line-height: 26px;
+      font-weight: normal;
+    }
+
+    @include tablet {
+      font-weight: 300;
+    }
+
+  }
+
+  &__image {
+
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    max-width: 100%;
+
+    @include laptop {
+      width: 300px;
+    }
+
+    @include tablet {
+      display: block;
+      position: static;
+      margin-top: 20px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+  }
+
+}
