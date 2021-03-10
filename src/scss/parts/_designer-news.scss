@@ -1,0 +1,63 @@
+.designer-news {
+
+  display: grid;
+  margin-top: 100px;
+  grid-gap: 30px;
+  grid-template-columns: repeat(3, 1fr);
+
+  @include laptop {
+    margin-top: 80px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include tablet {
+    grid-gap: 20px;
+  }
+
+  @include phone {
+    grid-template-columns: 1fr;
+  }
+
+  &__image {
+
+    height: 200px;
+    overflow: hidden;
+
+    img {
+      object-fit: cover;
+      height: 100%;
+      width: 100%;
+    }
+
+  }
+
+  &__category {
+
+    margin-top: 20px;
+    font-size: 13px;
+    line-height: 18px;
+    opacity: .9;
+    color: $paragraph;
+
+    @include laptop {
+      margin-top: 15px;
+    }
+
+  }
+
+  &__name {
+
+    display: block;
+    margin-top: 5px;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 31px;
+    color: $title;
+
+    @include tablet {
+      font-size: 20px;
+    }
+
+  }
+
+}

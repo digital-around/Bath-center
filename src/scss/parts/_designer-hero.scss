@@ -1,0 +1,47 @@
+.designer-hero {
+
+  background: #EFFAFF;
+
+  &__container {
+
+    position: relative;
+    padding-top: 40px;
+    padding-bottom: 78px;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 31px;
+    color: $paragraph;
+
+    @include tablet {
+      font-size: 20px;
+      padding-top: 30px;
+    }
+
+    @include laptop {
+      padding-bottom: 0;
+    }
+
+  }
+
+  &__image {
+
+    position: absolute;
+    right: 0;
+    bottom: 0;
+
+    @include laptop {
+      position: static;
+      width: 100%;
+      max-width: 350px;
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+    }
+
+    @include tablet {
+      max-width: 290px;
+    }
+
+  }
+
+}
