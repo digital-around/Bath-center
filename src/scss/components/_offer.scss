@@ -1,6 +1,19 @@
 .offer {
 
   margin-top: 60px;
+  max-width: 1920px;
+  margin-left: auto;
+  margin-right: auto;
+
+  &_big-mt {
+
+    margin-top: 100px;
+
+    @include laptop {
+      margin-top: 80px;
+    }
+
+  }
 
   &__image-wrap {
 

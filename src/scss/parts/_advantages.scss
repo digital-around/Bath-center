@@ -6,6 +6,40 @@
   grid-gap: 30px;
 
   @include laptop {
+    margin-top: 80px;
+  }
+
+  &_small {
+
+    padding: 50px;
+    background: #EFFAFF;
+
+    @include laptop {
+      padding: 40px;
+    }
+
+    @include tablet {
+      padding: 30px 0.75rem;
+    }
+
+    .advantage {
+
+      align-items: center;
+
+      &__content {
+        margin-top: 0;
+      }
+
+      &__title {
+        min-height: unset;
+        margin-bottom: 0;
+      }
+
+    }
+
+  }
+
+  @include laptop {
     grid-template-columns: 1fr;
   }
 
