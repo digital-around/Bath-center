@@ -1,0 +1,66 @@
+<div class="guarantee container">
+    <div class="guarantee__section">
+        <div class="guarantee__title title title_small">Гарантия</div>
+        @@include('../components/accordion.html')
+    </div>
+    <div class="guarantee__section">
+        <div class="guarantee__title title title_small">Сервисные центры</div>
+        <div class="guarantee__subsections">
+            <div class="guarantee__subsection">
+                <div class="row">
+                    <div class="col-lg-7">
+                        <div class="guarantee__subtitle">Сервисные центры</div>
+                        <div class="paragraph">
+                            Все поставщики - проверенные производители и официальные диллеры мировых брендов, покупая у нас,
+                            будьте уверены в подлинности товаров. Если после покупки вы обнаружили дефект товара, обратитесь
+                            к нам по номеру или в сервисный центр производителя. Обратите внимание, гарантийный срок
+                            на изделия устанавливают производители, и он отмечен в гарантийном талоне и инструкции.
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <img src="images/guarantee/service.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="guarantee__subsection">
+                <div class="guarantee__subtitle">Контактные данные сервисных центров</div>
+                <div class="delivery-table">
+                    <table class="delivery-table__table">
+                        <thead>
+                        <tr>
+                            <td>Бренд:</td>
+                            <td>Телефон:</td>
+                            <td>Адрес:</td>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        @@for (var i = 0; i < 5; i++) {
+                            <tr>
+                                <td>Vidima, Smart, Grohe, Alcaplast</td>
+                                <td>+7 (923) 570-57-47<br>+7 (391) 252-53-13 (добавочный 117)</td>
+                                <td>г. Красноярск, ул. Светлогорская 5</td>
+                            </tr>
+                        }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="guarantee__section">
+        <div class="guarantee__title title title_small">Претензии</div>
+        <div class="guarantee__subsections">
+            <div class="guarantee__subsection">
+                <div class="guarantee__subtitle">Подача претензии</div>
+                @@include('../components/number-list.html', {
+                    "list": [
+                        "Скачайте <a href='#'>пустой бланк</a> и <a href='#'>образец</a>;",
+                        "Заполните бланк по образцу;",
+                        "Подготовьте документы",
+                        "Отправьте заполненный бланк и фотографии по электронной почте на адрес 101@vanna-centr.ru, в теме письма должно быть слово 'Претензия'."
+                    ]
+                })
+            </div>
+        </div>
+    </div>
+</div>

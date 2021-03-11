@@ -1,0 +1,80 @@
+.guarantee-sections {
+
+  margin-top: 92px;
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: repeat(3, 1fr);
+
+  @include laptop {
+    margin-top: 80px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include phone {
+    grid-template-columns: 1fr;
+  }
+
+  &__image {
+
+    height: 200px;
+    overflow: hidden;
+
+    @include tablet {
+      height: 150px;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+  }
+
+  &__name {
+
+    margin-top: 20px;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 31px;
+    color: $title;
+    opacity: .9;
+
+    @include laptop {
+      font-size: 20px;
+      margin-top: 10px;
+    }
+
+  }
+
+  &__link {
+
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: $dark-blue;
+
+    @include laptop {
+      margin-top: 10px;
+    }
+
+    &:hover {
+      color: $dark-blue;
+    }
+
+    &::before {
+      content: "";
+      background: url("../images/guarantee-sections/arrow.svg") center no-repeat;
+      background-size: contain;
+      width: 36px;
+      height: 12px;
+      margin-right: 15px;
+    }
+
+  }
+
+}
