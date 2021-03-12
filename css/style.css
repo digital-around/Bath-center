@@ -2970,6 +2970,8 @@ h6 {
 
 .accordion__btn {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
   font-weight: 500;
   font-size: 22px;
   line-height: 31px;
@@ -2985,10 +2987,80 @@ h6 {
   background: #EFFAFF;
 }
 
+.accordion__btn::after {
+  content: "";
+  width: 16px;
+  height: 10px;
+  flex-shrink: 0;
+  background: url("../images/accordion/angle.svg") right center no-repeat;
+  background-size: contain;
+  margin-left: 19px;
+}
+
+.accordion__btn.collapsed::after {
+  transform: rotate(180deg);
+}
+
 .accordion__body {
   background: #ffffff;
   box-shadow: 0 0 20px rgba(7, 104, 154, 0.15);
   padding: 20px 20px 58px;
+  font-size: 16px;
+  line-height: 22px;
+  color: #575757;
+}
+
+.accordion__title {
+  font-size: 20px;
+  line-height: 31px;
+  font-weight: 500;
+  color: #333333;
+  margin-bottom: 20px;
+}
+
+.accordion__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.accordion__list li {
+  position: relative;
+  font-size: 16px;
+  line-height: 22px;
+  color: #575757;
+  padding-left: 17px;
+}
+
+.accordion__list li:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.accordion__list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 5px;
+  width: 5px;
+  height: 5px;
+  background: url("../images/accordion/dot.svg") center no-repeat;
+  background-size: contain;
+}
+
+.accordion__list li ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0;
+}
+
+.accordion__list li ul li {
+  padding-left: 0;
+  color: #8B857A;
+  font-weight: 300;
+}
+
+.accordion__list li ul li::before {
+  display: none;
 }
 
 .header {
@@ -4286,6 +4358,10 @@ h6 {
   margin-bottom: 30px;
 }
 
+.guarantee__image {
+  max-width: 100%;
+}
+
 .footer {
   margin-top: 120px;
   background: linear-gradient(90deg, #289FDD 0%, #07689A 100%);
@@ -5033,6 +5109,20 @@ h6 {
     font-size: 22px;
   }
 
+  .accordion__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
+  .accordion__btn {
+    font-size: 19px;
+    padding: 15px;
+  }
+
+  .accordion__title {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
   .header__logo {
     width: 220px;
   }
@@ -5361,6 +5451,14 @@ h6 {
     margin-top: 10px;
   }
 
+  .guarantee__section {
+    margin-top: 80px;
+  }
+
+  .guarantee__subsection:not(:first-child) {
+    margin-top: 50px;
+  }
+
   .footer__top {
     padding-top: 60px;
     padding-bottom: 0;
@@ -5686,6 +5784,28 @@ h6 {
 
   .installation-partner__name {
     font-size: 20px;
+  }
+
+  .accordion__btn {
+    font-size: 16px;
+    line-height: 22px;
+    padding: 10px 15px;
+  }
+
+  .accordion__title {
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: normal;
+    margin-bottom: 14px;
+  }
+
+  .accordion__list li {
+    font-size: 13px;
+    line-height: 18px;
+  }
+
+  .accordion__list li:not(:last-child) {
+    margin-bottom: 10px;
   }
 
   .header__top {
@@ -6028,6 +6148,14 @@ h6 {
 
   .guarantee-sections__image {
     height: 150px;
+  }
+
+  .guarantee__subsection:not(:first-child) {
+    margin-top: 40px;
+  }
+
+  .guarantee__subtitle {
+    font-size: 20px;
   }
 
   .footer {

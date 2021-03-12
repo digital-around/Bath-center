@@ -3,7 +3,13 @@
   &__item {
 
     &:not(:last-child) {
+
       margin-bottom: 40px;
+
+      @include laptop {
+        margin-bottom: 30px;
+      }
+
     }
 
   }
@@ -11,6 +17,8 @@
   &__btn {
 
     display: flex;
+    align-items: center;
+    justify-content: space-between;
     font-weight: 500;
     font-size: 22px;
     line-height: 31px;
@@ -19,9 +27,38 @@
     background: $white;
     filter: drop-shadow(0px 0px 10px rgba(7, 104, 154, 0.15));
 
+    @include laptop {
+      font-size: 19px;
+      padding: 15px;
+    }
+
+    @include tablet {
+      font-size: 16px;
+      line-height: 22px;
+      padding: 10px 15px;
+    }
+
     &:hover, &:not(.collapsed) {
       color: $title;
       background: #EFFAFF;
+    }
+
+    &::after {
+      content: "";
+      width: 16px;
+      height: 10px;
+      flex-shrink: 0;
+      background: url("../images/accordion/angle.svg")  right center no-repeat;
+      background-size: contain;
+      margin-left: 19px;
+    }
+
+    &.collapsed {
+
+      &::after {
+        transform: rotate(180deg);
+      }
+
     }
 
   }
@@ -30,6 +67,95 @@
     background: $white;
     box-shadow: 0 0 20px rgba(7, 104, 154, 0.15);
     padding: 20px 20px 58px;
+    font-size: 16px;
+    line-height: 22px;
+    color: $paragraph;
+  }
+
+  &__title {
+
+    font-size: 20px;
+    line-height: 31px;
+    font-weight: 500;
+    color: $gray;
+    margin-bottom: 20px;
+
+    @include laptop {
+      font-size: 16px;
+      line-height: 24px;
+    }
+
+    @include tablet {
+      font-size: 13px;
+      line-height: 20px;
+      font-weight: normal;
+      margin-bottom: 14px;
+    }
+
+  }
+
+  &__list {
+
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    li {
+
+      position: relative;
+      font-size: 16px;
+      line-height: 22px;
+      color: $paragraph;
+      padding-left: 17px;
+
+      @include tablet {
+        font-size: 13px;
+        line-height: 18px;
+      }
+
+      &:not(:last-child) {
+
+        margin-bottom: 15px;
+
+        @include tablet {
+          margin-bottom: 10px;
+        }
+
+      }
+
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 5px;
+        width: 5px;
+        height: 5px;
+        background: url("../images/accordion/dot.svg") center no-repeat;
+        background-size: contain;
+      }
+
+      ul {
+
+        list-style: none;
+        padding: 0;
+        margin: 10px 0 0;
+
+        li {
+
+          padding-left: 0;
+          color: #8B857A;
+          font-weight: 300;
+
+          &::before {
+            display: none;
+          }
+
+        }
+
+      }
+
+    }
+
   }
 
 }
