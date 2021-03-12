@@ -26,19 +26,8 @@
 
   &__socials {
     position: absolute;
-    display: flex;
     top: 0;
     right: 0.75rem;
-  }
-
-  &__social {
-
-    display: flex;
-
-    &:not(:last-child) {
-      margin-right: 5px;
-    }
-
   }
 
   &__logo {

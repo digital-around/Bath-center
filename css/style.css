@@ -3063,6 +3063,201 @@ h6 {
   display: none;
 }
 
+.mobile-menu {
+  position: absolute;
+  top: 90px;
+  left: 0;
+  right: 0;
+  background: #EFFAFF;
+  padding-bottom: 38px;
+  max-height: calc(100vh - 90px);
+  overflow-y: auto;
+}
+
+.mobile-menu__search {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.mobile-menu__list,
+.mobile-menu__categories {
+  margin-left: -0.75rem;
+  margin-right: -0.75rem;
+}
+
+.mobile-menu__item {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  padding: 16px 40px 16px 56px;
+  border-bottom: 1px solid #d8f2ff;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 18px;
+  color: #002538;
+}
+
+.mobile-menu__item_catalog {
+  background: #F2DE6D;
+  box-shadow: 0 0 10px rgba(74, 74, 74, 0.2);
+}
+
+.mobile-menu__item_catalog::before {
+  content: "";
+  width: 17px;
+  height: 13px;
+  margin-right: 10px;
+  margin-left: -27px;
+  background: url("../images/mobile-menu/catalog.svg") center no-repeat;
+  background-size: contain;
+}
+
+.mobile-menu__item_promo::before {
+  content: "";
+  width: 10px;
+  height: 15px;
+  position: absolute;
+  top: 0;
+  margin-left: -23px;
+  background: url("../images/mobile-menu/promo.svg") center no-repeat;
+  background-size: contain;
+}
+
+.mobile-menu__item_arrow::after {
+  content: "";
+  width: 5px;
+  height: 9px;
+  margin-left: auto;
+  flex-shrink: 0;
+  background: url("../images/mobile-menu/arrow.svg") center no-repeat;
+  background-size: contain;
+}
+
+.mobile-menu__banner {
+  width: 100%;
+  height: 150px;
+  overflow: hidden;
+}
+
+.mobile-menu__banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.mobile-menu__articles {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-bottom: 15px;
+}
+
+.mobile-menu__article {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 18px;
+  color: #333333;
+  text-align: right;
+}
+
+.mobile-menu__category {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #d8f2ff;
+  padding: 9px 22px;
+}
+
+.mobile-menu__category::after {
+  content: "";
+  width: 5px;
+  height: 9px;
+  margin-left: 15px;
+  flex-shrink: 0;
+  background: url("../images/mobile-menu/arrow.svg") center no-repeat;
+  background-size: contain;
+}
+
+.mobile-menu__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 30px;
+}
+
+.mobile-menu__partners {
+  margin-top: 40px;
+}
+
+.mobile-menu__contact {
+  margin-top: 20px;
+}
+
+.mobile-menu__city {
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 12px;
+  color: #666666;
+  padding-left: 25px;
+}
+
+.mobile-menu__phone {
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #333333;
+}
+
+.mobile-menu__phone::before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  margin-right: 10px;
+  background: url("../images/mobile-menu/phone.svg") center no-repeat;
+  background-size: contain;
+}
+
+.mobile-menu__callback {
+  margin-top: 30px;
+  width: 100%;
+  text-transform: none;
+}
+
+.mobile-menu__socials {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.mobile-menu__root,
+.mobile-menu__catalog,
+.mobile-menu__subcategories,
+.mobile-menu__subcategory {
+  display: none;
+}
+
+.mobile-menu__root_active,
+.mobile-menu__catalog_active,
+.mobile-menu__subcategories_active,
+.mobile-menu__subcategory_active {
+  display: block;
+}
+
+.socials {
+  display: flex;
+}
+
+.socials__item {
+  display: flex;
+}
+
+.socials__item:not(:last-child) {
+  margin-right: 5px;
+}
+
 .header {
   position: relative;
   z-index: 2;
@@ -4379,17 +4574,8 @@ h6 {
 
 .footer__socials {
   position: absolute;
-  display: flex;
   top: 0;
   right: 0.75rem;
-}
-
-.footer__social {
-  display: flex;
-}
-
-.footer__social:not(:last-child) {
-  margin-right: 5px;
 }
 
 .footer__logo {
@@ -4500,6 +4686,10 @@ h6 {
 @media screen and (min-width: 768px) {
   .team__carousel .flickity-prev-next-button {
     display: none;
+  }
+
+  .mobile-menu {
+    display: none !important;
   }
 
   .brands-carousel__carousel .flickity-prev-next-button {
@@ -5613,6 +5803,10 @@ h6 {
 
   .review__text {
     margin-top: 12px;
+  }
+
+  .catalog-menu {
+    display: none !important;
   }
 
   .cart-total__line {

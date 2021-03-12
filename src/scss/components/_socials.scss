@@ -1,0 +1,15 @@
+.socials {
+
+  display: flex;
+
+  &__item {
+
+    display: flex;
+
+    &:not(:last-child) {
+      margin-right: 5px;
+    }
+
+  }
+
+}
