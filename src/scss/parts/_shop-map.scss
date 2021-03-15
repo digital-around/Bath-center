@@ -1,0 +1,110 @@
+.shop-map {
+
+  &__tabs {
+    display: flex;
+  }
+
+  &__tab {
+
+    height: 70px;
+    display: flex;
+    align-items: center;
+    padding: 0 35px;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 31px;
+    color: $paragraph;
+    border: 2px solid #EFFAFF;
+
+    &.active {
+      background: #EFFAFF;
+      color: $gray;
+    }
+
+    &:not(:last-child) {
+      margin-right: 4px;
+    }
+
+    &::before {
+      content: "";
+      width: 24px;
+      height: 24px;
+      flex-shrink: 0;
+      margin-right: 10px;
+      background: url("../images/shop-map/pin-gray.svg") center no-repeat;
+      background-size: contain;
+    }
+
+    &.active {
+
+      &::before {
+        background: url("../images/shop-map/pin.svg") center no-repeat;
+      }
+
+    }
+
+  }
+
+  &__tab-content {
+    padding: 40px 35px 70px;
+    background: #EFFAFF;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+  }
+
+  &__map {
+    height: 590px;
+    background: $light-blue;
+  }
+
+  &__contact-center {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 21px;
+    color: #666666;
+  }
+
+  &__phone {
+
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 31px;
+    color: $gray;
+
+    &::before {
+      content: "";
+      width: 18px;
+      height: 18px;
+      background: url("../images/shop-map/phone.svg") center no-repeat;
+      margin-right: 14px;
+    }
+
+  }
+
+  &__email {
+
+    margin-top: 5px;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 31px;
+    color: $dark-blue;
+    text-decoration: underline;
+
+    &:hover {
+      color: $dark-blue;
+    }
+
+  }
+
+}

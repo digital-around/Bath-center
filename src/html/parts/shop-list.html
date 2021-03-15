@@ -1,0 +1,23 @@
+<div class="shop-list container">
+    <div class="title">Наши магазины</div>
+    <div class="shop-list__list">
+        @@for (var i = 0; i < 2; i++) {
+            <div class="shop-list__item">
+                <div class="shop-list__name title title_small">Магазин на Водопьянова</div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        @@include('../components/shop.html')
+                    </div>
+                    <div class="shop-list__staff col-xl-5 offset-xl-1 col-lg-6">
+                        <div class="shop-list__staff-title">Ваши персональные менеджеры:</div>
+                        <div class="shop-list__staff-grid">
+                            @@for (var j = 0; j < 3; j++) {
+                                @@include('../components/manager.html')
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>

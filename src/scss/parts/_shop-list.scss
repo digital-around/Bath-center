@@ -1,0 +1,80 @@
+.shop-list {
+
+  margin-top: 100px;
+
+  @include laptop {
+    margin-top: 80px;
+  }
+
+  @include tablet {
+    margin-top: 64px;
+  }
+
+  &__list {
+
+    margin-top: 40px;
+
+    @include tablet {
+      margin-top: 30px;
+    }
+
+  }
+
+  &__item {
+
+    &:not(:last-child) {
+      margin-bottom: 60px;
+    }
+
+  }
+
+  &__staff {
+
+    @include laptop {
+      margin-top: 40px;
+    }
+
+  }
+
+  &__staff-title {
+
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 31px;
+    color: $gray;
+
+    @include laptop {
+      font-size: 22px;
+    }
+
+    @include tablet {
+      font-size: 20px;
+    }
+
+  }
+
+  &__staff-grid {
+
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+
+    @include laptop {
+      margin-top: 20px;
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    @include tablet {
+      margin-top: 10px;
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include phone {
+      grid-template-columns: 1fr;
+      grid-gap: 44px;
+    }
+
+  }
+
+}

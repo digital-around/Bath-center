@@ -1,0 +1,73 @@
+.shop {
+
+  &__contact {
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    color: $gray;
+
+    &:not(:last-child) {
+      margin-bottom: 12px;
+    }
+
+  }
+
+  &__caption {
+    margin-top: 2px;
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: normal;
+    color: $paragraph;
+    padding-left: 34px;
+  }
+
+  &__address, &__phone {
+
+    display: flex;
+    align-items: center;
+
+    &::before {
+      content: "";
+      width: 24px;
+      height: 24px;
+      margin-right: 10px;
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+  }
+
+  &__address {
+
+    &::before {
+      background-image: url("../images/shop/pin.svg");
+    }
+
+  }
+
+  &__phone {
+
+    &::before {
+      background-image: url("../images/shop/phone.svg");
+    }
+
+  }
+
+  &__photo {
+
+    margin-top: 25px;
+    max-width: 100%;
+
+    @include laptop {
+      margin-top: 15px;
+    }
+
+  }
+
+  &__description {
+    margin-top: 20px;
+  }
+
+}
