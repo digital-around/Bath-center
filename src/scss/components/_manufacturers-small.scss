@@ -1,14 +1,26 @@
 .manufacturers-small {
 
   &__title {
+
     font-weight: 700;
     font-size: 18px;
     line-height: 25px;
     color: $title;
+
+    @include tablet {
+      text-align: center;
+    }
+
   }
 
   &__carousel {
+
     margin: 30px 65px 0;
+
+    @include tablet {
+      margin: 30px 0 0;
+    }
+
   }
 
   &__item {
@@ -32,18 +44,18 @@
 
   .flickity-prev-next-button {
 
-    &.previous {
-      left: -65px;
-    }
+    @include tablet-min {
 
-    &.next {
-      right: -65px;
+      &.previous {
+        left: -65px;
+      }
+
+      &.next {
+        right: -65px;
+      }
+
     }
 
   }
-
-  //.flickity-viewport {
-  //  margin: 0 65px;
-  //}
 
 }

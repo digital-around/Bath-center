@@ -55,6 +55,8 @@
 
   &__burger {
     display: flex;
+    width: 21px;
+    flex-shrink: 0;
   }
 
   &__logo {
