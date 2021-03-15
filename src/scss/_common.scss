@@ -184,6 +184,18 @@ h6 {
     border: none;
   }
 
+  &_invert {
+
+    &:hover {
+      border: 2px solid $blue;
+    }
+
+    &:active {
+      border: 2px solid $dark-blue;
+    }
+
+  }
+
 }
 
 .field {

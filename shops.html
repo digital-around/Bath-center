@@ -91,12 +91,12 @@
                             <div class="header__contact col-lg-6 col-auto">
                                 <div class="header__city">г. Абакан</div>
                                 <a href="tel:+73902298600" class="header__phone">+7 (390) 229-86-00</a>
-                                <a href="#" class="header__callback">Заказать звонок</a>
+                                <a href="javascript:void(0)" class="header__callback">Заказать звонок</a>
                             </div>
                             <div class="header__contact col-lg-6 col-auto">
                                 <div class="header__city">г. Красноярск</div>
                                 <a href="tel:+73912051345" class="header__phone">+7 (391) 205-13-45</a>
-                                <a href="#" class="header__callback">Заказать звонок</a>
+                                <a href="javascript:void(0)" class="header__callback">Заказать звонок</a>
                             </div>
                         </div>
                     </div>
@@ -1068,7 +1068,7 @@
                         <div class="mobile-menu__city">г. Красноярск</div>
                         <a href="tel:+73912051345" class="mobile-menu__phone">+7 (391) 205-13-45</a>
                     </div>
-                    <a href="#" class="mobile-menu__callback btn">Перезвоните мне</a>
+                    <a href="javascript:void(0)" class="mobile-menu__callback btn">Перезвоните мне</a>
                     <div class="mobile-menu__socials">
                         <div class="socials">
                             <a href="#" target="_blank" class="socials__item">
@@ -1903,14 +1903,14 @@
                                     <div class="footer__city">Магазины в Красноярске</div>
                                     <div class="footer__phone-wrap">
                                         <a href="tel:+73912051345" class="footer__phone">+7 (391) 205-13-45</a>
-                                        <a href="#" class="footer__callback">Заказать звонок</a>
+                                        <a href="javascript:void(0)" class="footer__callback">Заказать звонок</a>
                                     </div>
                                 </div>
                                 <div class="footer__contact col-lg-6 col-md-auto">
                                     <div class="footer__city">Магазины в Абакане</div>
                                     <div class="footer__phone-wrap">
                                         <a href="tel:+73902298600" class="footer__phone">+7 (390) 229-86-00</a>
-                                        <a href="#" class="footer__callback">Заказать звонок</a>
+                                        <a href="javascript:void(0)" class="footer__callback">Заказать звонок</a>
                                     </div>
                                 </div>
                             </div>
@@ -1970,12 +1970,58 @@
         </div>
     </div>
 
+    <div id="callback-modal" class="modal modal_callback">
+        <div class="title title_small">Оставьте заявку</div>
+        <div class="paragraph">Заполните форму и наш специалист с вами свяжется.</div>
+        <div class="modal__form">
+            <div class="modal__fields">
+                <input class="modal__field field" type="text" placeholder="*Имя">
+                <input class="modal__field field" type="text" placeholder="*Номер телефона">
+            </div>
+            <div class="modal__agreement">
+                *Нажимая на кнопку “Заказать звонок” вы даете согласие на обработку ваших персональных данных
+            </div>
+            <a href="javascript:void(0)" class="modal__submit btn">Заказать звонок</a>
+        </div>
+    </div>
+
+    <div id="callback-modal-ok" class="modal modal_callback modal_ok">
+        <div class="title title_small">Ваша заявка принята!</div>
+        <div class="paragraph">
+            Благодарим за внимание к нашей компании.<br>Наш менеджер свяжется с вами в ближайшее время.
+        </div>
+        <img src="images/modal/ok.svg" class="modal__ok" alt="">
+    </div>
+
+    <div id="cart-modal" class="modal modal_cart">
+        <div class="modal__inner">
+            <img class="modal__image" src="images/modal/product.png" alt="">
+            <div class="modal__content">
+                <div class="modal__title title title_small">Товар добавлен</div>
+                <div class="modal__text paragraph">В корзине 3 товара, на сумму: 11 456 руб.</div>
+                <div class="modal__buttons">
+                    <a href="#" class="btn modal__button">В корзину</a>
+                    <a href="#" class="btn btn_invert modal__button">К покупкам</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="order-modal" class="modal modal_order">
+        <div class="modal__title title title_small">Ваш заказ оформлен</div>
+        <div class="modal__text paragraph">Мы отправим вам ссылку на оплату после уточнения деталей!</div>
+        <div class="modal__buttons">
+            <a href="#" class="modal__link modal__button">В корзину</a>
+        </div>
+    </div>
+
     <script src="js/libs/jquery-3.5.1.min.js"></script>
     <script src="js/libs/popper.min.js"></script>
     <script src="js/libs/bootstrap.min.js"></script>
     <script src="js/libs/flickity.pkgd.min.js"></script>
     <script src="js/libs/flickity-fade.js"></script>
     <script src="js/libs/ion.rangeSlider.min.js"></script>
+    <script src="js/libs/jquery.fancybox.min.js"></script>
 
     <script src="js/banners.js"></script>
     <script src="js/sections.js"></script>
@@ -1995,6 +2041,7 @@
     <script src="js/installation-partners.js"></script>
     <script src="js/brands-carousel.js"></script>
     <script src="js/mobile-menu.js"></script>
+    <script src="js/modals.js"></script>
 
 </body>
 

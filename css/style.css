@@ -181,6 +181,14 @@ h6 {
   border: none;
 }
 
+.btn_invert:hover {
+  border: 2px solid #289fdd;
+}
+
+.btn_invert:active {
+  border: 2px solid #07689a;
+}
+
 .field {
   height: 45px;
   width: 100%;
@@ -3256,6 +3264,124 @@ h6 {
   margin-right: 5px;
 }
 
+.modal {
+  width: 765px;
+  background: #EFFAFF;
+  padding: 50px;
+  display: none;
+}
+
+.modal_callback {
+  overflow: visible;
+}
+
+.modal_callback::after {
+  content: "";
+  position: absolute;
+  right: -70px;
+  bottom: 0;
+  width: 362px;
+  height: 301px;
+  background: url("../images/modal/girl-right.png") bottom no-repeat;
+  background-size: contain;
+}
+
+.modal_ok {
+  padding-right: 134px;
+}
+
+.modal_cart {
+  padding: 25px 30px;
+}
+
+.modal_cart .modal__inner {
+  display: flex;
+  align-items: center;
+}
+
+.modal_cart .modal__image {
+  max-width: 100%;
+  margin-right: 48px;
+}
+
+.modal_order {
+  overflow: visible;
+  padding: 68px 32px 80px 350px;
+}
+
+.modal_order::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 299px;
+  height: 392px;
+  background: url("../images/modal/girl-like.png") bottom left no-repeat;
+  background-size: contain;
+}
+
+.modal__form {
+  margin-top: 20px;
+  max-width: 340px;
+}
+
+.modal__field:not(:last-child) {
+  margin-bottom: 25px;
+}
+
+.modal__agreement {
+  font-size: 13px;
+  line-height: 18px;
+  color: #8B857A;
+  opacity: 0.78;
+  margin-top: 10px;
+}
+
+.modal__submit {
+  margin-top: 20px;
+  width: 100%;
+  text-transform: unset;
+}
+
+.modal__buttons {
+  display: flex;
+  margin-top: 35px;
+}
+
+.modal__button:not(:last-child) {
+  margin-right: 30px;
+}
+
+.modal__link {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #07689a;
+  display: flex;
+  align-items: center;
+}
+
+.modal__link:hover {
+  color: #07689a;
+}
+
+.modal__link::before {
+  content: "";
+  width: 36px;
+  height: 12px;
+  background: url("../images/modal/arrow.svg") center no-repeat;
+  background-size: contain;
+  margin-right: 18px;
+}
+
+.modal__ok {
+  display: block;
+  margin-top: 63px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .header {
   position: relative;
   z-index: 2;
@@ -5321,6 +5447,26 @@ h6 {
     line-height: 24px;
   }
 
+  .modal_callback::after {
+    display: none;
+  }
+
+  .modal_cart {
+    padding: 64px 30px 50px;
+  }
+
+  .modal_cart .modal__image {
+    display: none;
+  }
+
+  .modal_order {
+    padding: 64px 30px 50px;
+  }
+
+  .modal_order::before {
+    display: none;
+  }
+
   .header__logo {
     width: 220px;
   }
@@ -6018,6 +6164,10 @@ h6 {
     margin-bottom: 10px;
   }
 
+  .modal__ok {
+    margin-top: 30px;
+  }
+
   .header__top {
     display: none;
   }
@@ -6465,6 +6615,42 @@ h6 {
 
   .delivery-benefits {
     grid-template-columns: 1fr;
+  }
+
+  .modal {
+    padding: 40px 14px 50px;
+  }
+
+  .modal_cart {
+    padding: 64px 14px 50px;
+  }
+
+  .modal_cart .modal__inner {
+    max-width: 290px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .modal_cart .modal__title,
+  .modal_cart .modal__text {
+    text-align: center;
+  }
+
+  .modal_order {
+    padding: 64px 14px 50px;
+  }
+
+  .modal__buttons {
+    flex-direction: column;
+  }
+
+  .modal__button {
+    width: 100%;
+  }
+
+  .modal__button:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 20px;
   }
 
   .section__grid {
