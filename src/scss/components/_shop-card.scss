@@ -3,5 +3,215 @@
   background: $white;
   box-shadow: 0 0 20px rgba(7, 104, 154, 0.15);
   padding: 30px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  @include laptop {
+    padding: 20px;
+  }
+
+  @include tablet {
+    padding: 10px 10px 20px;
+  }
+
+  @include phone {
+    grid-template-columns: 1fr;
+  }
+
+  &__contact {
+
+    &:not(:last-child) {
+
+      margin-bottom: 10px;
+
+      @include tablet {
+        margin-bottom: 15px;
+      }
+
+    }
+
+  }
+
+  &__address, &__phone {
+
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    color: $gray;
+
+    @include tablet {
+      font-weight: normal;
+    }
+
+    &::before {
+      content: "";
+      width: 24px;
+      height: 24px;
+      flex-shrink: 0;
+      margin-right: 10px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+
+      @include tablet {
+        width: 16px;
+        height: 16px;
+      }
+
+    }
+
+  }
+
+  &__address {
+
+    color: $title;
+    font-size: 20px;
+
+    @include desktop {
+      font-size: 16px;
+    }
+
+    &::before {
+      background-image: url("../images/shop-card/pin.svg");
+    }
+
+  }
+
+  &__phone {
+
+    &::before {
+      background-image: url("../images/shop-card/phone.svg");
+    }
+
+  }
+
+  &__caption {
+
+    font-size: 13px;
+    line-height: 18px;
+    color: $paragraph;
+    padding-left: 34px;
+
+    @include tablet {
+      padding-left: 25px;
+    }
+
+  }
+
+  &__right {
+
+    display: flex;
+    flex-direction: column;
+
+    @include phone {
+      margin-top: 14px;
+    }
+
+  }
+
+  &__controls {
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    @include phone {
+      flex-direction: row;
+    }
+
+  }
+
+  &__control {
+
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    line-height: 18px;
+    color: $dark-blue;
+    text-decoration: underline;
+
+    &:hover {
+      color: $dark-blue;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 9px;
+
+      @include phone {
+        margin-bottom: 0;
+        margin-right: 20px;
+      }
+
+    }
+
+    &::before {
+      content: "";
+      width: 16px;
+      height: 16px;
+      margin-right: 7px;
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    &_route {
+
+      &::before {
+        background-image: url("../images/shop-card/map.svg");
+      }
+
+    }
+
+    &_tour {
+
+      &::before {
+        background-image: url("../images/shop-card/eye.svg");
+      }
+
+    }
+
+  }
+
+  &__more {
+
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 15px;
+    line-height: 18px;
+    font-weight: 500;
+    color: $dark-blue;
+    text-align: right;
+
+    @include phone {
+      margin-top: 15px;
+    }
+
+    &:hover {
+      color: $dark-blue;
+    }
+
+    &::before {
+
+      content: "";
+      background: url("../images/shop-card/arrow.svg") center no-repeat;
+      width: 36px;
+      height: 12px;
+      margin-right: 7px;
+
+      @include desktop {
+        display: none;
+      }
+
+      @include phone {
+        display: block;
+      }
+
+    }
+
+  }
 
 }

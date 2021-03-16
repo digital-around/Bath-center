@@ -16,6 +16,21 @@
     color: $paragraph;
     border: 2px solid #EFFAFF;
 
+    @include laptop {
+      height: 55px;
+      padding: 0 25px;
+      font-size: 19px;
+      line-height: 24px;
+    }
+
+    @include tablet {
+      height: 40px;
+      font-size: 16px;
+      line-height: 21px;
+      padding: 0 14px;
+      font-weight: normal;
+    }
+
     &.active {
       background: #EFFAFF;
       color: $gray;
@@ -26,6 +41,7 @@
     }
 
     &::before {
+
       content: "";
       width: 24px;
       height: 24px;
@@ -33,12 +49,24 @@
       margin-right: 10px;
       background: url("../images/shop-map/pin-gray.svg") center no-repeat;
       background-size: contain;
+
+      @include laptop {
+        width: 20px;
+        height: 20px;
+      }
+
+      @include tablet {
+        width: 16px;
+        height: 16px;
+      }
+
     }
 
     &.active {
 
       &::before {
         background: url("../images/shop-map/pin.svg") center no-repeat;
+        background-size: contain;
       }
 
     }
@@ -46,22 +74,57 @@
   }
 
   &__tab-content {
+
     padding: 40px 35px 70px;
     background: #EFFAFF;
+
+    @include laptop {
+      padding: 30px 25px 55px;
+    }
+
+    @include tablet {
+      padding: 20px 15px 40px;
+    }
+
   }
 
   &__list {
+
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 20px;
+
+    @include laptop {
+      margin-top: 40px;
+    }
+
+    @include tablet {
+      margin-top: 20px;
+    }
+
   }
 
   &__map {
+
     height: 590px;
     background: $light-blue;
+
+    @include laptop {
+      height: 370px;
+    }
+
+    @include tablet {
+      height: 300px;
+    }
+
+    @include phone {
+      height: 220px;
+    }
+
   }
 
   &__contact-center {
+
     margin-top: 20px;
     display: flex;
     flex-direction: column;
@@ -70,6 +133,11 @@
     font-size: 16px;
     line-height: 21px;
     color: #666666;
+
+    @include tablet {
+      margin-top: 10px;
+    }
+
   }
 
   &__phone {
@@ -81,6 +149,10 @@
     font-size: 22px;
     line-height: 31px;
     color: $gray;
+
+    @include tablet {
+      margin-top: 10px;
+    }
 
     &::before {
       content: "";
@@ -100,6 +172,10 @@
     line-height: 31px;
     color: $dark-blue;
     text-decoration: underline;
+
+    @include tablet {
+      margin-top: 3px;
+    }
 
     &:hover {
       color: $dark-blue;
