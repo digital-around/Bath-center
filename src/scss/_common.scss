@@ -105,34 +105,6 @@ h6 {
 
 }
 
-.cart-btn {
-
-  height: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: $blue-gradient;
-  font-weight: 700;
-  font-size: 15px;
-  line-height: 18px;
-  text-transform: uppercase;
-  color: $white;
-
-  &::after {
-    content: "";
-    width: 32px;
-    height: 20px;
-    background: url("../images/common/cart.svg") center no-repeat;
-    background-size: contain;
-    margin-left: 10px;
-  }
-
-  &:hover {
-    color: $white;
-  }
-
-}
-
 .btn {
 
   height: 50px;
@@ -150,7 +122,7 @@ h6 {
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 
   &_invert {
-    background: transparent;
+    background: rgba(255, 255, 255, 0.6);
     border: 2px solid $blue;
     color: $title;
   }

@@ -118,6 +118,27 @@
 
   }
 
+  &__schedule {
+
+    display: flex;
+    align-items: center;
+    margin-top: 14px;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 19px;
+    color: #D0EFFF;
+
+    &::before {
+      content: "";
+      width: 16px;
+      height: 16px;
+      background: url("../images/footer/schedule.svg") no-repeat center;
+      background-size: contain;
+      margin-right: 8px;
+    }
+
+  }
+
   &__callback {
 
     margin-top: 3px;
