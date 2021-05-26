@@ -262,6 +262,7 @@ h6 {
   top: 0;
   width: 18px;
   height: 18px;
+  z-index: 1;
 }
 
 .irs--flat .irs-handle.state_hover > i:first-child {
@@ -622,6 +623,7 @@ h6 {
   left: 0;
   right: 0;
   background: rgba(51, 51, 51, 0.5);
+  z-index: 2;
 }
 
 .product-card__image-wrapper {
@@ -1890,7 +1892,7 @@ h6 {
 
 .labels {
   position: absolute;
-  z-index: 2;
+  z-index: 1;
   top: 0;
   left: 0;
   display: flex;
@@ -2133,7 +2135,7 @@ h6 {
 .availability__shops {
   margin-top: 5px;
   width: 140px;
-  z-index: 2;
+  z-index: 1;
 }
 
 .availability__balance {
